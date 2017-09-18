@@ -3,6 +3,8 @@
     ViewBag.Title = "Quiz Completed";
 }
 
-<h1>The quiz is completed</h1>
+<link href="~/Content/question.css" rel="stylesheet">
 
-<span>Number of correct answers: </span> @Model.NumberOfCorrectAnswers
+<img src="~/Images/quizCompleted.png"/>
+
+<div class="question">Number of correct answers: @Model.NumberOfCorrectAnswers </div>
