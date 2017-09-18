@@ -103,6 +103,14 @@ namespace WebProject.Controllers
             return View(model);
         }
 
+        public ActionResult StartTest()
+        {
+            AnsweredQuestionsIds.Clear();
+            NumberOfCorrectAnswers = 0;
+            var model = new ResponseModel();
+            return RedirectToAction("GetNextQuestion", model);
+        }
+
         private async Task<bool> IsResponseCorrectAsync(ResponseModel responseModel)
         {
             var correctAnswers = await _questionService.CheckAnswersAsync(responseModel.QuestionId, responseModel.AnswerIds);

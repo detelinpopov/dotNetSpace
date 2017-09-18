@@ -6,5 +6,9 @@
 <link href="~/Content/question.css" rel="stylesheet">
 
 <img src="~/Images/quizCompleted.png"/>
-
 <div class="question">Number of correct answers: @Model.NumberOfCorrectAnswers </div>
+<div>
+    <a href="@Url.Action("StartTest", "Quiz")">
+        <img src="~/Images/btnStartNewTest.png" alt="Start a new test"/>
+    </a>
+</div>

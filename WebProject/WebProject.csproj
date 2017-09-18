@@ -202,6 +202,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\btnCheckAnswer.png" />
     <Content Include="Images\btnNextQuestion.png" />
+    <Content Include="Images\btnStartNewTest.png" />
     <Content Include="Images\correctAnswer.png" />
     <Content Include="Images\correctAnswerText.png" />
     <Content Include="Images\pleaseSelectAnswer.png" />
