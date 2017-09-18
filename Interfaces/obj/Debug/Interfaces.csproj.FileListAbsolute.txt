@@ -41,3 +41,10 @@ C:\Users\Detelin Popov\Desktop\Quiz\Interfaces\bin\Debug\Shared.pdb
 C:\Users\Detelin Popov\Desktop\Quiz\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\Quiz\Interfaces\obj\Debug\Interfaces.dll
 C:\Users\Detelin Popov\Desktop\Quiz\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\bin\Debug\Shared.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\bin\Debug\Shared.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\obj\Debug\Interfaces.pdb

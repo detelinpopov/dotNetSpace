@@ -8,3 +8,7 @@ C:\Users\Detelin Popov\Desktop\Quiz\Shared\bin\Debug\Shared.pdb
 C:\Users\Detelin Popov\Desktop\Quiz\Shared\obj\Debug\Shared.dll
 C:\Users\Detelin Popov\Desktop\Quiz\Shared\obj\Debug\Shared.pdb
 C:\Users\Detelin Popov\Desktop\Quiz\Shared\obj\Debug\Shared.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Shared\bin\Debug\Shared.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Shared\bin\Debug\Shared.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Shared\obj\Debug\Shared.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Shared\obj\Debug\Shared.pdb

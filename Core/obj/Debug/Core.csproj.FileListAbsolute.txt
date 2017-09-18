@@ -82,3 +82,12 @@ C:\Users\Detelin Popov\Desktop\Quiz\Core\bin\Debug\Shared.pdb
 C:\Users\Detelin Popov\Desktop\Quiz\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\Quiz\Core\obj\Debug\Core.dll
 C:\Users\Detelin Popov\Desktop\Quiz\Core\obj\Debug\Core.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Debug\Core.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Debug\Core.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Debug\Shared.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Debug\Shared.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\obj\Debug\Core.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\obj\Debug\Core.pdb

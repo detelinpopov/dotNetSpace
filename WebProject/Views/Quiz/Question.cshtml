@@ -4,7 +4,10 @@
     ViewBag.Title = "Detail";
 }
 
-<div style="font-family: Times New Roman; font-size: xx-large; padding-bottom: 20px; padding-top: 20px;">
+<link href="~/Content/zooomin.css" rel="stylesheet">
+<link href="~/Content/question.css" rel="stylesheet">
+
+<div class="question">
     @Model.Text
 </div>
 
@@ -15,7 +18,7 @@
     }
 </div>
 
-<div id="divResult" style="padding-bottom: 10px; padding-top: 10px">
+<div id="divResult">
     <img src="~/Images/correctAnswer.png" style="display: none; height: 70px; width: 70px;" class="correctAnswer"/>
     <img src="~/Images/correctAnswerText.png" style="display: none" class="correctAnswer"/>
     <img src="~/Images/wrongAnswer.png" style="display: none; height: 70px; width: 70px;" class="wrongAnswer"/>
@@ -28,17 +31,17 @@
 {
     @Html.HiddenFor(m => m.Id, new {id = "QuestionId"})
     @Html.Hidden("ResponseModel.QuestionId", Model.Id.ToString())
-
+   
     for (var i = 0; i < Model.Answers.Count; i++)
     {
-        <div style="font-family: Times New Roman; font-size: x-large">
+        <div class="answer">
             <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quizOption"})</span>
             @Model.Answers[i].Text
             @Html.Hidden(nameof(ResponseModel) + "." + nameof(ResponseModel.AnswerIds) + "[" + i + "]", 0, new {id = "hiddenAnswerId" + Model.Answers[i].Id})
         </div>
     }
 
-    <div style="padding-top: 20px">
+    <div class="question-buttons">
         <img src="~/Images/btnSubmit.png" alt="Submit" id="checkAnswer" data-request-url="@Url.Action("CheckAnswers", "Quiz")">
         <button type="submit" style="background-color: white; border: 10px solid transparent; border-color: white;">
             <img src="~/Images/btnNext.png" alt="Next" id="nextQuestion">
@@ -46,7 +49,6 @@
     </div>
 }
 
-<link href="~/Content/zooomin.css" rel="stylesheet">
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/zooomin.js"></script>
 <script type="text/javascript" src="~/Scripts/answer.js"></script>

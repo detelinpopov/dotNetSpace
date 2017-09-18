@@ -77,14 +77,17 @@ namespace WebProject.Controllers
             {
                 Id = question.Id,
                 Text = question.Text,
-                Image = question.Image
+                Image = question.Image,
+                IsAnswered = AnsweredQuestionsIds.Contains(id)
             };
             foreach (var answer in question.Answers)
             {
-                var answerModel = new AnswerModel();
-                answerModel.Id = answer.Id;
-                answerModel.Text = answer.Text;
-                answerModel.IsCorrect = answer.IsCorrect;
+                var answerModel = new AnswerModel
+                {
+                    Id = answer.Id,
+                    Text = answer.Text,
+                    IsCorrect = answer.IsCorrect
+                };
                 model.Answers.Add(answerModel);
             }
             return View(model);
