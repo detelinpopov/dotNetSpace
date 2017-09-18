@@ -200,8 +200,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\btnNext.png" />
-    <Content Include="Images\btnSubmit.png" />
+    <Content Include="Images\btnCheckAnswer.png" />
+    <Content Include="Images\btnNextQuestion.png" />
     <Content Include="Images\correctAnswer.png" />
     <Content Include="Images\correctAnswerText.png" />
     <Content Include="Images\pleaseSelectAnswer.png" />
