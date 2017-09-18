@@ -1,0 +1,84 @@
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Core.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Core.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Core.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Core.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.pdb
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Core.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Core.pdb
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.pdb
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Core.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Core.pdb
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Core\obj\Debug\Core.pdb
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\bin\Debug\Core.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\bin\Debug\Core.pdb
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\obj\Debug\Core.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Core\obj\Debug\Core.pdb
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\bin\Debug\Core.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\bin\Debug\Core.pdb
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\bin\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\bin\Debug\Sql.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\bin\Debug\EntityFramework.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\bin\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\bin\Debug\Sql.pdb
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\bin\Debug\EntityFramework.xml
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\obj\Debug\Core.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Core\obj\Debug\Core.pdb
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Core\obj\Debug\Core.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Core\obj\Debug\Core.pdb
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Core\bin\Debug\Core.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Core\bin\Debug\Core.pdb
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Core\bin\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Core\bin\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Core\bin\Debug\Shared.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Core\bin\Debug\Shared.pdb
+C:\Users\Detelin Popov\Desktop\Quiz\Core\bin\Debug\Core.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Core\bin\Debug\Core.pdb
+C:\Users\Detelin Popov\Desktop\Quiz\Core\bin\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Core\bin\Debug\Shared.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Core\bin\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\Quiz\Core\bin\Debug\Shared.pdb
+C:\Users\Detelin Popov\Desktop\Quiz\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\Quiz\Core\obj\Debug\Core.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Core\obj\Debug\Core.pdb
