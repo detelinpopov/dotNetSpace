@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -28,6 +29,18 @@ namespace WebProject.Controllers
                     return answeredQuestionsIds;
                 }
                 return (IList<int>) System.Web.HttpContext.Current.Session["AnsweredQuestionsIds"];
+            }
+        }
+
+        public static DateTime StartTime
+        {
+            get { return (DateTime) System.Web.HttpContext.Current.Session["StartTime"]; }
+            set
+            {
+                if (System.Web.HttpContext.Current.Session["StartTime"] == null)
+                {
+                    System.Web.HttpContext.Current.Session["StartTime"] = value;
+                }
             }
         }
 
@@ -71,6 +84,7 @@ namespace WebProject.Controllers
 
         public async Task<ActionResult> Question(int id)
         {
+            StartTime = DateTime.Now;
             if (AnsweredQuestionsIds.Contains(id))
             {
                 return View("AnsweredQuestion");
@@ -99,12 +113,14 @@ namespace WebProject.Controllers
 
         public ActionResult QuizCompleted()
         {
-            var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers};
+            var timeSpent = DateTime.Now - StartTime;
+            var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers, TimeSpent = timeSpent};
             return View(model);
         }
 
         public ActionResult StartTest()
         {
+            StartTime = DateTime.Now;
             AnsweredQuestionsIds.Clear();
             NumberOfCorrectAnswers = 0;
             var model = new ResponseModel();
