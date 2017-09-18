@@ -1,0 +1,55 @@
+﻿@using WebProject.Models.Quiz
+@model WebProject.Models.Quiz.QuestionModel
+@{
+    ViewBag.Title = "Detail";
+}
+
+<div style="font-family: Times New Roman; font-size: xx-large; padding-bottom: 20px; padding-top: 20px;">
+    @Model.Text
+</div>
+
+<div>
+    @if (Model.Image != null && Model.Image.Length > 0)
+    {
+        @Html.Raw("<img class='zooomin' src=\"data:image/jpeg;base64," + Convert.ToBase64String(Model.Image) + "\" />")
+    }
+</div>
+
+<div id="divResult" style="padding-bottom: 10px; padding-top: 10px">
+    <img src="~/Images/correctAnswer.png" style="display: none; height: 70px; width: 70px;" class="correctAnswer"/>
+    <img src="~/Images/correctAnswerText.png" style="display: none" class="correctAnswer"/>
+    <img src="~/Images/wrongAnswer.png" style="display: none; height: 70px; width: 70px;" class="wrongAnswer"/>
+    <img src="~/Images/wrongAnswerText.png" style="display: none" class="wrongAnswer"/>
+    <img src="~/Images/warning.png" style="display: none; height: 70px; width: 70px;" class="noAnswerSelectedWarning"/>
+    <img src="~/Images/pleaseSelectAnswer.png" style="display: none" class="noAnswerSelectedWarning"/>
+</div>
+
+@using (Html.BeginForm("GetNextQuestion", "Quiz"))
+{
+    @Html.HiddenFor(m => m.Id, new {id = "QuestionId"})
+    @Html.Hidden("ResponseModel.QuestionId", Model.Id.ToString())
+
+    for (var i = 0; i < Model.Answers.Count; i++)
+    {
+        <div style="font-family: Times New Roman; font-size: x-large">
+            <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quizOption"})</span>
+            @Model.Answers[i].Text
+            @Html.Hidden(nameof(ResponseModel) + "." + nameof(ResponseModel.AnswerIds) + "[" + i + "]", 0, new {id = "hiddenAnswerId" + Model.Answers[i].Id})
+        </div>
+    }
+
+    <div style="padding-top: 20px">
+        <img src="~/Images/btnSubmit.png" alt="Submit" id="checkAnswer" data-request-url="@Url.Action("CheckAnswers", "Quiz")">
+        <button type="submit" style="background-color: white; border: 10px solid transparent; border-color: white;">
+            <img src="~/Images/btnNext.png" alt="Next" id="nextQuestion">
+        </button>
+    </div>
+}
+
+<link href="~/Content/zooomin.css" rel="stylesheet">
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/zooomin.js"></script>
+<script type="text/javascript" src="~/Scripts/answer.js"></script>
+<script type="text/javascript">
+    $('.zooomin').zooomin();
+</script>

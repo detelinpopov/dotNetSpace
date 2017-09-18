@@ -1,0 +1,11 @@
+﻿@using GridMvc.Html
+@model IEnumerable<Interfaces.Sql.Entities.IQuestion>
+@{
+    ViewBag.Title = "Questions";
+}
+
+@Html.Grid(Model).Columns(columns =>
+{
+    columns.Add(e => e.Id).Titled("Id").Sortable(true);
+    columns.Add(e => e.Text).Titled("Text").Sortable(true);
+}).WithPaging(10)

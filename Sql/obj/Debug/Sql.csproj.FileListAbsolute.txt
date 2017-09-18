@@ -1,0 +1,109 @@
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.dll.config
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.dll.config
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.dll
+C:\Users\devadmin\Desktop\SeniorDeveloperCodingExercise-master1\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.dll.config
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Newtonsoft.Json.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Newtonsoft.Json.xml
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.dll
+C:\Users\devadmin\Desktop\Level\SeniorDeveloperCodingExercise-master\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.dll.config
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Newtonsoft.Json.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\bin\Debug\Newtonsoft.Json.xml
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.dll
+C:\Users\devadmin\Desktop\WebAPI - Copy\SeniorDeveloperCodingExercise-master\Sql\obj\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\Sql.dll.config
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\Sql.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\Sql.pdb
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\EntityFramework.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\Interfaces.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\Newtonsoft.Json.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\Interfaces.pdb
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\EntityFramework.xml
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\Newtonsoft.Json.xml
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\obj\Debug\Sql.csprojResolveAssemblyReference.cache
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\obj\Debug\Sql.dll
+C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\obj\Debug\Sql.pdb
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\Sql.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\Sql.pdb
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\EntityFramework.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\EntityFramework.xml
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\obj\Debug\Sql.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\obj\Debug\Sql.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\obj\Debug\Sql.pdb
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\obj\Debug\Sql.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\obj\Debug\Sql.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\obj\Debug\Sql.pdb
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\Sql.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\Sql.pdb
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\EntityFramework.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\EntityFramework.xml
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\Shared.dll
+C:\Users\Detelin Popov\Desktop\MVCOnionArchitectureSample-master - Copy\MVCOnionArchitectureSample-master\Sql\bin\Debug\Shared.pdb
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\Sql.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\Sql.pdb
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\EntityFramework.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\Shared.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\Shared.pdb
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\EntityFramework.xml
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\obj\Debug\Sql.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\obj\Debug\Sql.dll
+C:\Users\Detelin Popov\Desktop\Quiz\Sql\obj\Debug\Sql.pdb
