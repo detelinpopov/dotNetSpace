@@ -8,7 +8,6 @@ using WebProject.Models.Quiz;
 
 namespace WebProject.Controllers
 {
-    //[Authorize]
     public class QuizController : Controller
     {
         private readonly IQuestionService _questionService;
@@ -72,6 +71,11 @@ namespace WebProject.Controllers
 
         public async Task<ActionResult> Question(int id)
         {
+            if (AnsweredQuestionsIds.Contains(id))
+            {
+                return View("AnsweredQuestion");
+            }
+
             var question = await _questionService.FindAsync(id);
             var model = new QuestionModel
             {
