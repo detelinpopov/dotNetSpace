@@ -32,16 +32,10 @@ namespace WebProject.Controllers
             }
         }
 
-        public static DateTime StartTime
+        public static DateTime? StartTime
         {
-            get { return (DateTime) System.Web.HttpContext.Current.Session["StartTime"]; }
-            set
-            {
-                if (System.Web.HttpContext.Current.Session["StartTime"] == null)
-                {
-                    System.Web.HttpContext.Current.Session["StartTime"] = value;
-                }
-            }
+            get { return (DateTime?) System.Web.HttpContext.Current.Session["StartTime"]; }
+            set { System.Web.HttpContext.Current.Session["StartTime"] = value; }
         }
 
         public static int NumberOfCorrectAnswers
@@ -84,7 +78,10 @@ namespace WebProject.Controllers
 
         public async Task<ActionResult> Question(int id)
         {
-            StartTime = DateTime.Now;
+            if (StartTime == null)
+            {
+                StartTime = DateTime.Now;
+            }
             if (AnsweredQuestionsIds.Contains(id))
             {
                 return View("AnsweredQuestion");

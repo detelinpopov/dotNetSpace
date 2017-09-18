@@ -7,7 +7,7 @@
 
 <img src="~/Images/quizCompleted.png"/>
 <div class="question">Number of correct answers: @Model.NumberOfCorrectAnswers </div>
-<div class="question">Time spent: @Model.TimeSpent </div>
+<div class="question">Time spent: @Model.TimeSpent.Value.Minutes minutes @Model.TimeSpent.Value.Seconds seconds </div>
 <div>
     <a href="@Url.Action("StartTest", "Quiz")">
         <img src="~/Images/btnStartNewTest.png" alt="Start a new test"/>
