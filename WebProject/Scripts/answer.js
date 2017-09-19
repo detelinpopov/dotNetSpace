@@ -9,15 +9,15 @@
             data: JSON.stringify(responseModel),
             success: function (response) {               
                 if (response.AnswerResult.toLowerCase() === "correct") {
-                    $(".correctAnswer").fadeIn(1500);
+                    $(".correctAnswer").fadeIn(1000);
                     $(".wrongAnswer").hide();
                     $(".noAnswerSelectedWarning").hide();
                 } else if (response.AnswerResult.toLowerCase() === "wrong") {
-                    $(".wrongAnswer").fadeIn(1500);
+                    $(".wrongAnswer").fadeIn(1000);
                     $(".correctAnswer").hide();
                     $(".noAnswerSelectedWarning").hide();
                 } else {
-                    $(".noAnswerSelectedWarning").fadeIn(1500);
+                    $(".noAnswerSelectedWarning").fadeIn(1000);
                     $(".correctAnswer").hide();
                     $(".wrongAnswer").hide();
                 }
