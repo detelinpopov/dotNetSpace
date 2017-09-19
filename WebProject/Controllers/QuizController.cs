@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using Interfaces.Core.Services;
 using WebProject.Enums;
+using WebProject.Models.Account;
 using WebProject.Models.Quiz;
 
 namespace WebProject.Controllers
@@ -56,7 +57,7 @@ namespace WebProject.Controllers
         {
             if (responseModel.AnswerIds.Count(i => i > 0) == 0)
             {
-                var noSelectionModel = new VerifyAnswerModel { AnswerResult = AnswerResult.NoAnswerSelected.ToString(), QuestionId = responseModel.QuestionId};
+                var noSelectionModel = new VerifyAnswerModel {AnswerResult = AnswerResult.NoAnswerSelected.ToString(), QuestionId = responseModel.QuestionId};
                 return Json(noSelectionModel);
             }
 
@@ -64,7 +65,7 @@ namespace WebProject.Controllers
             var verifyAnswerModel = new VerifyAnswerModel {AnswerResult = correctAnswers ? AnswerResult.Correct.ToString() : AnswerResult.Wrong.ToString()};
             var correctAnswersIds = await _questionService.GetCorrectAnswersIdsAsync(responseModel.QuestionId);
             verifyAnswerModel.CorrectAnswersIds = correctAnswersIds.Select(i => i.ToString()).ToArray();
-            
+
             return Json(verifyAnswerModel);
         }
 
@@ -78,6 +79,13 @@ namespace WebProject.Controllers
                 return RedirectToAction("QuizCompleted", "Quiz");
             }
             return RedirectToAction("Question", new {id = question.Id});
+        }
+
+        [Authorize]
+        public ActionResult Index()
+        {
+            IEnumerable<RegisterModel> models = new List<RegisterModel>();
+            return View(models);
         }
 
         public async Task<ActionResult> Question(int id)

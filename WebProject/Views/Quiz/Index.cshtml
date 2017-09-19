@@ -1,11 +1,11 @@
 ﻿@using GridMvc.Html
-@model IEnumerable<Interfaces.Sql.Entities.IQuestion>
+@model IEnumerable<WebProject.Models.Account.RegisterModel>
 @{
-    ViewBag.Title = "Questions";
+    ViewBag.Title = "Completed tests";
 }
 
 @Html.Grid(Model).Columns(columns =>
 {
-    columns.Add(e => e.Id).Titled("Id").Sortable(true);
-    columns.Add(e => e.Text).Titled("Text").Sortable(true);
+    columns.Add(e => e.NumberOfCorrectAnswers).Titled("Correct Answers").Sortable(true);
+    columns.Add(e => e.TestCompletionDate).Titled("Completed on").Sortable(true);
 }).WithPaging(10)
