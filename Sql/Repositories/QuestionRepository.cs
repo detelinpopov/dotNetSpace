@@ -61,6 +61,13 @@ namespace Sql.Repositories
             }
         }
 
+        public async Task<IEnumerable<int>> GetCorrectAnswersIdsAsync(int questionId)
+        {
+            var question = await FindAsync(questionId);
+            IList<int> correctAnswersIds = question.Answers.Where(a => a.IsCorrect).Select(a => a.Id).ToList();
+            return correctAnswersIds;
+        }
+
         public virtual async Task<IQuestion> SaveAsync(IQuestion question)
         {
             using (var context = new QuizContext())

@@ -183,6 +183,7 @@
     <Compile Include="Models\JsonEmployee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Quiz\VerifyAnswerModel.cs" />
     <Compile Include="Models\Quiz\QuizCompletedModel.cs" />
     <Compile Include="Models\Quiz\ResponseModel.cs" />
     <Compile Include="Models\Quiz\AnswerModel.cs" />

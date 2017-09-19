@@ -20,6 +20,11 @@ namespace Core.Services
             return await _repository.FindRandomQuestionAsync(excludeIdsList);
         }
 
+        public async Task<IEnumerable<int>> GetCorrectAnswersIdsAsync(int questionId)
+        {
+            return await _repository.GetCorrectAnswersIdsAsync(questionId);
+        }
+
         public async Task<IQuestion> SaveAsync(IQuestion question)
         {
             return await _repository.SaveAsync(question);

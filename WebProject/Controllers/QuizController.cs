@@ -56,12 +56,16 @@ namespace WebProject.Controllers
         {
             if (responseModel.AnswerIds.Count(i => i > 0) == 0)
             {
-                return Json(AnswerResult.NoAnswerSelected.ToString(), JsonRequestBehavior.AllowGet);
+                var noSelectionModel = new VerifyAnswerModel { AnswerResult = AnswerResult.NoAnswerSelected.ToString(), QuestionId = responseModel.QuestionId};
+                return Json(noSelectionModel);
             }
 
             var correctAnswers = await IsResponseCorrectAsync(responseModel);
-            var result = correctAnswers ? AnswerResult.Correct.ToString() : AnswerResult.Wrong.ToString();
-            return Json(result, JsonRequestBehavior.AllowGet);
+            var verifyAnswerModel = new VerifyAnswerModel {AnswerResult = correctAnswers ? AnswerResult.Correct.ToString() : AnswerResult.Wrong.ToString()};
+            var correctAnswersIds = await _questionService.GetCorrectAnswersIdsAsync(responseModel.QuestionId);
+            verifyAnswerModel.CorrectAnswersIds = correctAnswersIds.Select(i => i.ToString()).ToArray();
+            
+            return Json(verifyAnswerModel);
         }
 
         public async Task<ActionResult> GetNextQuestion(ResponseModel responseModel)

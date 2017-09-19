@@ -16,6 +16,8 @@ namespace Interfaces.Core.Services
 
         Task<IQuestion> FindRandomQuestionAsync(IEnumerable<int> excludeIdsList);
 
+        Task<IEnumerable<int>> GetCorrectAnswersIdsAsync(int questionId);
+
         Task<IQuestion> SaveAsync(IQuestion question);
     }
 }

@@ -31,12 +31,12 @@
 {
     @Html.HiddenFor(m => m.Id, new {id = "QuestionId"})
     @Html.Hidden("ResponseModel.QuestionId", Model.Id.ToString())
-   
+
     for (var i = 0; i < Model.Answers.Count; i++)
     {
         <div class="answer">
-            <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quizOption"})</span>
-            @Model.Answers[i].Text
+            <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quizOption"})</span>           
+            <span> @Html.Label(Model.Answers[i].Text, new {id = "spanAnswerText" + Model.Answers[i].Id }) </span>
             @Html.Hidden(nameof(ResponseModel) + "." + nameof(ResponseModel.AnswerIds) + "[" + i + "]", 0, new {id = "hiddenAnswerId" + Model.Answers[i].Id})
         </div>
     }
