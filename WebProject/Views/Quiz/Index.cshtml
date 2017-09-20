@@ -1,11 +1,17 @@
 ﻿@using GridMvc.Html
 @model IEnumerable<WebProject.Models.Account.RegisterModel>
 @{
-    ViewBag.Title = "Completed tests";
+    ViewBag.Title = "Welcome to";
 }
 
-@Html.Grid(Model).Columns(columns =>
-{
-    columns.Add(e => e.NumberOfCorrectAnswers).Titled("Correct Answers").Sortable(true);
-    columns.Add(e => e.TestCompletionDate).Titled("Completed on").Sortable(true);
-}).WithPaging(10)
+<link href="~/Content/quizIndex.css" rel="stylesheet">
+
+<div class="quiz-title">
+    Welcome to Quiz4Net
+</div>
+
+<div class="quiz-completed-buttons">
+    <a href="@Url.Action("StartTest", "Quiz")">
+        <img src="~/Images/btnStartNewTest.png" alt="Start a new test" />
+    </a>
+</div>

@@ -74,12 +74,10 @@ namespace WebProject.Controllers
             }
             return RedirectToAction("Question", new {id = question.Id});
         }
-
-        [Authorize]
+       
         public ActionResult Index()
-        {
-            IEnumerable<RegisterModel> models = new List<RegisterModel>();
-            return View(models);
+        {           
+            return View();
         }
 
         public async Task<ActionResult> Question(int id)
