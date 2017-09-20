@@ -1,4 +1,5 @@
 #divResult {
+    font-size: x-large;
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -29,10 +30,20 @@
 
 .div-result-wrong { color: red; }
 
-.div-result-please-select { color: #FF8C00; }
+.div-result-please-select { color: #DAA520; }
 
 .div-result {
     display: none;
     font-family: Times New Roman;
     font-size: x-large;
+}
+
+.answered {
+    font-size: xx-large;
+    padding-top: 20px;
+}
+
+.div-question-image {
+    padding-bottom: 10px;
+    padding-top: 10px;
 }

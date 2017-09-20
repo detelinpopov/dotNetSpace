@@ -1,6 +1,7 @@
 .div-item {
-    padding-top: 5px;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-top: 10px;
+    font-size: x-large;
 }
 
 .quiz-completed-title {
@@ -9,4 +10,9 @@
     font-size: xx-large;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+.quiz-completed-buttons {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

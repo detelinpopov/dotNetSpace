@@ -11,9 +11,11 @@
                 if (response.AnswerResult.toLowerCase() === "correct") {
                     $("#divResult").text("Your answer is correct");
                     $("#divResult").addClass("div-result-correct");
+                    $(".quiz-option").prop("disabled", true);
                 } else if (response.AnswerResult.toLowerCase() === "wrong") {
                     $("#divResult").text("Your answer is wrong");
                     $("#divResult").addClass("div-result-wrong");
+                    $(".quiz-option").prop("disabled", true);
                 } else {
                     $("#divResult").text("Please select at least one answer");
                     $("#divResult").addClass("div-result-please-select");
@@ -24,7 +26,7 @@
                 for (var i = 0; i < response.CorrectAnswersIds.length; i++) {
                     $("#" + response.CorrectAnswersIds[i] + ".quiz-option").prop("checked", true);
                     $("#spanAnswerText" + response.CorrectAnswersIds[i]).addClass("green-answer");
-                }
+                }               
             }
         });
     });
