@@ -9,5 +9,7 @@ namespace WebProject.Models.Quiz
         public TimeSpan? TimeSpent { get; set; }
 
         public string TimeSpentText { get; set; }
+
+        public int TotalQuestionsCount { get; set; }
     }
 }

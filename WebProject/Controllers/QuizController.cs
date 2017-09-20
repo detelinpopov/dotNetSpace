@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using Interfaces.Core.Services;
 using WebProject.Enums;
-using WebProject.Models.Account;
 using WebProject.Models.Quiz;
 
 namespace WebProject.Controllers
 {
     public class QuizController : Controller
     {
+        private const int TotalQuestionsCount = 20;
+
         private readonly IQuestionService _questionService;
 
         public QuizController(IQuestionService questionService)
@@ -52,6 +53,19 @@ namespace WebProject.Controllers
             set { System.Web.HttpContext.Current.Session["NumberOfCorrectAnswers"] = value; }
         }
 
+        public static int NumberOfAnsweredQuestions
+        {
+            get
+            {
+                if (System.Web.HttpContext.Current.Session["NumberOfAnsweredQuestions"] == null)
+                {
+                    System.Web.HttpContext.Current.Session["NumberOfAnsweredQuestions"] = 0;
+                }
+                return (int) System.Web.HttpContext.Current.Session["NumberOfAnsweredQuestions"];
+            }
+            set { System.Web.HttpContext.Current.Session["NumberOfAnsweredQuestions"] = value; }
+        }
+
         [HttpPost]
         public async Task<JsonResult> CheckAnswers(ResponseModel responseModel)
         {
@@ -64,7 +78,12 @@ namespace WebProject.Controllers
         }
 
         public async Task<ActionResult> GetNextQuestion(ResponseModel responseModel)
-        {
+        {            
+            if (NumberOfAnsweredQuestions == TotalQuestionsCount)
+            {
+                return RedirectToAction("QuizCompleted", "Quiz");
+            }
+
             await IsResponseCorrectAsync(responseModel);
 
             var question = await _questionService.FindRandomQuestionAsync(AnsweredQuestionsIds);
@@ -72,11 +91,13 @@ namespace WebProject.Controllers
             {
                 return RedirectToAction("QuizCompleted", "Quiz");
             }
+
+            NumberOfAnsweredQuestions++;
             return RedirectToAction("Question", new {id = question.Id});
         }
-       
+
         public ActionResult Index()
-        {           
+        {
             return View();
         }
 
@@ -121,7 +142,7 @@ namespace WebProject.Controllers
                 var plural = timeSpent.Value.Minutes == 1 ? string.Empty : "s";
                 timeSpentText = $"{timeSpent.Value.Minutes} minute{plural}  and {timeSpent.Value.Seconds} seconds";
             }
-            var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers, TimeSpentText = timeSpentText};
+            var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers, TimeSpentText = timeSpentText, TotalQuestionsCount = TotalQuestionsCount};
             return View(model);
         }
 
@@ -129,6 +150,7 @@ namespace WebProject.Controllers
         {
             StartTime = DateTime.Now;
             AnsweredQuestionsIds.Clear();
+            NumberOfAnsweredQuestions = 0;
             NumberOfCorrectAnswers = 0;
             var model = new ResponseModel();
             return RedirectToAction("GetNextQuestion", model);
