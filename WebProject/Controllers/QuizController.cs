@@ -55,12 +55,6 @@ namespace WebProject.Controllers
         [HttpPost]
         public async Task<JsonResult> CheckAnswers(ResponseModel responseModel)
         {
-            if (responseModel.AnswerIds.Count(i => i > 0) == 0)
-            {
-                var model = new VerifyAnswerModel {AnswerResult = AnswerResult.Wrong.ToString(), QuestionId = responseModel.QuestionId};
-                return Json(model);
-            }
-
             var correctAnswers = await IsResponseCorrectAsync(responseModel);
             var verifyAnswerModel = new VerifyAnswerModel {AnswerResult = correctAnswers ? AnswerResult.Correct.ToString() : AnswerResult.Wrong.ToString()};
             var correctAnswersIds = await _questionService.GetCorrectAnswersIdsAsync(responseModel.QuestionId);
