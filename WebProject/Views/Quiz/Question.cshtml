@@ -18,13 +18,8 @@
     }
 </div>
 
-<div id="divResult">
-    <img src="~/Images/correctAnswer.png" style="display: none; height: 70px; width: 70px;" class="correctAnswer"/>
-    <img src="~/Images/correctAnswerText.png" style="display: none" class="correctAnswer"/>
-    <img src="~/Images/wrongAnswer.png" style="display: none; height: 70px; width: 70px;" class="wrongAnswer"/>
-    <img src="~/Images/wrongAnswerText.png" style="display: none" class="wrongAnswer"/>
-    <img src="~/Images/warning.png" style="display: none; height: 70px; width: 70px;" class="noAnswerSelectedWarning"/>
-    <img src="~/Images/pleaseSelectAnswer.png" style="display: none" class="noAnswerSelectedWarning"/>
+<div id="divResult" class="div-result">
+   
 </div>
 
 @using (Html.BeginForm("GetNextQuestion", "Quiz"))
@@ -35,7 +30,7 @@
     for (var i = 0; i < Model.Answers.Count; i++)
     {
         <div class="answer">
-            <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quizOption"})</span>           
+            <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quiz-option"})</span>           
             <span> @Html.Label(Model.Answers[i].Text, new {id = "spanAnswerText" + Model.Answers[i].Id }) </span>
             @Html.Hidden(nameof(ResponseModel) + "." + nameof(ResponseModel.AnswerIds) + "[" + i + "]", 0, new {id = "hiddenAnswerId" + Model.Answers[i].Id})
         </div>

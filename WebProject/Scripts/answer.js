@@ -7,25 +7,24 @@
             contentType: "application/json",
             type: "POST",
             data: JSON.stringify(responseModel),
-            success: function (response) {               
+            success: function(response) {
                 if (response.AnswerResult.toLowerCase() === "correct") {
-                    $(".correctAnswer").fadeIn(1000);
-                    $(".wrongAnswer").hide();
-                    $(".noAnswerSelectedWarning").hide();
+                    $("#divResult").text("Your answer is correct");
+                    $("#divResult").addClass("div-result-correct");
                 } else if (response.AnswerResult.toLowerCase() === "wrong") {
-                    $(".wrongAnswer").fadeIn(1000);
-                    $(".correctAnswer").hide();
-                    $(".noAnswerSelectedWarning").hide();
+                    $("#divResult").text("Your answer is wrong");
+                    $("#divResult").addClass("div-result-wrong");
                 } else {
-                    $(".noAnswerSelectedWarning").fadeIn(1000);
-                    $(".correctAnswer").hide();
-                    $(".wrongAnswer").hide();
+                    $("#divResult").text("Please select at least one answer");
+                    $("#divResult").addClass("div-result-please-select");
                 }
 
+                $("#divResult").fadeIn(1000);
+
                 for (var i = 0; i < response.CorrectAnswersIds.length; i++) {
-                    $("#" + response.CorrectAnswersIds[i] + ".quizOption").prop("checked", true);
-                    $("#spanAnswerText" + response.CorrectAnswersIds[i]).addClass('green-answer');
-                }               
+                    $("#" + response.CorrectAnswersIds[i] + ".quiz-option").prop("checked", true);
+                    $("#spanAnswerText" + response.CorrectAnswersIds[i]).addClass("green-answer");
+                }
             }
         });
     });
@@ -37,7 +36,7 @@
             $("#hiddenAnswerId" + $(this).attr("id")).val(0);
         }
     });
-   
+
     function ResponseModel() {
         var self = this;
         self.QuestionId = $("#QuestionId").val();
@@ -46,5 +45,5 @@
             answerIds.push($(this).attr("id"));
             self.AnswerIds = answerIds;
         });
-    }  
+    }
 });

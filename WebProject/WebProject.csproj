@@ -206,13 +206,7 @@
     <Content Include="Images\btnNextQuestion.png" />
     <Content Include="Images\btnRegister.png" />
     <Content Include="Images\btnStartNewTest.png" />
-    <Content Include="Images\correctAnswer.png" />
-    <Content Include="Images\correctAnswerText.png" />
-    <Content Include="Images\pleaseSelectAnswer.png" />
     <Content Include="Images\quizCompleted.png" />
-    <Content Include="Images\warning.png" />
-    <Content Include="Images\wrongAnswer.png" />
-    <Content Include="Images\wrongAnswerText.png" />
     <Content Include="Scripts\answer.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

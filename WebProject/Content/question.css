@@ -23,6 +23,16 @@
     padding-top: 20px;
 }
 
-.green-answer {
-    color: green;
+.green-answer { color: green; }
+
+.div-result-correct { color: green; }
+
+.div-result-wrong { color: red; }
+
+.div-result-please-select { color: #FF8C00; }
+
+.div-result {
+    display: none;
+    font-family: Times New Roman;
+    font-size: x-large;
 }
