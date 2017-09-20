@@ -16,8 +16,9 @@
                     $("#divResult").text("Your answer is wrong");
                     $("#divResult").addClass("div-result-wrong");
                     $(".quiz-option").prop("disabled", true);
-                } 
+                }
 
+                $("#checkAnswer").hide();
                 $("#divResult").fadeIn(1000);
 
                 for (var i = 0; i < response.CorrectAnswersIds.length; i++) {
