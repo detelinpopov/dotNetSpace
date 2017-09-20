@@ -16,10 +16,7 @@
                     $("#divResult").text("Your answer is wrong");
                     $("#divResult").addClass("div-result-wrong");
                     $(".quiz-option").prop("disabled", true);
-                } else {
-                    $("#divResult").text("Please select at least one answer");
-                    $("#divResult").addClass("div-result-please-select");
-                }
+                } 
 
                 $("#divResult").fadeIn(1000);
 

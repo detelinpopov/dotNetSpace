@@ -57,8 +57,8 @@ namespace WebProject.Controllers
         {
             if (responseModel.AnswerIds.Count(i => i > 0) == 0)
             {
-                var noSelectionModel = new VerifyAnswerModel {AnswerResult = AnswerResult.NoAnswerSelected.ToString(), QuestionId = responseModel.QuestionId};
-                return Json(noSelectionModel);
+                var model = new VerifyAnswerModel {AnswerResult = AnswerResult.Wrong.ToString(), QuestionId = responseModel.QuestionId};
+                return Json(model);
             }
 
             var correctAnswers = await IsResponseCorrectAsync(responseModel);
@@ -122,9 +122,13 @@ namespace WebProject.Controllers
 
         public ActionResult QuizCompleted()
         {
+            var timeSpentText = string.Empty;
             var timeSpent = DateTime.Now - StartTime;
-            var plural = timeSpent.Value.Minutes == 1 ? string.Empty : "s";
-            var timeSpentText = $"{timeSpent.Value.Minutes} minute{plural}  and {timeSpent.Value.Seconds} seconds";
+            if (timeSpent != null)
+            {
+                var plural = timeSpent.Value.Minutes == 1 ? string.Empty : "s";
+                timeSpentText = $"{timeSpent.Value.Minutes} minute{plural}  and {timeSpent.Value.Seconds} seconds";
+            }
             var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers, TimeSpentText = timeSpentText};
             return View(model);
         }
