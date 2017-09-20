@@ -196,7 +196,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Gridmvc.css" />
-    <Content Include="Content\question.css" />
+    <Content Include="Content\quizCompleted.css" />
+    <Content Include="Content\quiz.css" />
     <Content Include="Content\zooomin.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -206,7 +207,6 @@
     <Content Include="Images\btnNextQuestion.png" />
     <Content Include="Images\btnRegister.png" />
     <Content Include="Images\btnStartNewTest.png" />
-    <Content Include="Images\quizCompleted.png" />
     <Content Include="Scripts\answer.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

@@ -1,11 +1,11 @@
 ﻿@using WebProject.Models.Quiz
 @model WebProject.Models.Quiz.QuestionModel
 @{
-    ViewBag.Title = "Detail";
+    ViewBag.Title = "Question";
 }
 
 <link href="~/Content/zooomin.css" rel="stylesheet">
-<link href="~/Content/question.css" rel="stylesheet">
+<link href="~/Content/quiz.css" rel="stylesheet">
 
 <div class="question">
     @Model.Text
@@ -19,7 +19,7 @@
 </div>
 
 <div id="divResult" class="div-result">
-   
+
 </div>
 
 @using (Html.BeginForm("GetNextQuestion", "Quiz"))
@@ -30,8 +30,8 @@
     for (var i = 0; i < Model.Answers.Count; i++)
     {
         <div class="answer">
-            <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quiz-option"})</span>           
-            <span> @Html.Label(Model.Answers[i].Text, new {id = "spanAnswerText" + Model.Answers[i].Id }) </span>
+            <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quiz-option"})</span>
+            <span> @Html.Label(Model.Answers[i].Text, new {id = "spanAnswerText" + Model.Answers[i].Id}) </span>
             @Html.Hidden(nameof(ResponseModel) + "." + nameof(ResponseModel.AnswerIds) + "[" + i + "]", 0, new {id = "hiddenAnswerId" + Model.Answers[i].Id})
         </div>
     }

@@ -3,11 +3,11 @@
     ViewBag.Title = "Quiz Completed";
 }
 
-<link href="~/Content/question.css" rel="stylesheet">
+<link href="~/Content/quizCompleted.css" rel="stylesheet">
 
-<img src="~/Images/quizCompleted.png"/>
-<div class="answer">Number of correct answers: @Model.NumberOfCorrectAnswers </div>
-<div class="answer">Time spent: @Model.TimeSpent.Value.Minutes minutes and @Model.TimeSpent.Value.Seconds seconds </div>
+<div class="quiz-completed-title"> Quiz Completed</div>
+<div class="div-item">Number of correct answers: @Model.NumberOfCorrectAnswers </div>
+<div class="div-item">Time spent: @Model.TimeSpent.Value.Minutes minutes and @Model.TimeSpent.Value.Seconds seconds </div>
 <div>
     <a href="@Url.Action("StartTest", "Quiz")">
         <img src="~/Images/btnStartNewTest.png" alt="Start a new test"/>
