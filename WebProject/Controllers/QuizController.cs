@@ -123,7 +123,9 @@ namespace WebProject.Controllers
         public ActionResult QuizCompleted()
         {
             var timeSpent = DateTime.Now - StartTime;
-            var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers, TimeSpent = timeSpent};
+            var plural = timeSpent.Value.Minutes == 1 ? string.Empty : "s";
+            var timeSpentText = $"{timeSpent.Value.Minutes} minute{plural}  and {timeSpent.Value.Seconds} seconds";
+            var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers, TimeSpentText = timeSpentText};
             return View(model);
         }
 

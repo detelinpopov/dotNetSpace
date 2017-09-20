@@ -7,7 +7,7 @@
 
 <div class="quiz-completed-title"> Quiz Completed</div>
 <div class="div-item">Number of correct answers: @Model.NumberOfCorrectAnswers </div>
-<div class="div-item">Time spent: @Model.TimeSpent.Value.Minutes minutes and @Model.TimeSpent.Value.Seconds seconds </div>
+<div class="div-item">Time spent: @Model.TimeSpentText </div>
 <div class="quiz-completed-buttons">
     <a href="@Url.Action("StartTest", "Quiz")">
         <img src="~/Images/btnStartNewTest.png" alt="Start a new test"/>
