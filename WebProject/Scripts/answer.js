@@ -16,8 +16,8 @@
             dataType: "json",
             contentType: "application/json",
             type: "POST",
-            data: JSON.stringify(responseModel),
-            success: function(response) {
+            data: JSON.stringify(responseModel),          
+            success: function (response) {               
                 if (response.AnswerResult.toLowerCase() === "correct") {
                     $("#divResult").text("Your answer is correct");
                     $("#divResult").addClass("div-result-correct");
@@ -27,10 +27,9 @@
                     $("#divResult").addClass("div-result-wrong");
                     $(".quiz-option").prop("disabled", true);
                 }
-
+               
                 $("#checkAnswer").hide();
                 $("#divResult").fadeIn(1000);
-
                 for (var i = 0; i < response.CorrectAnswersIds.length; i++) {
                     $("#" + response.CorrectAnswersIds[i] + ".quiz-option").prop("checked", true);
                     $("#spanAnswerText" + response.CorrectAnswersIds[i]).addClass("green-answer");

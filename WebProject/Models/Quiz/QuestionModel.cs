@@ -11,5 +11,9 @@ namespace WebProject.Models.Quiz
         public byte[] Image { get; set; }
 
         public IList<AnswerModel> Answers { get; } = new List<AnswerModel>();
+
+        public int Number { get; set; }
+
+        public int TotalQuestionsCount { get; set; } = 20;
     }
 }

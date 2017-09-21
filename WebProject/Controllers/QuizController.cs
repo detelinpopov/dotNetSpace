@@ -152,7 +152,8 @@ namespace WebProject.Controllers
             {
                 Id = question.Id,
                 Text = question.Text,
-                Image = question.Image
+                Image = question.Image,
+                Number = AnsweredQuestionsIds.Count + 1
             };
             foreach (var answer in question.Answers)
             {
@@ -174,7 +175,10 @@ namespace WebProject.Controllers
             {
                 NumberOfCorrectAnswers++;
             }
-            AnsweredQuestionsIds.Add(responseModel.QuestionId);
+            if (responseModel.QuestionId > 0 && !AnsweredQuestionsIds.Contains(responseModel.QuestionId))
+            {
+                AnsweredQuestionsIds.Add(responseModel.QuestionId);
+            }
             return correctAnswers;
         }
     }
