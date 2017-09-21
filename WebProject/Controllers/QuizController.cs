@@ -136,14 +136,15 @@ namespace WebProject.Controllers
             return View(model);
         }
 
-        public ActionResult StartTest()
+        public async Task<ActionResult> StartTest()
         {
             StartTime = DateTime.Now;
             AnsweredQuestionsIds.Clear();
             NumberOfAnsweredQuestions = 0;
             NumberOfCorrectAnswers = 0;
-            var model = new ResponseModel();
-            return RedirectToAction("GetNextQuestion", model);
+            var question = await _questionService.FindRandomQuestionAsync(AnsweredQuestionsIds);
+            var model = CreateQuestionModel(question);
+            return View("Question", model);
         }
 
         private QuestionModel CreateQuestionModel(IQuestion question)

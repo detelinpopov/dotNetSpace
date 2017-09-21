@@ -20,6 +20,7 @@
         @Html.Raw("<img class='zooomin' src=\"data:image/jpeg;base64," + Convert.ToBase64String(Model.Image) + "\" />")
     }
 </div>
+<hr/>
 <div id="divResult" class="div-result"></div>
 @using (Html.BeginForm("GetNextQuestion", "Quiz"))
 {

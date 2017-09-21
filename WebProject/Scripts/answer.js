@@ -34,6 +34,8 @@
                     $("#" + response.CorrectAnswersIds[i] + ".quiz-option").prop("checked", true);
                     $("#spanAnswerText" + response.CorrectAnswersIds[i]).addClass("green-answer");
                 }
+
+                $("#nextQuestion").fadeIn(1000);
             }
         });
     });
