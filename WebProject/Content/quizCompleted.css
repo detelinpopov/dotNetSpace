@@ -1,23 +1,21 @@
 .div-item {
-    padding-top: 10px;
-    padding-top: 10px;
     font-size: x-large;
+    padding-top: 10px;
+    padding-top: 10px;
 }
 
 .quiz-completed-title {
     color: green;
     font-family: Times New Roman;
     font-size: xx-large;
-    padding-bottom: 20px;
     padding-top: 20px;
 }
 
-.quiz-completed-buttons {
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
+.quiz-completed-buttons { padding-bottom: 20px; }
 
 .user-level {
-    font-size: xx-large;
     color: green;
+    font-size: xx-large;
 }
+
+.green { color: green; }

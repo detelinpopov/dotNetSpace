@@ -21,7 +21,7 @@
     }
 </div>
 <div id="divResult" class="div-result"></div>
-@using (Html.BeginForm("GetNextQuestion", "Quiz"))
+@using (Html.BeginForm("Question", "Quiz"))
 {
     @Html.HiddenFor(m => m.Id, new {id = "QuestionId"})
     @Html.Hidden("ResponseModel.QuestionId", Model.Id.ToString())

@@ -78,7 +78,12 @@ namespace WebProject.Controllers
             return Json(verifyAnswerModel);
         }
 
-        public async Task<ActionResult> GetNextQuestion(ResponseModel responseModel)
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public async Task<ActionResult> Question(ResponseModel responseModel)
         {
             if (StartTime == null)
             {
@@ -89,7 +94,10 @@ namespace WebProject.Controllers
                 return RedirectToAction("QuizCompleted", "Quiz");
             }
 
-            await IsResponseCorrectAsync(responseModel);
+            if (responseModel != null)
+            {
+                await IsResponseCorrectAsync(responseModel);
+            }
 
             var question = await _questionService.FindRandomQuestionAsync(AnsweredQuestionsIds);
             if (question == null)
@@ -97,30 +105,8 @@ namespace WebProject.Controllers
                 return RedirectToAction("QuizCompleted", "Quiz");
             }
 
-            NumberOfAnsweredQuestions++;
             var model = CreateQuestionModel(question);
             return View("Question", model);
-        }
-
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        public async Task<ActionResult> Question(int id)
-        {
-            if (StartTime == null)
-            {
-                StartTime = DateTime.Now;
-            }
-            if (AnsweredQuestionsIds.Contains(id))
-            {
-                return View("AnsweredQuestion");
-            }
-
-            var question = await _questionService.FindAsync(id);
-            var model = CreateQuestionModel(question);
-            return View(model);
         }
 
         public ActionResult QuizCompleted()
@@ -136,15 +122,13 @@ namespace WebProject.Controllers
             return View(model);
         }
 
-        public async Task<ActionResult> StartTest()
+        public ActionResult StartTest()
         {
             StartTime = DateTime.Now;
             AnsweredQuestionsIds.Clear();
             NumberOfAnsweredQuestions = 0;
             NumberOfCorrectAnswers = 0;
-            var question = await _questionService.FindRandomQuestionAsync(AnsweredQuestionsIds);
-            var model = CreateQuestionModel(question);
-            return View("Question", model);
+            return RedirectToAction("Question");
         }
 
         private QuestionModel CreateQuestionModel(IQuestion question)
@@ -178,8 +162,10 @@ namespace WebProject.Controllers
             }
             if (responseModel.QuestionId > 0 && !AnsweredQuestionsIds.Contains(responseModel.QuestionId))
             {
+                NumberOfAnsweredQuestions++;
                 AnsweredQuestionsIds.Add(responseModel.QuestionId);
             }
+           
             return correctAnswers;
         }
     }
