@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using Interfaces.Core.Services;
+using Interfaces.Sql.Entities;
 using WebProject.Enums;
 using WebProject.Models.Quiz;
 
@@ -78,7 +79,11 @@ namespace WebProject.Controllers
         }
 
         public async Task<ActionResult> GetNextQuestion(ResponseModel responseModel)
-        {            
+        {
+            if (StartTime == null)
+            {
+                StartTime = DateTime.Now;
+            }
             if (NumberOfAnsweredQuestions == TotalQuestionsCount)
             {
                 return RedirectToAction("QuizCompleted", "Quiz");
@@ -93,7 +98,8 @@ namespace WebProject.Controllers
             }
 
             NumberOfAnsweredQuestions++;
-            return RedirectToAction("Question", new {id = question.Id});
+            var model = CreateQuestionModel(question);
+            return View("Question", model);
         }
 
         public ActionResult Index()
@@ -113,23 +119,7 @@ namespace WebProject.Controllers
             }
 
             var question = await _questionService.FindAsync(id);
-            var model = new QuestionModel
-            {
-                Id = question.Id,
-                Text = question.Text,
-                Image = question.Image,
-                IsAnswered = AnsweredQuestionsIds.Contains(id)
-            };
-            foreach (var answer in question.Answers)
-            {
-                var answerModel = new AnswerModel
-                {
-                    Id = answer.Id,
-                    Text = answer.Text,
-                    IsCorrect = answer.IsCorrect
-                };
-                model.Answers.Add(answerModel);
-            }
+            var model = CreateQuestionModel(question);
             return View(model);
         }
 
@@ -154,6 +144,27 @@ namespace WebProject.Controllers
             NumberOfCorrectAnswers = 0;
             var model = new ResponseModel();
             return RedirectToAction("GetNextQuestion", model);
+        }
+
+        private QuestionModel CreateQuestionModel(IQuestion question)
+        {
+            var model = new QuestionModel
+            {
+                Id = question.Id,
+                Text = question.Text,
+                Image = question.Image
+            };
+            foreach (var answer in question.Answers)
+            {
+                var answerModel = new AnswerModel
+                {
+                    Id = answer.Id,
+                    Text = answer.Text,
+                    IsCorrect = answer.IsCorrect
+                };
+                model.Answers.Add(answerModel);
+            }
+            return model;
         }
 
         private async Task<bool> IsResponseCorrectAsync(ResponseModel responseModel)
