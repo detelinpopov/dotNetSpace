@@ -32,6 +32,23 @@ namespace Tester.Sql.Repositories.IntegrationTests
         }
 
         [Test]
+        public async Task CheckAnswersAsync_ReturnsFalse_WhenNotAllAnswersAreCorrect()
+        {
+            // Arrange
+            var answersCount = 4;
+            var correctAnswersIds = new List<int> {1, 2};
+            var question = QuestionBuilder.CreateQuestion().WithAnswers(answersCount, correctAnswersIds);
+            var repository = new QuestionRepository();
+
+            // Act   
+            var savedQuestion = await repository.SaveAsync(question);
+            var correctAnswers = await repository.CheckAnswersAsync(savedQuestion.Id, new List<int> {correctAnswersIds[0]});
+
+            // Assert
+            Assert.IsFalse(correctAnswers);
+        }
+
+        [Test]
         public async Task CheckAnswersAsync_ReturnsFalse_WhenTheAnswersAreNotCorrect()
         {
             // Arrange

@@ -26,7 +26,7 @@ namespace WebProject.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<ActionResult> Create(QuestionModel model, HttpPostedFileBase uploadImage)
         {
             var question = _questionService.CreateQuestion();

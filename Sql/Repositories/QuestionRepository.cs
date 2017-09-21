@@ -21,7 +21,7 @@ namespace Sql.Repositories
         {
             using (var context = new QuizContext())
             {
-                answersIds = answersIds.Where(a => a > 0);
+                answersIds = answersIds.Where(a => a > 0).ToList();
                 if (!answersIds.Any())
                 {
                     return false;
@@ -29,14 +29,7 @@ namespace Sql.Repositories
 
                 IQuestion question = await context.Questions.Include(nameof(Question.Answers)).FirstOrDefaultAsync(q => q.Id == questionId);
                 var correctAnswersIds = question.Answers.Where(a => a.IsCorrect).Select(a => a.Id).ToList();
-                foreach (var answerId in answersIds)
-                {
-                    if (!correctAnswersIds.Contains(answerId))
-                    {
-                        return false;
-                    }
-                }
-                return true;
+                return correctAnswersIds.Count == answersIds.Count() && answersIds.All(answerId => correctAnswersIds.Contains(answerId));
             }
         }
 

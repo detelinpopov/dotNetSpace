@@ -1,4 +1,14 @@
 ﻿$(document).ready(function() {
+
+    var $loading = $("#ajaxLoadIndicator").hide();
+    $(document)
+        .ajaxStart(function() {            
+            $loading.show();
+        })
+        .ajaxStop(function() {
+            $loading.hide();
+        });
+
     $("#checkAnswer").click(function() {
         var responseModel = new ResponseModel();
         $.ajax({
@@ -24,7 +34,7 @@
                 for (var i = 0; i < response.CorrectAnswersIds.length; i++) {
                     $("#" + response.CorrectAnswersIds[i] + ".quiz-option").prop("checked", true);
                     $("#spanAnswerText" + response.CorrectAnswersIds[i]).addClass("green-answer");
-                }               
+                }
             }
         });
     });
