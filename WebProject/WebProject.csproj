@@ -208,6 +208,7 @@
     <Content Include="Images\btnNextQuestion.png" />
     <Content Include="Images\btnRegister.png" />
     <Content Include="Images\btnStartNewTest.png" />
+    <Content Include="Images\btnStartTest.png" />
     <Content Include="Images\loadImage.gif" />
     <Content Include="Scripts\answer.js" />
     <Content Include="Scripts\bootstrap.js" />
