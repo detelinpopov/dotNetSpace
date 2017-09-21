@@ -6,10 +6,11 @@
 <link href="~/Content/quizCompleted.css" rel="stylesheet">
 
 <div class="quiz-completed-title"> Quiz Completed</div>
+<hr/>
 <div class="div-item">Number of correct answers: @Model.NumberOfCorrectAnswers out of @Model.TotalQuestionsCount questions </div>
 <div class="div-item">Time spent: @Model.TimeSpentText </div>
 <div class="quiz-completed-buttons">
     <a href="@Url.Action("StartTest", "Quiz")">
         <img src="~/Images/btnStartNewTest.png" alt="Start a new test"/>
-    </a>  
+    </a>
 </div>
