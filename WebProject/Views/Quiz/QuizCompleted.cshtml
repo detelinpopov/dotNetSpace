@@ -9,7 +9,8 @@
 <hr/>
 <div class="div-item">Number of correct answers: @Model.NumberOfCorrectAnswers out of @Model.TotalQuestionsCount questions </div>
 <div class="div-item">Time spent: @Model.TimeSpentText </div>
-<div class="div-item">Your level is: <span class="user-level"> @Model.UserLevel </span> </div>
+<div class="div-item">Your level is: </div>
+<span class="user-level"> @Model.UserLevel </span>
 <div class="quiz-completed-buttons">
     <a href="@Url.Action("StartTest", "Quiz")">
         <img src="~/Images/btnStartNewTest.png" alt="Start a new test"/>
