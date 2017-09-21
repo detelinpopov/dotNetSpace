@@ -50,7 +50,7 @@ namespace Sql.Repositories
         {
             using (var context = new QuizContext())
             {
-                return await context.Questions.Include(nameof(Question.Answers)).FirstOrDefaultAsync(q => !excludeIdsList.Contains(q.Id));
+                return await context.Questions.Include(nameof(Question.Answers)).OrderBy(r => Guid.NewGuid()).FirstOrDefaultAsync(q => !excludeIdsList.Contains(q.Id));
             }
         }
 
