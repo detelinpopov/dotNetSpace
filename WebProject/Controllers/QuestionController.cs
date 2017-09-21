@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -40,7 +41,7 @@ namespace WebProject.Controllers
                 }
             }
             IList<IAnswer> answers = new List<IAnswer>();
-            foreach (var answerModel in model.Answers)
+            foreach (var answerModel in model.Answers.Where(a => !string.IsNullOrWhiteSpace(a.Text)))
             {
                 var answer = _questionService.CreateAnswer();
                 answer.Text = answerModel.Text;
