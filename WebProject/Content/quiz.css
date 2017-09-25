@@ -24,7 +24,7 @@
 
 .green-answer { color: #44C767; }
 
-.div-result-correct { color: #44C767; }
+.div-result-correct { color: green; }
 
 .div-result-wrong { color: red; }
 
