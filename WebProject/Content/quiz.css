@@ -22,9 +22,9 @@
     font-size: xx-large;
 }
 
-.green-answer { color: green; }
+.green-answer { color: #44C767; }
 
-.div-result-correct { color: green; }
+.div-result-correct { color: #44C767; }
 
 .div-result-wrong { color: red; }
 
@@ -50,7 +50,7 @@
     color: #44C767;
     font-family: Times New Roman;
     font-size: x-large;
-    padding-top: 10px;
+    padding-top: 25px;
 }
 
 #nextQuestion { display: none; }

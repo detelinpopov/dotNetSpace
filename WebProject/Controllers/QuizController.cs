@@ -93,7 +93,7 @@ namespace WebProject.Controllers
             {
                 return RedirectToAction("QuizCompleted", "Quiz");
             }
-
+      
             if (responseModel != null)
             {
                 await IsResponseCorrectAsync(responseModel);
