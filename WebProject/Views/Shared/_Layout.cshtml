@@ -8,29 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")       
 </head>
 <body>
-    <div class="navbar-fixed-top" style="background-color:white">
-        <div class="container" style="background-color:white">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-
-                <ul class="nav navbar-nav">
-                    <li><a href="@Url.Action("Index", "Quiz" )"><img src="~/Images/quiz4net_logo.png" /></a></li>
-                    <li><a href="@Url.Action("About", "Home" )"><img src="~/Images/aboutUs.png" /></a></li>
-                    <li><a href="@Url.Action("Contact", "Home" )"><img src="~/Images/contacts.png" /></a></li>
-                    @*<li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
-                </ul>
-                @*@Html.Partial("_LoginPartial")*@
-            </div>
-            <hr style="height: 0;border: 1px solid #44C767"/>
-        </div>
+    <div class="navbar-fixed-top" style="background-color:white">       
     </div>
     <div class="container body-content">
         @RenderBody()
