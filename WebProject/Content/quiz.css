@@ -50,8 +50,11 @@
     color: #44C767;
     font-family: Times New Roman;
     font-size: x-large;
-    padding-top: 10px;
-   
 }
 
 #nextQuestion { display: none; }
+
+.hr-green {
+    border: 1px solid #44C767;
+    height: 0;
+}

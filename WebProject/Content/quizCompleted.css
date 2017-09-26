@@ -7,8 +7,7 @@
 .quiz-completed-title {
     color: green;
     font-family: Times New Roman;
-    font-size: xx-large;
-    padding-top: 20px;
+    font-size: xx-large;   
 }
 
 .quiz-completed-buttons { padding-bottom: 20px; }
