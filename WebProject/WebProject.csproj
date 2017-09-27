@@ -184,6 +184,7 @@
     <Compile Include="Models\JsonEmployee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Quiz\FeedbackModel.cs" />
     <Compile Include="Models\Quiz\VerifyAnswerModel.cs" />
     <Compile Include="Models\Quiz\QuizCompletedModel.cs" />
     <Compile Include="Models\Quiz\ResponseModel.cs" />
@@ -196,6 +197,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Gridmvc.css" />
+    <Content Include="Content\quizContact.css" />
     <Content Include="Content\quizMenu.css" />
     <Content Include="Content\quizAbout.css" />
     <Content Include="Content\quizIndex.css" />
@@ -211,6 +213,7 @@
     <Content Include="Images\btnCheckAnswer.png" />
     <Content Include="Images\btnNextQuestion.png" />
     <Content Include="Images\btnRegister.png" />
+    <Content Include="Images\btnSend.png" />
     <Content Include="Images\btnStartNewTest.png" />
     <Content Include="Images\btnStartTest.png" />
     <Content Include="Images\btnSubmit.png" />
@@ -253,7 +256,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Quiz\Index.cshtml" />

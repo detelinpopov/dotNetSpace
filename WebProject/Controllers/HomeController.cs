@@ -1,32 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
+﻿using System.Threading.Tasks;
 using System.Web.Mvc;
+using Interfaces.Core.Services;
+using WebProject.Models.Quiz;
 
 namespace WebProject.Controllers
 {
-	public class HomeController : Controller
-	{
-		public ActionResult Index()
-		{
-			return View();
-		}
+    public class HomeController : Controller
+    {
+        private readonly IFeedbackService _feedbackService;
 
-		public ActionResult About()
-		{		   
-            ViewBag.Message = "Your application description page.";
+        public HomeController(IFeedbackService feedbackService)
+        {
+            _feedbackService = feedbackService;
+        }
 
-			return View();
-		}
+        public ActionResult About()
+        {
+            return View();
+        }
 
-		public ActionResult Contact()
-		{
-			ViewBag.Message = "Your contact page.";
+        [HttpGet]
+        public ActionResult Contact()
+        {
+            return View();
+        }
 
-			return View();
-		}	  
-	}
+        [HttpPost]
+        public async Task<ActionResult> Contact(FeedbackModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            var feedback = _feedbackService.CreateFeedback();
+            feedback.Email = model.Email;
+            feedback.Text = model.Text;
+            await _feedbackService.SaveAsync(feedback);
+            return RedirectToAction("Index", "Quiz");
+        }
+    }
 }
