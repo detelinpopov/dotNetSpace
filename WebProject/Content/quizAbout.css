@@ -7,8 +7,7 @@
     padding-bottom: 20px;
 }
 
-.about-item {
-    color: #44C767;
+.about-item {    
     font-family: Times New Roman;
     font-size: x-large;
     padding-bottom: 5px;
@@ -17,4 +16,15 @@
 .hr-gray {
     border: 1px solid #EEEEEE;
     height: 0;
+}
+
+.about-item-description {
+    font-style: italic;
+    padding-left: 50px;
+}
+
+.about-main-item {
+    color: green;
+    font-family: Times New Roman;
+    font-size: x-large;
 }
