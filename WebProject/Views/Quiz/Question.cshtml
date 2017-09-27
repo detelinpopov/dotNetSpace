@@ -7,6 +7,10 @@
 <link href="~/Content/zooomin.css" rel="stylesheet">
 <link href="~/Content/quiz.css" rel="stylesheet">
 
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
 <div class="quiz4net-logo">
     <img src="~/Images/quiz4net_logo.png" alt="Quiz4Net Logo"/>
 </div>
@@ -44,15 +48,16 @@
         <button type="submit" style="background-color: white; border: 10px solid transparent; border-color: white;">
             <img src="~/Images/btnNextQuestion.png" alt="Next" id="nextQuestion">
         </button>
-        <a href='@Url.Action("QuizCompleted", "Quiz")'>
+        <a id="finishTestLink" data-request-url="@Url.Action("QuizCompleted", "Quiz")">
             <img src='~/Images/btnFinishTest.png' alt="Finish Test" />
         </a>
     </div>
 }
 
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/zooomin.js"></script>
 <script type="text/javascript" src="~/Scripts/answer.js"></script>
 <script type="text/javascript">
     $('.zooomin').zooomin();
 </script>
+
+

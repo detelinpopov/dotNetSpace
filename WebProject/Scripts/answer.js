@@ -57,4 +57,30 @@
             self.AnswerIds = answerIds;
         });
     }
+
+    $(function () {
+        $("#finishTestLink").click(function (event) {
+            event.preventDefault();
+            $('<div title="Confirm"></div>').dialog({
+                open: function (event, ui) {
+                    $(this).html("Are you sure you want to finish the test?");
+                },
+                close: function () {
+                    $(this).remove();
+                },
+                resizable: false,                
+                modal: true,
+                buttons: {
+                    'Yes': function () {
+                        $(this).dialog('close');
+                        window.location.href = "/Quiz/QuizCompleted";
+
+                    },
+                    'No': function () {
+                        $(this).dialog('close');                      
+                    }
+                }
+            });
+        });
+    });    
 });
