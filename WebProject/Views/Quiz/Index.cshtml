@@ -1,4 +1,5 @@
-﻿@model IEnumerable<WebProject.Models.Account.RegisterModel>
+﻿@using Shared.Entities
+@model IEnumerable<WebProject.Models.Account.RegisterModel>
 @{
     ViewBag.Title = "Welcome to";
     string userMessage = string.Empty;
@@ -36,8 +37,17 @@
     <hr class="hr-gray"/>
 </div>
 <div class="quiz-index-buttons">
-    <a href="@Url.Action("StartTest", "Quiz")">
-        <img src="~/Images/btnStartTest.png" alt="Start test"/>
+    <a href="@Url.Action("StartTest", "Quiz", new { questionCategory = QuestionCategory.CSharp})">
+        <img src="~/Images/btnCSharpTest.png" alt="Start C# Test"/>
+    </a>
+    <a href="@Url.Action("StartTest", "Quiz", new { questionCategory = QuestionCategory.Mvc})">
+        <img src="~/Images/btnMVCTest.png" alt="Start ASP.Net MVC Test"/>
+    </a>
+    <a href="@Url.Action("StartTest", "Quiz", new { questionCategory = QuestionCategory.Javascript})">
+        <img src="~/Images/btnJavaScriptTest.png" alt="Start JavaScript Test"/>
+    </a>
+    <a href="@Url.Action("StartTest", "Quiz", new { questionCategory = QuestionCategory.SharePoint})">
+        <img src="~/Images/btnSharePointTest.png" alt="Start SharePoint 2016 Test"/>
     </a>
 </div>
 

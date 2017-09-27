@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Interfaces.Sql.Entities;
 using Interfaces.Sql.Repositories;
+using Shared.Entities;
 using Sql.Context;
 using Sql.Entities;
 
@@ -49,11 +50,11 @@ namespace Sql.Repositories
             }
         }
 
-        public async Task<IQuestion> FindRandomQuestionAsync(IEnumerable<int> excludeIdsList)
+        public async Task<IQuestion> FindRandomQuestionAsync(QuestionCategory category, IEnumerable<int> excludeIdsList)
         {
             using (var context = new QuizContext())
             {
-                return await context.Questions.Include(nameof(Question.Answers)).OrderBy(r => Guid.NewGuid()).FirstOrDefaultAsync(q => !excludeIdsList.Contains(q.Id));
+                return await context.Questions.Include(nameof(Question.Answers)).OrderBy(r => Guid.NewGuid()).FirstOrDefaultAsync(q => q.Category == category.ToString() && !excludeIdsList.Contains(q.Id));
             }
         }
 

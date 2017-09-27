@@ -8,9 +8,9 @@
 <link href="~/Content/quiz.css" rel="stylesheet">
 
 <div class="question-number">
-    Question @Model.Number / @Model.TotalQuestionsCount   
+    Question @Model.Number / @Model.TotalQuestionsCount
 </div>
-<hr class="hr-green" />
+<hr class="hr-green"/>
 <div class="question">
     @Model.Text
 </div>
@@ -21,7 +21,7 @@
     }
 </div>
 <div id="divResult" class="div-result"></div>
-@using (Html.BeginForm("Question", "Quiz"))
+@using (Html.BeginForm("Question", "Quiz", new {questionCategory = Model.SelectedQuestionCategory}))
 {
     @Html.HiddenFor(m => m.Id, new {id = "QuestionId"})
     @Html.Hidden("ResponseModel.QuestionId", Model.Id.ToString())

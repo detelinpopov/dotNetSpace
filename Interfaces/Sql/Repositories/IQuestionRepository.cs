@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Interfaces.Sql.Entities;
+using Shared.Entities;
 
 namespace Interfaces.Sql.Repositories
 {
@@ -16,7 +17,7 @@ namespace Interfaces.Sql.Repositories
 
         Task<IQuestion> FindAsync(int id);
 
-        Task<IQuestion> FindRandomQuestionAsync(IEnumerable<int> excludeIdsList);
+        Task<IQuestion> FindRandomQuestionAsync(QuestionCategory category, IEnumerable<int> excludeIdsList);
 
         Task<IEnumerable<int>> GetCorrectAnswersIdsAsync(int questionId);
 

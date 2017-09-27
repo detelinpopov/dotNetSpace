@@ -211,9 +211,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\aboutUs.png" />
     <Content Include="Images\btnCheckAnswer.png" />
+    <Content Include="Images\btnCSharpTest.png" />
+    <Content Include="Images\btnJavaScriptTest.png" />
+    <Content Include="Images\btnMVCTest.png" />
     <Content Include="Images\btnNextQuestion.png" />
     <Content Include="Images\btnRegister.png" />
     <Content Include="Images\btnSend.png" />
+    <Content Include="Images\btnSharePointTest.png" />
     <Content Include="Images\btnStartNewTest.png" />
     <Content Include="Images\btnStartTest.png" />
     <Content Include="Images\btnSubmit.png" />

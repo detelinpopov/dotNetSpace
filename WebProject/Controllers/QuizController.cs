@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using Interfaces.Core.Services;
 using Interfaces.Sql.Entities;
+using Shared.Entities;
 using WebProject.Enums;
 using WebProject.Models.Quiz;
 
@@ -39,6 +40,12 @@ namespace WebProject.Controllers
         {
             get { return (DateTime?) System.Web.HttpContext.Current.Session["StartTime"]; }
             set { System.Web.HttpContext.Current.Session["StartTime"] = value; }
+        }
+
+        public static QuestionCategory QuestionCategory
+        {
+            get { return (QuestionCategory) System.Web.HttpContext.Current.Session["QuestionCategory"]; }
+            set { System.Web.HttpContext.Current.Session["QuestionCategory"] = value; }
         }
 
         public static int NumberOfCorrectAnswers
@@ -91,7 +98,7 @@ namespace WebProject.Controllers
             return View();
         }
 
-        public async Task<ActionResult> Question(ResponseModel responseModel)
+        public async Task<ActionResult> Question(ResponseModel responseModel, QuestionCategory questionCategory)
         {
             if (StartTime == null)
             {
@@ -107,7 +114,7 @@ namespace WebProject.Controllers
                 await IsResponseCorrectAsync(responseModel);
             }
 
-            var question = await _questionService.FindRandomQuestionAsync(AnsweredQuestionsIds);
+            var question = await _questionService.FindRandomQuestionAsync(questionCategory, AnsweredQuestionsIds);
             if (question == null)
             {
                 return RedirectToAction("QuizCompleted", "Quiz");
@@ -130,13 +137,14 @@ namespace WebProject.Controllers
             return View(model);
         }
 
-        public ActionResult StartTest()
+        public ActionResult StartTest(QuestionCategory questionCategory)
         {
+            QuestionCategory = questionCategory;
             StartTime = DateTime.Now;
             AnsweredQuestionsIds.Clear();
             NumberOfAnsweredQuestions = 0;
             NumberOfCorrectAnswers = 0;
-            return RedirectToAction("Question");
+            return RedirectToAction("Question", new {questionCategory});
         }
 
         private QuestionModel CreateQuestionModel(IQuestion question)
@@ -146,7 +154,8 @@ namespace WebProject.Controllers
                 Id = question.Id,
                 Text = question.Text,
                 Image = question.Image,
-                Number = AnsweredQuestionsIds.Count + 1
+                Number = AnsweredQuestionsIds.Count + 1,
+                SelectedQuestionCategory = question.Category
             };
             foreach (var answer in question.Answers)
             {

@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Interfaces.Core.Services;
 using Interfaces.Sql.Entities;
 using Interfaces.Sql.Repositories;
+using Shared.Entities;
 
 namespace Core.Services
 {
@@ -15,9 +16,9 @@ namespace Core.Services
             _repository = repository;
         }
 
-        public async Task<IQuestion> FindRandomQuestionAsync(IEnumerable<int> excludeIdsList)
+        public async Task<IQuestion> FindRandomQuestionAsync(QuestionCategory category, IEnumerable<int> excludeIdsList)
         {
-            return await _repository.FindRandomQuestionAsync(excludeIdsList);
+            return await _repository.FindRandomQuestionAsync(category, excludeIdsList);
         }
 
         public async Task<IEnumerable<int>> GetCorrectAnswersIdsAsync(int questionId)
