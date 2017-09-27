@@ -10,27 +10,14 @@
     padding-bottom: 5px;
 }
 
-.quiz-index-buttons {
-    padding-top: 20px;
-}
+.quiz-index-buttons { padding-top: 20px; }
 
 .hr {
+    border: 1px solid #44C767;
     height: 0;
-    border: 1px solid #44C767;   
 }
+
 .hr-gray {
-    height: 0;
     border: 1px solid #EEEEEE;
-}
-
-.quiz4net-logo {
-    padding-right: 40px;
-}
-
-.quiz4net-menu-item {
-    padding-right: 20px;
-}
-
-.quiz4net-index-menu {
-    
+    height: 0;
 }

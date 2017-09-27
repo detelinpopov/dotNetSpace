@@ -1,38 +1,32 @@
-﻿@using GridMvc.Html
-@model IEnumerable<WebProject.Models.Account.RegisterModel>
+﻿@model IEnumerable<WebProject.Models.Account.RegisterModel>
 @{
     ViewBag.Title = "Welcome to";
 }
 
+<link href="~/Content/quizMenu.css" rel="stylesheet">
 <link href="~/Content/quizIndex.css" rel="stylesheet">
-<meta name="Keywords" content="web development,development online quiz,development online test,practice exam,c# quiz,c# test,.net quiz,.net exam,.net quiz free,c# quiz free,practice test,practice questions,multiple choice questions,csharp programming,sql server,asp net,mvc,csharp questions,asp.net questions,framework questions,csharp interview question,asp net interview question" />
-<div class="quiz4net-index-menu">
-    <img src="~/Images/quiz4net_logo.png" alt="Quiz4Net Logo" class="quiz4net-logo" />
-    <a href="@Url.Action("About", "Home" )"><img src="~/Images/aboutUs.png" class="quiz4net-menu-item"/></a>
-    <a href="@Url.Action("Contact", "Home" )"><img src="~/Images/contacts.png" class="quiz4net-menu-item" /></a>
-    <hr style="height: 0;border: 1px solid #44C767"/>
-</div>
+@Html.Partial("_Menu")
 <div class="quiz-title">
-    <img src="~/Images/welcomeImage.png" alt="Welcome to Quiz4Net"/>   
+    <img src="~/Images/welcomeImage.png" alt="Welcome to Quiz4Net"/>
 </div>
-<hr class="hr" />
+<hr class="hr"/>
 <div class="quiz-description">
     <img src="~/Images/tick.png"/>
     We provide free online tests which help you assess your development skills
     <hr class="hr-gray"/>
 </div>
 <div class="quiz-description">
-    <img src="~/Images/tick.png" />
+    <img src="~/Images/tick.png"/>
     Our main goal is to provide quality content and great user experience
     <hr class="hr-gray"/>
 </div>
 <div class="quiz-description">
-    <img src="~/Images/tick.png" />
+    <img src="~/Images/tick.png"/>
     You can check the correct answers for each question
     <hr class="hr-gray"/>
 </div>
 <div class="quiz-index-buttons">
     <a href="@Url.Action("StartTest", "Quiz")">
-        <img src="~/Images/btnStartTest.png" alt="Start test" />
+        <img src="~/Images/btnStartTest.png" alt="Start test"/>
     </a>
 </div>
