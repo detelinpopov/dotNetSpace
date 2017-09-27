@@ -669,3 +669,5 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.Se
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Core.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Core.pdb

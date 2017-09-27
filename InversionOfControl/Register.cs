@@ -1,4 +1,6 @@
 ﻿using System.Web.Mvc;
+using Core.Services;
+using Interfaces.Core.Services;
 using Interfaces.Sql.Entities;
 using Interfaces.Sql.Repositories;
 using Microsoft.Practices.Unity;
@@ -44,9 +46,9 @@ namespace InversionOfControl
 
         private static void RegisterServices(UnityContainer container)
         {
-            container.BindInRequestScope<IQuestionRepository, QuestionRepository>();
-            container.BindInRequestScope<IUserRepository, UserRepository>();
-            container.BindInRequestScope<IFeedbackRepository, FeedbackRepository>();
+            container.BindInRequestScope<IQuestionService, QuestionService>();
+            container.BindInRequestScope<IUserService, UserService>();
+            container.BindInRequestScope<IFeedbackService, FeedbackService>();
         }
     }
 }
