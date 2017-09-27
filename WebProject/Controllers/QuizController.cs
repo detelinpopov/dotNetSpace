@@ -78,6 +78,14 @@ namespace WebProject.Controllers
             return Json(verifyAnswerModel);
         }
 
+        [HttpGet]
+        public async Task<ActionResult> Detail(int id)
+        {
+            var question = await _questionService.FindAsync(id);
+            var model = CreateQuestionModel(question);
+            return View("Question", model);
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -93,7 +101,7 @@ namespace WebProject.Controllers
             {
                 return RedirectToAction("QuizCompleted", "Quiz");
             }
-      
+
             if (responseModel != null)
             {
                 await IsResponseCorrectAsync(responseModel);
@@ -165,7 +173,7 @@ namespace WebProject.Controllers
                 NumberOfAnsweredQuestions++;
                 AnsweredQuestionsIds.Add(responseModel.QuestionId);
             }
-           
+
             return correctAnswers;
         }
     }

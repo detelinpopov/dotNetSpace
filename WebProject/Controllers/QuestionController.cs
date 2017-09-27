@@ -23,8 +23,8 @@ namespace WebProject.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            QuestionModel model = new QuestionModel();
-            for (int i = 0; i < 6; i++)
+            var model = new QuestionModel();
+            for (var i = 0; i < 6; i++)
             {
                 model.Answers.Add(new AnswerModel());
             }
@@ -56,7 +56,8 @@ namespace WebProject.Controllers
             }
             question.Answers = answers;
             await _questionService.SaveAsync(question);
-            return RedirectToAction("Question", "Quiz", new {id = question.Id});
+
+            return RedirectToAction("Detail", "Quiz", new {id = question.Id});
         }
     }
 }
