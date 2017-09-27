@@ -18,7 +18,10 @@
         <span> Image: </span>
         <input type="file" name="uploadImage"/>
     </div>
-
+    <div style="padding-top: 10px; padding-bottom: 10px;">
+        <span> Category: </span>
+        @Html.DropDownListFor(m => m.SelectedQuestionCategory, Model.QuestionCategories, new {style = "width: 100%"})      
+    </div>
     <div style="padding-top: 10px; padding-bottom: 10px;">
         <span> Answer 1: </span>
         @Html.TextAreaFor(m => m.Answers[0].Text, new {style = "width: 100%"})

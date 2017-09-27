@@ -103,6 +103,24 @@ namespace Tester.Sql.Repositories.IntegrationTests
         }
 
         [Test]
+        public async Task GetCorrectAnswersIdsAsync_ReturnsCorrectAnswerIds()
+        {
+            // Arrange
+            var answersCount = 4;
+            var correctAnswerId = 2;
+            var question = QuestionBuilder.CreateQuestion().WithAnswers(answersCount, new List<int> {correctAnswerId});
+            var repository = new QuestionRepository();
+
+            // Act   
+            var savedQuestion = await repository.SaveAsync(question);
+            var correctAnswers = await repository.GetCorrectAnswersIdsAsync(savedQuestion.Id);
+
+            // Assert
+            Assert.AreEqual(1, correctAnswers.Count());
+            Assert.IsNotNull(correctAnswers.FirstOrDefault(a => a == correctAnswerId));
+        }
+
+        [Test]
         public async Task SaveAsync_SavesCorrectAnswerStatus()
         {
             // Arrange

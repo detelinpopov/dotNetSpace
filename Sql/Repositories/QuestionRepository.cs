@@ -27,9 +27,12 @@ namespace Sql.Repositories
                     return false;
                 }
 
-                IQuestion question = await context.Questions.Include(nameof(Question.Answers)).FirstOrDefaultAsync(q => q.Id == questionId);
-                var correctAnswersIds = question.Answers.Where(a => a.IsCorrect).Select(a => a.Id).ToList();
-                return correctAnswersIds.Count == answersIds.Count() && answersIds.All(answerId => correctAnswersIds.Contains(answerId));
+                var correctAnswersIds = await context.Answers.Where(a => a.QuestionId == questionId && a.IsCorrect).Select(a => a.Id).ToListAsync();
+                if (correctAnswersIds.Count != answersIds.Count())
+                {
+                    return false;
+                }
+                return answersIds.All(answerId => correctAnswersIds.Contains(answerId));
             }
         }
 
@@ -56,9 +59,11 @@ namespace Sql.Repositories
 
         public async Task<IEnumerable<int>> GetCorrectAnswersIdsAsync(int questionId)
         {
-            var question = await FindAsync(questionId);
-            IList<int> correctAnswersIds = question.Answers.Where(a => a.IsCorrect).Select(a => a.Id).ToList();
-            return correctAnswersIds;
+            using (var context = new QuizContext())
+            {
+                var correctAnswersIds = await context.Answers.Where(a => a.QuestionId == questionId && a.IsCorrect).Select(a => a.Id).ToListAsync();
+                return correctAnswersIds;
+            }
         }
 
         public virtual async Task<IQuestion> SaveAsync(IQuestion question)

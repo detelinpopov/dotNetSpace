@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Interfaces.Sql.Entities;
+using Shared.Entities;
 using Sql.Entities;
 
 namespace Tester.Sql.Builders
@@ -11,6 +12,7 @@ namespace Tester.Sql.Builders
         {
             IQuestion question = new Question();
             question.Text = $"Test Question {index}";
+            question.Category = QuestionCategory.CSharp.ToString();
             return question;
         }
 
@@ -22,7 +24,7 @@ namespace Tester.Sql.Builders
                 IAnswer answer = new Answer();
                 var answerIndex = i + 1;
                 answer.Text = $"Test Answer {answerIndex}";
-                int index = i + 1;
+                var index = i + 1;
                 answer.IsCorrect = correctAnswersIds?.Contains(index) ?? i % 2 == 0;
                 answers.Add(answer);
             }

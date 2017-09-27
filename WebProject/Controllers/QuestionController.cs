@@ -23,7 +23,12 @@ namespace WebProject.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            return View();
+            QuestionModel model = new QuestionModel();
+            for (int i = 0; i < 6; i++)
+            {
+                model.Answers.Add(new AnswerModel());
+            }
+            return View(model);
         }
 
         [HttpPost]
@@ -31,6 +36,7 @@ namespace WebProject.Controllers
         public async Task<ActionResult> Create(QuestionModel model, HttpPostedFileBase uploadImage)
         {
             var question = _questionService.CreateQuestion();
+            question.Category = model.SelectedQuestionCategory;
             question.Text = model.Text;
             if (uploadImage != null && uploadImage.ContentLength > 0)
             {

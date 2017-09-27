@@ -9,5 +9,7 @@ namespace Interfaces.Sql.Entities
         byte[] Image { get; set; }
 
         ICollection<IAnswer> Answers { get; set; }
+
+        string Category { get; set; }
     }
 }

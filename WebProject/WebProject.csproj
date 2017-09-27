@@ -201,6 +201,7 @@
     <Content Include="Content\quizCompleted.css" />
     <Content Include="Content\quiz.css" />
     <Content Include="Content\zooomin.css" />
+    <Content Include="DBUpdateScripts\SqlData1.sql" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
