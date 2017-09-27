@@ -633,7 +633,6 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\WebActivatorEx.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.Unity.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.Unity.Mvc.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Sql.dll
-C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Core.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.ServiceLocation.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Interfaces.pdb
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\InversionOfControl.pdb
@@ -665,7 +664,6 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Owin.Securit
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.Unity.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.Unity.Mvc.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Sql.pdb
-C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Core.pdb
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.ServiceLocation.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.csprojResolveAssemblyReference.cache

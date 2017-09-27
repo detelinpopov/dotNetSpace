@@ -1,7 +1,4 @@
 ﻿using System.Web.Mvc;
-using Core.Services;
-using Interfaces.Core.Services;
-using Interfaces.Core.TestDataGenerators;
 using Interfaces.Sql.Entities;
 using Interfaces.Sql.Repositories;
 using Microsoft.Practices.Unity;
@@ -23,17 +20,33 @@ namespace InversionOfControl
         {
             var container = new UnityContainer();
 
+            RegisterEntities(container);
+            RegisterRepositories(container);
+            RegisterServices(container);
+
+            return container;
+        }
+
+        private static void RegisterEntities(UnityContainer container)
+        {
             container.BindInRequestScope<IAnswer, Answer>();
             container.BindInRequestScope<IQuestion, Question>();
             container.BindInRequestScope<IUser, User>();
+            container.BindInRequestScope<IFeedback, Feedback>();
+        }
 
+        private static void RegisterRepositories(UnityContainer container)
+        {
             container.BindInRequestScope<IQuestionRepository, QuestionRepository>();
             container.BindInRequestScope<IUserRepository, UserRepository>();
+            container.BindInRequestScope<IFeedbackRepository, FeedbackRepository>();
+        }
 
-            container.BindInRequestScope<IQuestionService, QuestionService>();
-            container.BindInRequestScope<IUserService, UserService>();
-
-            return container;
+        private static void RegisterServices(UnityContainer container)
+        {
+            container.BindInRequestScope<IQuestionRepository, QuestionRepository>();
+            container.BindInRequestScope<IUserRepository, UserRepository>();
+            container.BindInRequestScope<IFeedbackRepository, FeedbackRepository>();
         }
     }
 }

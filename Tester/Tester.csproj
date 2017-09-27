@@ -74,6 +74,7 @@
     <Compile Include="Core\Services\EmployeeServiceFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sql\Builders\QuestionBuilder.cs" />
+    <Compile Include="Sql\Repositories\IntegrationTests\FeedbackRepositoryFixture.cs" />
     <Compile Include="Sql\Repositories\IntegrationTests\UserRepositoryFixture.cs" />
     <Compile Include="Sql\Repositories\IntegrationTests\QuestionRepositoryFixture.cs" />
     <Compile Include="Sql\Repositories\IntegrationTests\RepositoryFixture.cs" />
