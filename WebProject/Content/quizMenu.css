@@ -1,12 +1,8 @@
 .hr-green {
+    border: 1px solid #44C767;
     height: 0;
-    border: 1px solid #44C767;   
 }
 
-.quiz4net-menu-logo {
-    padding-right: 40px;
-}
+.quiz4net-menu-logo { padding-right: 40px; }
 
-.quiz4net-menu-item {
-    padding-right: 20px;
-}
+.quiz4net-menu-item { padding-right: 20px; }

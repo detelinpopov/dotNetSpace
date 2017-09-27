@@ -1,16 +1,20 @@
-.about-form-container {
-    padding-top: 10px;
+.about-form-container { padding-top: 10px; }
+
+.about-title {
+    color: #44C767;
+    font-family: Times New Roman;
+    font-size: xx-large;
+    padding-bottom: 20px;
 }
 
-.hr {
+.about-item {
+    color: #44C767;
+    font-family: Times New Roman;
+    font-size: x-large;
+    padding-bottom: 5px;
+}
+
+.hr-gray {
+    border: 1px solid #EEEEEE;
     height: 0;
-    border: 1px solid #44C767;   
-}
-
-.quiz4net-logo {
-    padding-right: 40px;
-}
-
-.quiz4net-menu-item {
-    padding-right: 20px;
 }
