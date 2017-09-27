@@ -1,10 +1,20 @@
 ﻿@model IEnumerable<WebProject.Models.Account.RegisterModel>
 @{
     ViewBag.Title = "Welcome to";
+    string userMessage = string.Empty;
 }
 
 <link href="~/Content/quizMenu.css" rel="stylesheet">
 <link href="~/Content/quizIndex.css" rel="stylesheet">
+
+@if (TempData["UserMessage"] != null)
+{
+    userMessage = (string)TempData["UserMessage"];
+}
+@Html.Hidden("hdnUserMessage", userMessage)
+
+<div id="messageDialog" class="user-message-field"> @userMessage </div>
+
 @Html.Partial("_Menu")
 <div class="quiz-title">
     <img src="~/Images/welcomeImage.png" alt="Welcome to Quiz4Net"/>
@@ -30,3 +40,6 @@
         <img src="~/Images/btnStartTest.png" alt="Start test"/>
     </a>
 </div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/index.js"></script>

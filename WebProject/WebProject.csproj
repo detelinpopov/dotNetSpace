@@ -222,6 +222,7 @@
     <Content Include="Images\quiz4net_logo.png" />
     <Content Include="Images\tick.png" />
     <Content Include="Images\welcomeImage.png" />
+    <Content Include="Scripts\index.js" />
     <Content Include="Scripts\answer.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

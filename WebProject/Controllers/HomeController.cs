@@ -36,6 +36,7 @@ namespace WebProject.Controllers
             feedback.Email = model.Email;
             feedback.Text = model.Text;
             await _feedbackService.SaveAsync(feedback);
+            TempData["UserMessage"] = "Message sent successfully";
             return RedirectToAction("Index", "Quiz");
         }
     }
