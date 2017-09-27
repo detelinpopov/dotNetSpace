@@ -212,6 +212,7 @@
     <Content Include="Images\aboutUs.png" />
     <Content Include="Images\btnCheckAnswer.png" />
     <Content Include="Images\btnCSharpTest.png" />
+    <Content Include="Images\btnFinishTest.png" />
     <Content Include="Images\btnJavaScriptTest.png" />
     <Content Include="Images\btnMVCTest.png" />
     <Content Include="Images\btnNextQuestion.png" />
