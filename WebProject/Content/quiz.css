@@ -61,7 +61,7 @@
 
 .quiz4net-logo { padding-bottom: 20px; }
 
-.ui-dialog, .ui-widget { background: #44c767 !important }
+.ui-dialog-titlebar { background: #44c767 !important }
 
 .link-finish-test {
     padding-left: 10px;
