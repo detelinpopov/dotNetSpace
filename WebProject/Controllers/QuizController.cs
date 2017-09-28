@@ -100,10 +100,12 @@ namespace WebProject.Controllers
 
         public async Task<ActionResult> Question(ResponseModel responseModel, QuestionCategory questionCategory)
         {
-            if (StartTime == null)
+            if (NumberOfAnsweredQuestions == 0)
             {
-                StartTime = DateTime.Now;
+                ResetQuizSettings();
+                QuestionCategory = questionCategory;
             }
+
             if (NumberOfAnsweredQuestions == TotalQuestionsCount)
             {
                 return RedirectToAction("QuizCompleted", "Quiz");
@@ -135,16 +137,6 @@ namespace WebProject.Controllers
             }
             var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers, TimeSpentText = timeSpentText, TotalQuestionsCount = TotalQuestionsCount};
             return View(model);
-        }
-
-        public ActionResult StartTest(QuestionCategory questionCategory)
-        {
-            QuestionCategory = questionCategory;
-            StartTime = DateTime.Now;
-            AnsweredQuestionsIds.Clear();
-            NumberOfAnsweredQuestions = 0;
-            NumberOfCorrectAnswers = 0;
-            return RedirectToAction("Question", new {questionCategory});
         }
 
         private QuestionModel CreateQuestionModel(IQuestion question)
@@ -184,6 +176,14 @@ namespace WebProject.Controllers
             }
 
             return correctAnswers;
+        }
+
+        private void ResetQuizSettings()
+        {
+            StartTime = DateTime.Now;
+            AnsweredQuestionsIds.Clear();
+            NumberOfCorrectAnswers = 0;
+            NumberOfCorrectAnswers = 0;
         }
     }
 }
