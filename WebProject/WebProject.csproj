@@ -200,13 +200,13 @@
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Content\quizContact.css" />
+    <Content Include="Content\quizNotFound.css" />
     <Content Include="Content\quizMenu.css" />
     <Content Include="Content\quizAbout.css" />
     <Content Include="Content\quizIndex.css" />
     <Content Include="Content\quizCompleted.css" />
     <Content Include="Content\quiz.css" />
     <Content Include="Content\zooomin.css" />
-    <Content Include="DBUpdateScripts\SqlData1.sql" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -278,6 +278,7 @@
     <Content Include="Views\Quiz\QuizCompleted.cshtml" />
     <Content Include="Views\Quiz\AnsweredQuestion.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />
+    <Content Include="Views\Quiz\QuizNotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

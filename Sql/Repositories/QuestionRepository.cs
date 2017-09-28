@@ -18,6 +18,14 @@ namespace Sql.Repositories
             return new Question();
         }
 
+        public async Task<bool> ExistingQuestionsOfCategoryAsync(QuestionCategory category)
+        {
+            using (var context = new QuizContext())
+            {
+                return await context.Questions.AnyAsync(c => c.Category == category.ToString());
+            }
+        }
+
         public async Task<bool> CheckAnswersAsync(int questionId, IEnumerable<int> answersIds)
         {
             using (var context = new QuizContext())

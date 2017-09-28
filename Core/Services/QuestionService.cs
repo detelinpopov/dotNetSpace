@@ -36,6 +36,11 @@ namespace Core.Services
             return _repository.CreateQuestion();
         }
 
+        public async Task<bool> ExistingQuestionsOfCategoryAsync(QuestionCategory category)
+        {
+            return await _repository.ExistingQuestionsOfCategoryAsync(category);
+        }
+
         public async Task<bool> CheckAnswersAsync(int questionId, IEnumerable<int> answersIds)
         {
             return await _repository.CheckAnswersAsync(questionId, answersIds);

@@ -13,6 +13,8 @@ namespace Interfaces.Sql.Repositories
 
         IQuestion CreateQuestion();
 
+        Task<bool> ExistingQuestionsOfCategoryAsync(QuestionCategory category);
+
         Task<IEnumerable<IQuestion>> FindAllAsync();
 
         Task<IQuestion> FindAsync(int id);

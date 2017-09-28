@@ -13,6 +13,8 @@ namespace Interfaces.Core.Services
 
         IQuestion CreateQuestion();
 
+        Task<bool> ExistingQuestionsOfCategoryAsync(QuestionCategory category);
+
         Task<IQuestion> FindAsync(int id);
 
         Task<IQuestion> FindRandomQuestionAsync(QuestionCategory category, IEnumerable<int> excludeIdsList);

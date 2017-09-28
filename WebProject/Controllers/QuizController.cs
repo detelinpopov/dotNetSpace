@@ -102,6 +102,12 @@ namespace WebProject.Controllers
         {
             if (NumberOfAnsweredQuestions == 0)
             {
+                var existingQuestionsFromTheCategory = await _questionService.ExistingQuestionsOfCategoryAsync(questionCategory);
+                if (!existingQuestionsFromTheCategory)
+                {
+                    ResetQuizSettings();
+                    return View("QuizNotFound");
+                }
                 ResetQuizSettings();
                 QuestionCategory = questionCategory;
             }
@@ -136,6 +142,7 @@ namespace WebProject.Controllers
                 timeSpentText = $"{timeSpent.Value.Minutes} minute{plural}  and {timeSpent.Value.Seconds} seconds";
             }
             var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers, TimeSpentText = timeSpentText, TotalQuestionsCount = TotalQuestionsCount};
+            ResetQuizSettings();
             return View(model);
         }
 
@@ -182,7 +189,7 @@ namespace WebProject.Controllers
         {
             StartTime = DateTime.Now;
             AnsweredQuestionsIds.Clear();
-            NumberOfCorrectAnswers = 0;
+            NumberOfAnsweredQuestions = 0;
             NumberOfCorrectAnswers = 0;
         }
     }
