@@ -10,12 +10,14 @@
 {
     <div class="contact-form-container">
         <div>
-            <span class="contact-text-field"> Your email: </span>
-            @Html.TextBoxFor(m => m.Email)
+            <span class="contact-text-field"> Your email: </span>         
+        </div>
+        <div>
+            @Html.TextBoxFor(m => m.Email, new {@class="contact-email-field"})
         </div>
         <div class="contact-validation-message"> @Html.ValidationMessageFor(m => m.Email)</div>
         <div class="send-message-div">
-            <span class="contact-text-field">Send us message: </span>
+            <span class="contact-text-field">Send us a message: </span>
         </div>
         <div>
             @Html.TextAreaFor(m => m.Text, new {@class="contact-message-text-area"})
