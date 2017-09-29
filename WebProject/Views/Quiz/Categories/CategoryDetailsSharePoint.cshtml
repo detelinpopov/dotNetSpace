@@ -1,0 +1,52 @@
+﻿@using Shared.Entities
+@{
+    ViewBag.Title = "ASP.Net MVC Online Quiz Details";
+}
+
+<link href="~/Content/quizCategory.css" rel="stylesheet">
+
+@Html.Partial("_Menu")
+<div class="detail-form-container">
+    <div class="detail-title">
+        SharePoint 2016 Quiz Details
+    </div>
+    <div class="detail-item-description">
+        The test covers:
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Create, edit, share, and manage documents
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Create sites, organize them, and customize their layouts, features, and apps
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Efficiently organize content by using lists, libraries, and sites
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Manage site security, themes, templates, and content syndication
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Search for information and people
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Communicate and collaborate via SharePoint’s social features
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Use SharePoint with Microsoft Word, Excel, Outlook, and OneNote
+    </div>
+    <div class="detail-buttons">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})">
+            <img src="~/Images/btnStartTest.png" alt="Start Test"/>
+        </a>
+        <a href="@Url.Action("CategoriesDetails", "Quiz", null)">
+            <img src="~/Images/btnBack.png" alt="Back"/>
+        </a>
+    </div>
+</div>

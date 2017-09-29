@@ -286,6 +286,7 @@
     <Content Include="Views\Quiz\Categories\CategoryDetailsCSharp.cshtml" />
     <Content Include="Views\Quiz\Categories\CategoryDetailsMvc.cshtml" />
     <Content Include="Views\Quiz\Categories\CategoryDetailsJavaScript.cshtml" />
+    <Content Include="Views\Quiz\Categories\CategoryDetailsSharePoint.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
