@@ -29,7 +29,7 @@
     font-size: x-large;
 }
 
-.categories-details-link { font-weight: bold; }
+.categories-details-link { font-weight: bold; padding-left: 10px; }
 
 .categories-details-link > a:link { color: green; }
 
