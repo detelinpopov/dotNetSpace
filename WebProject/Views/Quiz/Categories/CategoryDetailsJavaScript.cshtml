@@ -1,0 +1,64 @@
+﻿@using Shared.Entities
+@{
+    ViewBag.Title = "ASP.Net MVC Online Quiz Details";
+}
+
+<link href="~/Content/quizCategory.css" rel="stylesheet">
+
+@Html.Partial("_Menu")
+<div class="detail-form-container">
+    <div class="detail-title">
+        JavaScript Quiz Details
+    </div>
+    <div class="detail-item-description">
+        The test covers:
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Syntax
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Statements
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Variables
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Operators
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Data Types
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Functions
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Scope
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Arrays
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Object-Oriented Concepts
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        DOM Manipulation
+    </div>
+    <div class="detail-buttons">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})">
+            <img src="~/Images/btnStartTest.png" alt="Start Test"/>
+        </a>
+        <a href="@Url.Action("CategoriesDetails", "Quiz", null)">
+            <img src="~/Images/btnBack.png" alt="Back"/>
+        </a>
+    </div>
+</div>
