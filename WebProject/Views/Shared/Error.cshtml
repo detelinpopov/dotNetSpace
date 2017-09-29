@@ -1,8 +1,16 @@
-﻿@model System.Web.Mvc.HandleErrorInfo
+﻿@model HandleErrorInfo
 
 @{
     ViewBag.Title = "Error";
 }
 
+@Html.Partial("_Menu")
 <h2 class="text-danger">An error occurred while processing your request</h2>
-
+<div>
+    <img src="~/Images/errorImage.png" alt="Error"/>
+</div>
+<div class="buttons-section button-back-error">
+    <a href="@Url.Action("Index", "Quiz", null)">
+        <img src="~/Images/btnBack.png" alt="Back"/>
+    </a>
+</div>

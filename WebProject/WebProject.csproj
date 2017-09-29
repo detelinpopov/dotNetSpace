@@ -227,6 +227,7 @@
     <Content Include="Images\btnStartTest.png" />
     <Content Include="Images\btnSubmit.png" />
     <Content Include="Images\contacts.png" />
+    <Content Include="Images\errorImage.png" />
     <Content Include="Images\loadImage.gif" />
     <Content Include="Images\quiz4net_logo.png" />
     <Content Include="Images\tick.png" />

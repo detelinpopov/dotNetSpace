@@ -7,6 +7,10 @@
 
 .quiz4net-menu-item { padding-right: 40px; }
 
-a:hover { 
-    color: white;
+a:hover { color: white; }
+
+.buttons-section { padding-top: 20px; }
+
+.button-back-error {
+    padding-left: 30px;
 }
