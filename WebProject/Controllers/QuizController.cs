@@ -74,6 +74,16 @@ namespace WebProject.Controllers
             set { System.Web.HttpContext.Current.Session["NumberOfAnsweredQuestions"] = value; }
         }
 
+        public ActionResult CategoriesDetails()
+        {
+            return View("Categories/CategoriesDetails");
+        }
+
+        public ActionResult CategoryDetails(QuestionCategory category)
+        {
+            return View("Categories/CategoryDetails" + category);
+        }
+
         [HttpPost]
         public async Task<JsonResult> CheckAnswers(ResponseModel responseModel)
         {

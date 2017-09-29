@@ -34,4 +34,15 @@
         </div>
         <hr class="hr-gray"/>
     </div>
+    <div class="about-item">       
+        <span class="about-main-item">
+            @Html.ActionLink("Preview the details about the tests that we provide", "CategoriesDetails", "Quiz")           
+        </span>        
+        <hr class="hr-gray"/>
+    </div>
+    <div class="detail-buttons">
+        <a href="@Url.Action("Index", "Quiz", null)">
+            <img src="~/Images/btnBack.png" alt="Back"/>
+        </a>
+    </div>
 </div>

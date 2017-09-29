@@ -1,0 +1,30 @@
+﻿@using Shared.Entities
+@{
+    ViewBag.Title = "Quiz4Net Quiz Details";
+}
+
+<link href="~/Content/quizCategory.css" rel="stylesheet">
+
+@Html.Partial("_Menu")
+<div class="detail-form-container">
+    <div class="detail-title">
+        We support the following Quiz categories:
+    </div>
+    <div class="detail-item">
+        @Html.ActionLink("C# Quiz", "CategoryDetails", new {caterogy = QuestionCategory.CSharp})
+    </div>
+    <div class="detail-item">
+        @Html.ActionLink("ASP.Net MVC Quiz", "CategoryDetails", new {caterogy = QuestionCategory.Mvc})
+    </div>
+    <div class="detail-item">
+        @Html.ActionLink("JavaScript Quiz", "CategoryDetails", new {caterogy = QuestionCategory.Javascript})
+    </div>
+    <div class="detail-item">
+        @Html.ActionLink("SharePoint 2016 Quiz", "CategoryDetails", new {caterogy = QuestionCategory.SharePoint})
+    </div>
+    <div class="detail-buttons">
+        <a href="@Url.Action("About", "Home", null)">
+            <img src="~/Images/btnBack.png" alt="Back"/>
+        </a>
+    </div>
+</div>

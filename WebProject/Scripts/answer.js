@@ -9,7 +9,8 @@
             $loading.hide();
         });
 
-    $("#checkAnswer").click(function() {
+    $("#checkAnswer").click(function () {
+        $("#finishTestLink").hide();
         var responseModel = new ResponseModel();
         $.ajax({
             url: $(this).data("request-url"),
@@ -36,6 +37,7 @@
                 }
 
                 $("#nextQuestion").fadeIn(1000);
+                $("#finishTestLink").fadeIn(1000);
             }
         });
     });

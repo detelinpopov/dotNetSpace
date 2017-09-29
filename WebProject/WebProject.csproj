@@ -199,6 +199,7 @@
     <Content Include="Content\Gridmvc.css" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\quizCategory.css" />
     <Content Include="Content\quizContact.css" />
     <Content Include="Content\quizNotFound.css" />
     <Content Include="Content\quizMenu.css" />
@@ -212,6 +213,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\aboutUs.png" />
+    <Content Include="Images\btnBack.png" />
     <Content Include="Images\btnCheckAnswer.png" />
     <Content Include="Images\btnCSharpTest.png" />
     <Content Include="Images\btnFinishTest.png" />
@@ -279,6 +281,8 @@
     <Content Include="Views\Quiz\AnsweredQuestion.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />
     <Content Include="Views\Quiz\QuizNotFound.cshtml" />
+    <Content Include="Views\Quiz\Categories\CategoriesDetails.cshtml" />
+    <Content Include="Views\Quiz\Categories\CategoryDetailsCSharp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
