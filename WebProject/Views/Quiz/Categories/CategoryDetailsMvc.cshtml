@@ -1,6 +1,6 @@
 ﻿@using Shared.Entities
 @{
-    ViewBag.Title = "C# Online Quiz Details";
+    ViewBag.Title = "ASP.Net MVC Online Quiz Details";
 }
 
 <link href="~/Content/quizCategory.css" rel="stylesheet">
@@ -8,57 +8,49 @@
 @Html.Partial("_Menu")
 <div class="detail-form-container">
     <div class="detail-title">
-        C# Quiz Details
+        ASP.Net MVC Quiz Details
     </div>
     <div class="detail-item-description">
         The test covers:
     </div>
     <div class="detail-item-option">
         <img src="~/Images/tick.png"/>
-        Primitive Types and Variables
+        Controllers
     </div>
     <div class="detail-item-option">
         <img src="~/Images/tick.png"/>
-        Operators and Expressions
+        Views
     </div>
     <div class="detail-item-option">
         <img src="~/Images/tick.png"/>
-        Conditional Statements
+        Models
     </div>
     <div class="detail-item-option">
         <img src="~/Images/tick.png"/>
-        Loops
+        Forms and HTML Helpers
     </div>
     <div class="detail-item-option">
         <img src="~/Images/tick.png"/>
-        Arrays
+        Data Annotations and Validations
     </div>
     <div class="detail-item-option">
         <img src="~/Images/tick.png"/>
-        Methods
+        Ajax
     </div>
     <div class="detail-item-option">
         <img src="~/Images/tick.png"/>
-        Defining Classes
+        Routing
     </div>
     <div class="detail-item-option">
         <img src="~/Images/tick.png"/>
-        Creating and Using Objects
+        Dependency Injection
     </div>
     <div class="detail-item-option">
         <img src="~/Images/tick.png"/>
-        Object-Oriented Programming Principles
-    </div>
-    <div class="detail-item-option">
-        <img src="~/Images/tick.png"/>
-        Exceptions
-    </div>
-    <div class="detail-item-option">
-        <img src="~/Images/tick.png"/>
-        Data Structures
+        Unit Testing
     </div>
     <div class="detail-buttons">
-        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})">
             <img src="~/Images/btnStartTest.png" alt="Start Test"/>
         </a>
         <a href="@Url.Action("CategoriesDetails", "Quiz", null)">
