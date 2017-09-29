@@ -1,7 +1,7 @@
 .detail-form-container { padding-top: 10px; }
 
 .detail-title {
-    color: #44C767;
+    color: green;
     font-family: Times New Roman;
     font-size: xx-large;
     padding-bottom: 20px;
@@ -14,10 +14,21 @@
     padding-bottom: 10px;
 }
 
-a:link { color: #44C767; }
+.detail-item-description {
+    font-family: Times New Roman;
+    font-size: x-large;
+    padding-bottom: 10px;
+}
 
-a:visited { color: green; }
+.detail-item > a:link { color: green; }
 
-a:hover { color: green !important; }
+.detail-item > a:visited { color: green; }
+
+.detail-item > a:hover { color: #44C767; }
 
 .detail-buttons { padding-top: 20px; }
+
+.detail-item-option {
+    font-family: Times New Roman;
+    padding-bottom: 5px;
+}

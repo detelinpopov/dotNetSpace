@@ -10,21 +10,21 @@
 {
     <div class="contact-form-container">
         <div>
-            <span class="contact-text-field"> Your email: </span>         
+            <span class="contact-text-field"> Your email: </span>
         </div>
         <div>
-            @Html.TextBoxFor(m => m.Email, new {@class="contact-email-field"})
+            @Html.TextBoxFor(m => m.Email, new {@class = "contact-email-field"})
         </div>
         <div class="contact-validation-message"> @Html.ValidationMessageFor(m => m.Email)</div>
         <div class="send-message-div">
             <span class="contact-text-field">Send us a message: </span>
         </div>
         <div>
-            @Html.TextAreaFor(m => m.Text, new {@class="contact-message-text-area"})
+            @Html.TextAreaFor(m => m.Text, new {@class = "contact-message-text-area"})
             <div class="contact-validation-message"> @Html.ValidationMessageFor(m => m.Text) </div>
         </div>
-        <div class="contact-button-section">                      
-            <input type="image" name="submit" src="~/Images/btnSend.png" border="0" alt="Send" />
+        <div class="contact-button-section">
+            <input type="image" name="submit" src="~/Images/btnSend.png" alt="Send"/>           
         </div>
     </div>
 }

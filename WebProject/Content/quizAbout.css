@@ -29,10 +29,14 @@
     font-size: x-large;
 }
 
-a:link { color: #44C767; }
+.categories-details-link { font-weight: bold; }
 
-a:visited { color: green; }
+.categories-details-link > a:link { color: green; }
 
-a:hover { color: green !important; }
+.categories-details-link > a:visited { color: green; }
+
+.categories-details-link > a:hover { color: #44C767; }
 
 .detail-buttons { padding-top: 10px; }
+
+.about-link { font-weight: bold; }

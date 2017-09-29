@@ -1,6 +1,6 @@
-﻿@{
-    ViewBag.Title = "Category Details";
-    
+﻿@using Shared.Entities
+@{
+    ViewBag.Title = "C# Online Quiz Details";
 }
 
 <link href="~/Content/quizCategory.css" rel="stylesheet">
@@ -8,9 +8,61 @@
 @Html.Partial("_Menu")
 <div class="detail-form-container">
     <div class="detail-title">
-        C# Quiz Details:
+        C# Quiz Details
     </div>
-    <div class="detail-item">
-        Ala bala
+    <div class="detail-item-description">
+        The test covers:
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Primitive Types and Variables
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Operators and Expressions
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Conditional Statements
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Loops
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Arrays
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Methods
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Defining Classes
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Creating and Using Objects
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Object-Oriented Programming Principles
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Exceptions
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Data Structures
+    </div>
+    <div class="detail-buttons">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})">
+            <img src="~/Images/btnCSharpTest.png" alt="Start Test"/>
+        </a>
+        <a href="@Url.Action("CategoriesDetails", "Quiz", null)">
+            <img src="~/Images/btnBack.png" alt="Back"/>
+        </a>
     </div>
 </div>

@@ -11,16 +11,16 @@
         We support the following Quiz categories:
     </div>
     <div class="detail-item">
-        @Html.ActionLink("C# Quiz", "CategoryDetails", new {caterogy = QuestionCategory.CSharp})
+        @Html.ActionLink("C# Quiz", "CategoryDetails", new {category = QuestionCategory.CSharp})
     </div>
     <div class="detail-item">
-        @Html.ActionLink("ASP.Net MVC Quiz", "CategoryDetails", new {caterogy = QuestionCategory.Mvc})
+        @Html.ActionLink("ASP.Net MVC Quiz", "CategoryDetails", new { category = QuestionCategory.Mvc})
     </div>
     <div class="detail-item">
-        @Html.ActionLink("JavaScript Quiz", "CategoryDetails", new {caterogy = QuestionCategory.Javascript})
+        @Html.ActionLink("JavaScript Quiz", "CategoryDetails", new { category = QuestionCategory.Javascript})
     </div>
     <div class="detail-item">
-        @Html.ActionLink("SharePoint 2016 Quiz", "CategoryDetails", new {caterogy = QuestionCategory.SharePoint})
+        @Html.ActionLink("SharePoint 2016 Quiz", "CategoryDetails", new { category = QuestionCategory.SharePoint})
     </div>
     <div class="detail-buttons">
         <a href="@Url.Action("About", "Home", null)">
