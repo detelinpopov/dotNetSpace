@@ -152,7 +152,7 @@ namespace WebProject.Controllers
                 timeSpentText = $"{timeSpent.Value.Minutes} minute{plural}  and {timeSpent.Value.Seconds} seconds";
             }
             var model = new QuizCompletedModel {NumberOfCorrectAnswers = NumberOfCorrectAnswers, TimeSpentText = timeSpentText, TotalQuestionsCount = TotalQuestionsCount};
-            ResetQuizSettings();
+            NumberOfAnsweredQuestions = 0;
             return View(model);
         }
 
