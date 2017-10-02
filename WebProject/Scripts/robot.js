@@ -11,17 +11,22 @@
                                     var editor = ace.edit("editor");
                                     editor.setTheme("ace/theme/monokai");
                                     editor.getSession().setMode("ace/mode/javascript");
-                                    var code = editor.getValue();
-                                    alert(code);
+                                    var code = editor.getValue();                                  
                                     eval(code);
                                 },
-                                2000);
+                                1000);
                         },
-                        5000);
+                        1000);
                 },
-                5000);
+                1000);
         },
-        5000);
+        1000);
+
+    $('#btnExecute').click(function () {
+        var editor = ace.edit("editor");
+        var code = editor.getValue();       
+        eval(code);
+    });
 });
 
 function toggleSpeechBubbleDisplay(text) {
