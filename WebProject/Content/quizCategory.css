@@ -16,7 +16,8 @@
 
 .detail-item-description {
     font-family: Times New Roman;
-    font-size: x-large;
+    font-size: xx-large;
+    text-decoration: underline;
     padding-bottom: 10px;
 }
 
@@ -30,5 +31,6 @@
 
 .detail-item-option {
     font-family: Times New Roman;
+    font-size: x-large;
     padding-bottom: 5px;
 }
