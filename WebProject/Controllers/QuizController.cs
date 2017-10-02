@@ -26,52 +26,53 @@ namespace WebProject.Controllers
         {
             get
             {
-                if (System.Web.HttpContext.Current.Session["AnsweredQuestionsIds"] == null)
+                var key = SessionKeys.AnsweredQuestionsIdsKey;
+                if (System.Web.HttpContext.Current.Session[key] == null)
                 {
                     IList<int> answeredQuestionsIds = new List<int>();
-                    System.Web.HttpContext.Current.Session["AnsweredQuestionsIds"] = answeredQuestionsIds;
+                    System.Web.HttpContext.Current.Session[key] = answeredQuestionsIds;
                     return answeredQuestionsIds;
                 }
-                return (IList<int>) System.Web.HttpContext.Current.Session["AnsweredQuestionsIds"];
+                return (IList<int>) System.Web.HttpContext.Current.Session[key];
             }
         }
 
         public static DateTime? StartTime
         {
-            get { return (DateTime?) System.Web.HttpContext.Current.Session["StartTime"]; }
-            set { System.Web.HttpContext.Current.Session["StartTime"] = value; }
+            get { return (DateTime?) System.Web.HttpContext.Current.Session[SessionKeys.StartTimeKey]; }
+            set { System.Web.HttpContext.Current.Session[SessionKeys.StartTimeKey] = value; }
         }
 
         public static QuestionCategory QuestionCategory
         {
-            get { return (QuestionCategory) System.Web.HttpContext.Current.Session["QuestionCategory"]; }
-            set { System.Web.HttpContext.Current.Session["QuestionCategory"] = value; }
+            get { return (QuestionCategory) System.Web.HttpContext.Current.Session[SessionKeys.QuestionCategoryKey]; }
+            set { System.Web.HttpContext.Current.Session[SessionKeys.QuestionCategoryKey] = value; }
         }
 
         public static int NumberOfCorrectAnswers
         {
             get
             {
-                if (System.Web.HttpContext.Current.Session["NumberOfCorrectAnswers"] == null)
+                if (System.Web.HttpContext.Current.Session[SessionKeys.NumberOfCorrectAnswersKey] == null)
                 {
-                    System.Web.HttpContext.Current.Session["NumberOfCorrectAnswers"] = 0;
+                    System.Web.HttpContext.Current.Session[SessionKeys.NumberOfCorrectAnswersKey] = 0;
                 }
-                return (int) System.Web.HttpContext.Current.Session["NumberOfCorrectAnswers"];
+                return (int) System.Web.HttpContext.Current.Session[SessionKeys.NumberOfCorrectAnswersKey];
             }
-            set { System.Web.HttpContext.Current.Session["NumberOfCorrectAnswers"] = value; }
+            set { System.Web.HttpContext.Current.Session[SessionKeys.NumberOfCorrectAnswersKey] = value; }
         }
 
         public static int NumberOfAnsweredQuestions
         {
             get
             {
-                if (System.Web.HttpContext.Current.Session["NumberOfAnsweredQuestions"] == null)
+                if (System.Web.HttpContext.Current.Session[SessionKeys.NumberOfAnsweredQuestionsKey] == null)
                 {
-                    System.Web.HttpContext.Current.Session["NumberOfAnsweredQuestions"] = 0;
+                    System.Web.HttpContext.Current.Session[SessionKeys.NumberOfAnsweredQuestionsKey] = 0;
                 }
-                return (int) System.Web.HttpContext.Current.Session["NumberOfAnsweredQuestions"];
+                return (int) System.Web.HttpContext.Current.Session[SessionKeys.NumberOfAnsweredQuestionsKey];
             }
-            set { System.Web.HttpContext.Current.Session["NumberOfAnsweredQuestions"] = value; }
+            set { System.Web.HttpContext.Current.Session[SessionKeys.NumberOfAnsweredQuestionsKey] = value; }
         }
 
         public ActionResult CategoriesDetails()
@@ -112,12 +113,6 @@ namespace WebProject.Controllers
         {
             if (NumberOfAnsweredQuestions == 0)
             {
-                var existingQuestionsFromTheCategory = await _questionService.ExistingQuestionsOfCategoryAsync(questionCategory);
-                if (!existingQuestionsFromTheCategory)
-                {
-                    ResetQuizSettings();
-                    return View("QuizNotFound");
-                }
                 ResetQuizSettings();
                 QuestionCategory = questionCategory;
             }
@@ -201,6 +196,19 @@ namespace WebProject.Controllers
             AnsweredQuestionsIds.Clear();
             NumberOfAnsweredQuestions = 0;
             NumberOfCorrectAnswers = 0;
+        }
+
+        private static class SessionKeys
+        {
+            public static readonly string AnsweredQuestionsIdsKey = "AnsweredQuestionsIds";
+
+            public static readonly string StartTimeKey = "StartTime";
+
+            public static readonly string QuestionCategoryKey = "QuestionCategory";
+
+            public static readonly string NumberOfCorrectAnswersKey = "NumberOfCorrectAnswers";
+
+            public static readonly string NumberOfAnsweredQuestionsKey = "NumberOfAnsweredQuestions";
         }
     }
 }
