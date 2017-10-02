@@ -227,13 +227,16 @@
     <Content Include="Images\btnStartNewTest.png" />
     <Content Include="Images\btnStartTest.png" />
     <Content Include="Images\btnSubmit.png" />
+    <Content Include="Images\checkOutQuizzes.png" />
     <Content Include="Images\contacts.png" />
     <Content Include="Images\errorImage.png" />
     <Content Include="Images\hand.png" />
     <Content Include="Images\loadImage.gif" />
     <Content Include="Images\quiz4net_logo.png" />
     <Content Include="Images\tick.png" />
+    <Content Include="Images\weBelieveIn.png" />
     <Content Include="Images\welcomeImage.png" />
+    <Content Include="Images\weSupport.png" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\answer.js" />
     <Content Include="Scripts\bootstrap.js" />

@@ -8,23 +8,27 @@
 @Html.Partial("_Menu")
 <div class="detail-form-container">
     <div class="detail-title">
-        We support the following Quiz categories:
+        <img src="~/Images/weSupport.png" alt="We support the following quiz categories" />
     </div>
     <div class="detail-item">
         <img src="~/Images/tick.png" />
         @Html.ActionLink("C# Quiz", "CategoryDetails", new {category = QuestionCategory.CSharp})
+        <hr/>
     </div>
     <div class="detail-item">
         <img src="~/Images/tick.png" />
         @Html.ActionLink("ASP.Net MVC Quiz", "CategoryDetails", new {category = QuestionCategory.Mvc})
+        <hr />
     </div>
     <div class="detail-item">
         <img src="~/Images/tick.png" />
         @Html.ActionLink("JavaScript Quiz", "CategoryDetails", new {category = QuestionCategory.Javascript})
+        <hr />
     </div>
     <div class="detail-item">
         <img src="~/Images/tick.png" />
         @Html.ActionLink("SharePoint 2016 Quiz", "CategoryDetails", new {category = QuestionCategory.SharePoint})
+        <hr />
     </div>
     <div class="detail-buttons">
         <a href="@Url.Action("About", "Home", null)">
