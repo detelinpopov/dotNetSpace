@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<link href="~/Content/robot.css" rel="stylesheet">
+<link href="~/Content/speechBubble.css" rel="stylesheet">
+
+<style type="text/css" media="screen">
+    #editor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 20%;
+    }
+</style>
+
+@Html.Partial("_Menu")
+
+<div class="speech-bubble">
+    <div class="arrow bottom right"></div>
+    Hi, I am Jason Hackman and I am not a real person...
+</div>
+<div class="robot-container">
+    <img src="~/Images/robot.jpg" alt="Robot"/>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="~/Scripts/robot.js"></script>
+
+<div id="editor">function foo(items) {
+    var x = "All this is syntax highlighted";
+    return x;
+    }</div>
+
+<script src="~/Scripts/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
