@@ -1,18 +1,21 @@
-﻿$(document).ready(function () {
-    $('#editor').hide();
+﻿$(document).ready(function() {
+    $("#editor").hide();
     setTimeout(function() {
             toggleSpeechBubbleDisplay("But I want to learn how to code.");
             setTimeout(function() {
                     toggleSpeechBubbleDisplay("Actually I know some JavaScript and jQuery.");
                     setTimeout(function() {
-                        toggleSpeechBubbleDisplay("Please help me to update my site!");
-                        setTimeout(function () {                              
-                            $('#editor').show();
-                                var editor = ace.edit("editor");
-                                editor.setTheme("ace/theme/monokai");
-                                editor.getSession().setMode("ace/mode/javascript");
-                            },
-                                5000);
+                            toggleSpeechBubbleDisplay("Please help me to update my site!");
+                            setTimeout(function() {
+                                    $("#editor").show();
+                                    var editor = ace.edit("editor");
+                                    editor.setTheme("ace/theme/monokai");
+                                    editor.getSession().setMode("ace/mode/javascript");
+                                    var code = editor.getValue();
+                                    alert(code);
+                                    eval(code);
+                                },
+                                2000);
                         },
                         5000);
                 },
