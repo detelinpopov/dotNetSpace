@@ -1,0 +1,9 @@
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Release\Core.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Release\Core.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Release\Interfaces.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Release\Shared.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Release\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\bin\Release\Shared.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\obj\Release\Core.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Core\obj\Release\Core.pdb

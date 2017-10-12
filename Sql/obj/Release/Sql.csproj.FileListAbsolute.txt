@@ -1,0 +1,15 @@
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Sql.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Sql.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\EntityFramework.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Interfaces.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Newtonsoft.Json.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Shared.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Shared.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\EntityFramework.xml
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Newtonsoft.Json.xml
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\obj\Release\Sql.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\obj\Release\Sql.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\obj\Release\Sql.pdb
