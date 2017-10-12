@@ -10,6 +10,10 @@
 
         Javascript,
 
-        Office365
+        SqlServer,
+
+        EntityFramework,
+
+        jQuery
     }
 }
