@@ -44,13 +44,9 @@
     }
 
     <div class="question-buttons">
-        <img src="~/Images/btnSubmit.png" alt="Submit" id="checkAnswer" data-request-url="@Url.Action("CheckAnswers", "Quiz")">
-        <button type="submit" style="background-color: white; border: 10px solid transparent; border-color: white;">
-            <img src="~/Images/btnNextQuestion.png" alt="Next" id="nextQuestion">
-        </button>
-        <a id="finishTestLink" class="link-finish-test">
-            <img src='~/Images/btnFinishTest.png' alt="Finish Test" />
-        </a>
+        <a id="checkAnswer" data-request-url="@Url.Action("CheckAnswers", "Quiz")" class="button"> Submit </a>
+        <button id="nextQuestion" type="submit" class="button"> Next </button>
+        <a id="finishTestLink" class="link-finish-test button"> Finish Test </a>
     </div>
 }
 

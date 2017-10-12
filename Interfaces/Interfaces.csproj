@@ -43,7 +43,6 @@
     <Compile Include="Core\Services\IFeedbackService.cs" />
     <Compile Include="Core\Services\IUserService.cs" />
     <Compile Include="Core\Services\IQuestionService.cs" />
-    <Compile Include="Core\TestDataGenerators\IEmployeeDataGenerator.cs" />
     <Compile Include="Sql\Entities\IFeedback.cs" />
     <Compile Include="Sql\Entities\IUser.cs" />
     <Compile Include="Sql\Entities\IEntity.cs" />

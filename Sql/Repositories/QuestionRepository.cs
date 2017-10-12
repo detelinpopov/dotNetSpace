@@ -30,17 +30,18 @@ namespace Sql.Repositories
         {
             using (var context = new QuizContext())
             {
-                answersIds = answersIds.Where(a => a > 0).ToList();
-                if (!answersIds.Any())
+                IQuestion question = await context.Questions.Include(nameof(Question.Answers)).FirstOrDefaultAsync(q => q.Id == questionId);
+                if (question == null || answersIds == null || !answersIds.Any())
                 {
                     return false;
                 }
 
-                var correctAnswersIds = await context.Answers.Where(a => a.QuestionId == questionId && a.IsCorrect).Select(a => a.Id).ToListAsync();
+                var correctAnswersIds = question.Answers.Where(a => a.IsCorrect).Select(a => a.Id).ToList();
                 if (correctAnswersIds.Count != answersIds.Count())
                 {
                     return false;
                 }
+
                 return answersIds.All(answerId => correctAnswersIds.Contains(answerId));
             }
         }
