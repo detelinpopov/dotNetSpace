@@ -1,7 +1,5 @@
-.about-form-container {  }
-
 .about-item {
-    font-family: Times New Roman;
+    font-family: 'Nunito', sans-serif;
     font-size: x-large;
     padding-bottom: 5px;
 }
@@ -12,8 +10,9 @@
 }
 
 .about-item-description {
-    font-style: italic;
+    font-family: 'Nunito', sans-serif;
     padding-left: 50px;
+    font-size: large;
 }
 
 .about-main-item {
@@ -22,7 +21,10 @@
     font-size: x-large;
 }
 
-.categories-details-link { font-weight: bold; padding-left: 10px; }
+.categories-details-link {
+    font-weight: bold;
+    padding-left: 10px;
+}
 
 .categories-details-link > a:link { color: green; }
 

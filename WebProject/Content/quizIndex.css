@@ -1,11 +1,11 @@
 .quiz-title {
-    font-family: Times New Roman;
+    font-family: 'Nunito', sans-serif;
     font-size: xx-large;
 }
 
 .quiz-description {
-    font-family: Times New Roman;
-    font-size: x-large;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
     padding-bottom: 5px;
 }
 
@@ -26,9 +26,11 @@
 }
 
 .user-message-field {
-    color: green;   
+    color: green;
+    display: none;
     font-family: Times New Roman;
     font-size: large;
     padding-bottom: 40px;
-    display: none;
 }
+
+.section-buttons { padding-top: 10px; }

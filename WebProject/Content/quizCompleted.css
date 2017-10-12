@@ -1,5 +1,6 @@
 .div-item {
-    font-size: x-large;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
     padding-top: 10px;
     padding-top: 10px;
 }
@@ -7,7 +8,7 @@
 .quiz-completed-title {
     color: green;
     font-family: Times New Roman;
-    font-size: xx-large;   
+    font-size: xx-large;
 }
 
 .quiz-completed-buttons { padding-bottom: 20px; }
@@ -20,6 +21,6 @@
 .green { color: green; }
 
 .hr {
-    height: 0;
     border: 1px solid #44C767;
+    height: 0;
 }
