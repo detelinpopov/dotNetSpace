@@ -202,7 +202,6 @@
     <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Content\quizCategory.css" />
     <Content Include="Content\quizContact.css" />
-    <Content Include="Content\quizNotFound.css" />
     <Content Include="Content\quizMenu.css" />
     <Content Include="Content\quizAbout.css" />
     <Content Include="Content\quizIndex.css" />
@@ -273,7 +272,6 @@
     <Content Include="Views\Quiz\QuizCompleted.cshtml" />
     <Content Include="Views\Quiz\AnsweredQuestion.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />
-    <Content Include="Views\Quiz\QuizNotFound.cshtml" />
     <Content Include="Views\Quiz\Categories\CategoriesDetails.cshtml" />
     <Content Include="Views\Quiz\Categories\CategoryDetailsCSharp.cshtml" />
     <Content Include="Views\Quiz\Categories\CategoryDetailsMvc.cshtml" />
