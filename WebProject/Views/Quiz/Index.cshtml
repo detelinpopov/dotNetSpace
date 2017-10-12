@@ -4,7 +4,7 @@
     ViewBag.Title = "Quiz4Net - Free .Net online quiz";
     ViewBag.MetaDescription = "We provide free online .Net tests";
     ViewBag.MetaKeywords = ".net quiz, .net online quiz, .net tests, .net tests online, c# quiz, c# online quiz, c# test, c# online test, mvc quiz, asp.net mvc quiz, mvc test online, sharepoint 2016 quiz, sharepoint 2016 test online, sharepoint 2016, sharepoint 2016 test, javascript quiz, javascript test, quiz online free";
-    string userMessage = string.Empty;
+    var userMessage = string.Empty;
 }
 
 <link href="~/Content/quizMenu.css" rel="stylesheet">
@@ -12,7 +12,7 @@
 
 @if (TempData["UserMessage"] != null)
 {
-    userMessage = (string)TempData["UserMessage"];
+    userMessage = (string) TempData["UserMessage"];
 }
 @Html.Hidden("hdnUserMessage", userMessage)
 
@@ -24,25 +24,25 @@
 </div>
 <hr class="hr"/>
 <div class="quiz-description">
-    <img src="~/Images/tick.png"/>
-    We provide free online tests which help you assess your development skills
+    <img src="~/Images/tick.png" alt=".Net quiz"/>
+    <span> We provide free online tests which help you assess your development skills </span>
     <hr class="hr-gray"/>
 </div>
 <div class="quiz-description">
-    <img src="~/Images/tick.png"/>
-    Our main goal is to provide quality content and great user experience
+    <img src="~/Images/tick.png" alt=".Net quiz"/>
+    <span> Our main goal is to provide quality content and great user experience </span>
     <hr class="hr-gray"/>
 </div>
 <div class="quiz-description">
-    <img src="~/Images/tick.png"/>
-    We keep our questions up-to-date and often add new questions and categories
-    <hr class="hr-green" />
+    <img src="~/Images/tick.png" alt=".Net quiz"/>
+    <span> We keep our questions up-to-date and often add new questions and categories </span>
+    <hr class="hr-green"/>
 </div>
 <div class="section-buttons">
-    <a href="@Url.Action("Question", "Quiz", new { questionCategory = QuestionCategory.CSharp})" class="button"> Start C# Test </a>           
-    <a href="@Url.Action("Question", "Quiz", new { questionCategory = QuestionCategory.Mvc})" class="button"> Start ASP.Net MVC Test </a>
-    <a href="@Url.Action("Question", "Quiz", new { questionCategory = QuestionCategory.Javascript})" class="button"> Start JavaScript Test </a>            
-    <a href="@Url.Action("Question", "Quiz", new { questionCategory = QuestionCategory.SharePoint})" class="button"> Start SharePoint 2016 Test </a>
+    <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="button"> Start C# Test </a>
+    <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="button"> Start ASP.Net MVC Test </a>
+    <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="button"> Start JavaScript Test </a>
+    <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="button"> Start SharePoint 2016 Test </a>
 </div>
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
