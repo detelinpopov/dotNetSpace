@@ -30,3 +30,7 @@ a:hover { color: white; }
     text-decoration: none;
     margin: 3px;   
 }
+
+.button-submit {
+    height: 36px;
+}

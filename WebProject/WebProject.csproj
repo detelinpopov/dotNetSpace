@@ -216,7 +216,7 @@
     <Content Include="Images\checkOutQuizzes.png" />
     <Content Include="Images\contacts.png" />
     <Content Include="Images\errorImage.png" />
-    <Content Include="Images\hand.png" />
+    <Content Include="Images\greenHand.png" />
     <Content Include="Images\loadImage.gif" />
     <Content Include="Images\quiz4net_logo.png" />
     <Content Include="Images\tick.png" />
