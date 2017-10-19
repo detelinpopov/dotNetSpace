@@ -21,14 +21,9 @@ namespace Core.Services
         }
 
         public async Task<bool> IsValidUser(string name, string password)
-        {
+        {           
             var user = await _userRepository.FindAsync(name);
-            if (user == null)
-            {
-                return false;
-            }
-           
-            return PasswordHasher.VerifyHashedPassword(user.Password, password);
+            return user != null && PasswordHasher.VerifyHashedPassword(user.Password, password);
         }
 
         public async Task<ValidationResult> RegisterAsync(string name, string password)

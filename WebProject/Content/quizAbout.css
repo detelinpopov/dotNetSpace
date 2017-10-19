@@ -1,6 +1,6 @@
 .about-item {
     font-family: 'Nunito', sans-serif;
-    font-size: x-large;
+    font-size: large;
     padding-bottom: 5px;
 }
 
@@ -17,8 +17,8 @@
 
 .about-main-item {
     color: green;
-    font-family: Times New Roman;
-    font-size: x-large;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
 }
 
 .categories-details-link {
@@ -35,3 +35,9 @@
 .detail-buttons { padding-top: 10px; }
 
 .about-link { font-weight: bold; }
+
+.check-out-our-quizzes-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    color: green;
+}

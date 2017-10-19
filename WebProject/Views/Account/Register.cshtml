@@ -1,24 +1,27 @@
 ﻿@{
     ViewBag.Title = "Register";
 }
-
-@using (Html.BeginForm("Register", "Account", FormMethod.Post))
+<link href="~/Content/quizMenu.css" rel="stylesheet">
+@Html.Partial("_Menu")
+@using (Html.BeginForm("Register", "Account"))
 {
     @Html.ValidationSummary()
-    @Html.AntiForgeryToken()
-
-    <div>
+    <div class="login-control login-label">
         Register
     </div>
-    <div>
-        <label for="name">Username:</label>
-        <input type="text" name="name" id="name">
+    <div> Username: </div>
+    <div class="login-control">
+        @Html.TextBox("name")
     </div>
-    <div>
-        <label for="name">Password:</label>
-        <input type="password" name="password" id="password">
-    </div>
-    <div>
-        <input type="submit" value="Register"/>
+    <div class="login-control">
+        <div> Password: </div> 
+        @Html.Password("password")
+    </div> 
+    <div class="login-control">
+        <div> Confirm Password: </div> 
+        @Html.Password("confirmPassword")
+    </div> 
+    <div class="button-section">
+        <input type="submit" value="Register" class="button"/>
     </div>
 }

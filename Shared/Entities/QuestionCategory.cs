@@ -14,6 +14,12 @@
 
         EntityFramework,
 
-        jQuery
+        jQuery,
+
+        Threads,
+
+        UnitTesting,
+
+        DataStructures
     }
 }

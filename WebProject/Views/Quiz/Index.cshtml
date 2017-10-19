@@ -24,12 +24,12 @@
 </div>
 <hr class="hr"/>
 <div class="quiz-description">
-    <img src="~/Images/tick.png" alt=".Net quiz"/>
-    <span> We provide free online tests which help you assess your development skills </span>
+    <img title="Quiz4Net" src="~/Images/tick.png" alt=".Net quiz"/>
+    <span title="Free .Net online tests"> We provide free online tests which help you assess your development skills </span>
     <hr class="hr-gray"/>
 </div>
 <div class="quiz-description">
-    <img src="~/Images/tick.png" alt=".Net quiz"/>
+    <img title="Quiz4Net" src="~/Images/tick.png" alt=".Net quiz"/>
     <span> Our main goal is to provide quality content and great user experience </span>
     <hr class="hr-gray"/>
 </div>
@@ -39,10 +39,20 @@
     <hr class="hr-green"/>
 </div>
 <div class="section-buttons">
-    <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="button"> Start C# Test </a>
-    <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="button"> Start ASP.Net MVC Test </a>
-    <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="button"> Start JavaScript Test </a>
-    <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="button"> Start SharePoint 2016 Test </a>
+    <div class="button-section">
+        <a title="C# Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="button"> Start C# Test </a>
+        <a title="Data Structures Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.DataStructures})" class="button"> Start Data Structures Test </a>
+        <a title="ASP.Net MVC Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="button"> Start ASP.Net MVC Test </a>
+    </div>
+    <div class="button-section">
+        <a title="JavaScript Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="button"> Start JavaScript Test </a>
+        <a title="SharePoint 2016 Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="button"> Start SharePoint 2016 Test </a>
+        <a title="Sql Server Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SqlServer})" class="button"> Start Sql Server Test </a>
+    </div>
+    <div class="button-section">
+        <a title="Entity Framework Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="button"> Start Entity Framework Test </a>
+        <a title="Multithreading Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Threads})" class="button"> Start Multithreading Test </a>
+    </div>
 </div>
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>

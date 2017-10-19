@@ -11,6 +11,7 @@ using WebProject.Models.Quiz;
 
 namespace WebProject.Controllers
 {
+    [Authorize]
     public class QuizController : Controller
     {
         private const int TotalQuestionsCount = 20;
