@@ -14,6 +14,7 @@ namespace WebProject.Controllers
             _feedbackService = feedbackService;
         }
 
+        [OutputCache(Duration = 3600)]
         public ActionResult About()
         {
             return View();

@@ -19,7 +19,6 @@ namespace WebProject.Controllers
             _questionService = questionService;
         }
 
-
         [HttpGet]
         public ActionResult Create()
         {
@@ -32,7 +31,6 @@ namespace WebProject.Controllers
         }
 
         [HttpPost]
-        //[ValidateAntiForgeryToken]
         public async Task<ActionResult> Create(QuestionModel model, HttpPostedFileBase uploadImage)
         {
             var question = _questionService.CreateQuestion();
