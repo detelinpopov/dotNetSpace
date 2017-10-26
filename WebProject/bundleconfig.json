@@ -1,0 +1,56 @@
+[
+  {
+    "outputFileName": "Content/quizMenu.min.css",
+    "inputFiles": [
+      "Content/quizMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/quizIndex.min.css",
+    "inputFiles": [
+      "Content/quizIndex.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/quizContact.min.css",
+    "inputFiles": [
+      "Content/quizContact.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/quizCompleted.min.css",
+    "inputFiles": [
+      "Content/quizCompleted.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/quizAbout.min.css",
+    "inputFiles": [
+      "Content/quizAbout.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/quiz.min.css",
+    "inputFiles": [
+      "Content/quiz.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/answer.min.js",
+    "inputFiles": [
+      "Scripts/answer.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/index.min.js",
+    "inputFiles": [
+      "Scripts/index.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/zooomin.min.js",
+    "inputFiles": [
+      "Scripts/zooomin.js"
+    ]
+  }
+]

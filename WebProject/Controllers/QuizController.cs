@@ -105,7 +105,6 @@ namespace WebProject.Controllers
             return View("Question", model);
         }
 
-        [OutputCache(Duration = 3600)]
         public ActionResult Index()
         {
             return View();

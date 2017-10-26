@@ -200,13 +200,28 @@
     <Content Include="Content\Gridmvc.css" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\quiz.min.css">
+      <DependentUpon>quiz.css</DependentUpon>
+    </Content>
+    <Content Include="Content\quizAbout.min.css">
+      <DependentUpon>quizAbout.css</DependentUpon>
+    </Content>
     <Content Include="Content\quizCategory.css" />
+    <Content Include="Content\quizCompleted.min.css">
+      <DependentUpon>quizCompleted.css</DependentUpon>
+    </Content>
     <Content Include="Content\quizContact.css" />
+    <Content Include="Content\quizIndex.min.css">
+      <DependentUpon>quizIndex.css</DependentUpon>
+    </Content>
     <Content Include="Content\quizMenu.css" />
     <Content Include="Content\quizAbout.css" />
     <Content Include="Content\quizIndex.css" />
     <Content Include="Content\quizCompleted.css" />
     <Content Include="Content\quiz.css" />
+    <Content Include="Content\quizMenu.min.css">
+      <DependentUpon>quizMenu.css</DependentUpon>
+    </Content>
     <Content Include="Content\zooomin.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -224,15 +239,22 @@
     <Content Include="Images\weBelieveIn.png" />
     <Content Include="Images\welcome.png" />
     <Content Include="Images\weSupport.png" />
+    <Content Include="Scripts\answer.min.js">
+      <DependentUpon>answer.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\answer.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Grid.mvc.readme" />
+    <None Include="bundleconfig.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\gridmvc.js" />
     <Content Include="Scripts\gridmvc.lang.ru.js" />
     <Content Include="Scripts\gridmvc.min.js" />
+    <Content Include="Scripts\index.min.js">
+      <DependentUpon>index.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -246,6 +268,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\zooomin.js" />
+    <Content Include="Scripts\zooomin.min.js">
+      <DependentUpon>zooomin.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\_references.js" />
     <Content Include="DBUpdateScripts\SqlData.sql" />
     <Content Include="Web.config" />
@@ -271,7 +296,6 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Quiz\QuizCompleted.cshtml" />
-    <Content Include="Views\Quiz\AnsweredQuestion.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />
     <Content Include="Views\Quiz\Categories\CategoriesDetails.cshtml" />
     <Content Include="Views\Quiz\Categories\CategoryDetailsCSharp.cshtml" />
@@ -321,7 +345,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53737</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53737/</IISUrl>
+          <IISUrl>http://localhost:53749/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
