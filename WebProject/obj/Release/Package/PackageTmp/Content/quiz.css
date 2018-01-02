@@ -1,0 +1,88 @@
+#divResult {
+    font-size: x-large;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.answer {
+    font-family: Times New Roman;
+    font-size: x-large
+}
+
+.question-buttons { padding-top: 20px }
+
+.response-image {
+    display: none;
+    height: 70px;
+    width: 70px;
+}
+
+.question {
+    font-family: Times New Roman;
+    font-size: xx-large;
+}
+
+.green-answer { color: green; }
+
+.div-result-correct { color: green; }
+
+.div-result-wrong { color: red; }
+
+.div-result-please-select { color: #DAA520; }
+
+.div-result {
+    display: none;
+    font-family: Times New Roman;
+    font-size: x-large;
+}
+
+.answered {
+    font-size: xx-large;
+    padding-top: 20px;
+}
+
+.div-question-image {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.question-number {
+    color: #44C767;
+    font-family: Times New Roman;
+    font-size: x-large;
+}
+
+#nextQuestion { display: none; }
+
+.hr-green {
+    border: 1px solid #44C767;
+    height: 0;
+}
+
+.quiz4net-logo { padding-bottom: 20px; }
+
+.ui-dialog-titlebar { background: #44c767 !important }
+
+.link-finish-test { padding-left: 10px; }
+
+.button {
+    -moz-border-radius: 4px;
+    -moz-box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
+    background: #44C767;
+    border: solid 1px #44C767;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
+    color: #FFF;
+    margin: 3px;
+    padding: 8px 12px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #44C767;
+    width: 80px;   
+}
+
+a:hover {
+    color: white;
+    cursor: pointer;
+}

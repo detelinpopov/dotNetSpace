@@ -1,0 +1,43 @@
+﻿@using WebProject.Models.Quiz
+@model WebProject.Models.Quiz.QuizCompletedModel
+@{
+    ViewBag.Title = "Quiz Completed";
+}
+
+<link href="~/Content/quizCompleted.min.css" rel="stylesheet">
+@Html.Partial("_Menu")
+<div class="quiz-completed-title"> Quiz Completed</div>
+<div class="quiz-complete-result">
+    @if (Model.QuizResult == CompletedQuizResult.Great)
+    {
+    <span> <i class="fa fa-trophy" aria-hidden="true"></i> Great result! All your answers are correct! You are a champion! </span>
+    }
+    else if (Model.QuizResult == CompletedQuizResult.VeryGood)
+    {
+    <span> <i class="fa fa-star" aria-hidden="true"></i> Wonderful result! You are a star! </span>
+    }
+    else if (Model.QuizResult == CompletedQuizResult.Good)
+    {
+    <span> <i class="fa fa-check" aria-hidden="true"></i> Very good! </span>
+    }
+    else if (Model.QuizResult == CompletedQuizResult.Mediocre)
+    {
+        <span> <i class="fa fa-check" aria-hidden="true"></i> Good! You can improve your results if you practise a little bit more.</span>
+    }
+    else
+    {
+        <span> The test is not very easy. Practise more to improve your results. </span>
+    }
+</div>
+<hr class="hr"/>
+<div class="div-item">
+    Number of correct answers: <span class="green"> @Model.NumberOfCorrectAnswers out of @Model.TotalQuestionsCount questions </span>
+</div>
+<hr class="hr"/>
+<div class="div-item">
+    Time spent: <span class="green"> @Model.TimeSpentText </span>
+</div>
+<hr class="hr"/>
+<div class="quiz-completed-buttons">
+    <a href="@Url.Action("Index", "Quiz")" class="button"> Start a new test </a>
+</div>

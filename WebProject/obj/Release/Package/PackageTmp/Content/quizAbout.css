@@ -1,0 +1,43 @@
+.about-item {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    padding-bottom: 5px;
+}
+
+.hr-gray {
+    border: 1px solid #EEEEEE;
+    height: 0;
+}
+
+.about-item-description {
+    font-family: 'Nunito', sans-serif;
+    padding-left: 50px;
+    font-size: large;
+}
+
+.about-main-item {
+    color: green;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+
+.categories-details-link {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.categories-details-link > a:link { color: green; }
+
+.categories-details-link > a:visited { color: green; }
+
+.categories-details-link > a:hover { color: #44C767; }
+
+.detail-buttons { padding-top: 10px; }
+
+.about-link { font-weight: bold; }
+
+.check-out-our-quizzes-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    color: green;
+}

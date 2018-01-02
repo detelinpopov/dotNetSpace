@@ -1,0 +1,69 @@
+﻿@using Shared.Entities
+@{
+    ViewBag.Title = "JavaScript";
+    ViewBag.MetaKeywords = "javascript, javascript quiz, javascript test, javascript quiz online, javascript test online, free javascript test, free online test";
+}
+
+<link href="~/Content/quizCategory.css" rel="stylesheet">
+
+@Html.Partial("_Menu")
+<div class="detail-form-container">
+    <div class="detail-title">
+        <span> JavaScript Quiz Details </span>
+        <hr class="hr-green"/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Syntax
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Statements
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Variables
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Operators
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Data Types
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Functions
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Scope
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Arrays
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Object-Oriented Concepts
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        DOM Manipulation
+        <hr class="hr-green"/>
+    </div>
+    <div class="detail-buttons">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="button"> Start Test</a>
+        <a href="@Url.Action("CategoriesDetails", "Quiz", null)" class="button"> Back </a>
+    </div>
+</div>

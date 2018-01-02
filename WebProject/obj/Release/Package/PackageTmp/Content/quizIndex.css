@@ -1,0 +1,49 @@
+.quiz-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: xx-large;
+}
+
+.quiz-quote {
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    color: green;
+}
+
+.quiz-row {
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    color: black;
+    font-size: 16px;
+}
+
+.hr {
+    border: 1px solid #44C767;
+    height: 0;
+}
+
+.hr-gray {
+    border: 1px solid #EEEEEE;
+    height: 0;
+}
+
+.message {
+    color: green;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.user-message-field {
+    color: green;
+    display: none;
+    font-family: Times New Roman;
+    font-size: large;
+    padding-bottom: 40px;
+}
+
+.section-buttons { padding-top: 10px; }
+
+.button-section{ padding-bottom: 30px;}

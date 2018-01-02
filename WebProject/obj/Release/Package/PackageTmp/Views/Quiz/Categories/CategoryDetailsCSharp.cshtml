@@ -1,0 +1,74 @@
+﻿@using Shared.Entities
+@{
+    ViewBag.Title = "C#";
+    ViewBag.MetaKeywords = "c#, c# quiz, c# test, c# quiz online, c# test online, c# free test, free test, free quiz, c# free quiz, online test, online quiz";
+}
+
+<link href="~/Content/quizCategory.css" rel="stylesheet">
+
+@Html.Partial("_Menu")
+<div class="detail-form-container">
+    <div class="detail-title">
+        <span> C# Quiz Details </span>
+        <hr class="hr-green"/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Primitive Types and Variables
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Operators and Expressions
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Conditional Statements
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Loops
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Arrays
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Methods
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Defining Classes
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Creating and Using Objects
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Object-Oriented Programming Principles
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Exceptions
+        <hr/>
+    </div>
+    <div class="detail-item-option">
+        <img src="~/Images/tick.png"/>
+        Data Structures
+        <hr class="hr-green"/>
+    </div>
+    <div class="detail-buttons">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="button"> Start Test </a>
+        <a href="@Url.Action("CategoriesDetails", "Quiz", null)" class="button"> Back </a>
+    </div>
+</div>

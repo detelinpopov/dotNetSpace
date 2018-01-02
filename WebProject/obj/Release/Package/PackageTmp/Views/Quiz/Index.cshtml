@@ -1,0 +1,63 @@
+﻿@using Shared.Entities
+@model IEnumerable<WebProject.Models.Account.RegisterModel>
+@{
+    ViewBag.Title = "Quiz4Net";
+    ViewBag.MetaDescription = "We provide online .Net tests";
+    ViewBag.MetaKeywords = ".net quiz, .net online quiz, .net tests, .net tests online, c# quiz, c# online quiz, c# test, c# online test, mvc quiz, asp.net mvc quiz, mvc test online, sharepoint 2016 quiz, sharepoint 2016 test online, sharepoint 2016, sharepoint 2016 test, javascript quiz, javascript test, quiz online free";
+    var userMessage = string.Empty;
+}
+
+<link href="~/Content/quizMenu.min.css" rel="stylesheet">
+<link href="~/Content/quizIndex.min.css" rel="stylesheet">
+
+@if (TempData["UserMessage"] != null)
+{
+    userMessage = (string) TempData["UserMessage"];
+}
+@Html.Hidden("hdnUserMessage", userMessage)
+
+<div id="messageDialog" class="user-message-field"> @userMessage </div>
+
+@Html.Partial("_Menu")
+<div class="quiz-title">
+    <img src="~/Images/welcomeToQuiz4Net.png" alt="Welcome to Quiz4Net" class="img-responsive"/>
+</div>
+<hr class="hr"/>
+<div class="quiz-quote">
+    <span> "First solve the problem. Then, write the code." - John Johnson</span>
+    <hr class="hr-green" />
+</div>
+<div class="quiz-row">    
+    <span> It needs a lot of practise and dedication to become a good software engineer. Our tests are a great way to test your skills and to learn new things. </span>
+    <hr class="hr-green"/>
+</div>
+<div class="quiz-row">
+    <span> We tried to make a combination of basic, more advaced are some really complicated questions. The questions cover many different topics. </span>
+    <hr class="hr-green"/>
+</div>
+<div class="quiz-row">
+    <span> Don't worry if you cannot answer correctly! The purpose of the quiz is to help you learn. It is NOT easy, our idea is to challenge you. </span>
+    <hr class="hr-green" />
+</div>
+<div class="quiz-row">
+    <span> We often add new questions and categories. We guarantee that the content is always up-to-date. </span>
+    <hr class="hr-green" />
+</div>
+<div class="section-buttons">
+    <div class="button-section">
+        <a title="C# Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="button"> Start C# Test </a>
+        <a title="Data Structures Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.DataStructures})" class="button"> Start Data Structures Test </a>
+        <a title="ASP.Net MVC Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="button"> Start ASP.Net MVC Test </a>
+    </div>
+    <div class="button-section">
+        <a title="JavaScript Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="button"> Start JavaScript Test </a>
+        <a title="SharePoint 2016 Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="button"> Start SharePoint 2016 Test </a>
+        <a title="Sql Server Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SqlServer})" class="button"> Start Sql Server Test </a>
+    </div>
+    <div class="button-section">
+        <a title="Entity Framework Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="button"> Start Entity Framework Test </a>       
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/index.min.js"></script>

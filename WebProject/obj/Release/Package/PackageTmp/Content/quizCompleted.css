@@ -1,0 +1,35 @@
+.div-item {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    padding-top: 10px;
+}
+
+.quiz-completed-title {
+    color: green;
+    font-family: 'Nunito', sans-serif;
+    font-size: x-large;
+}
+
+.quiz-completed-buttons {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.user-level {
+    color: green;
+    font-size: xx-large;
+}
+
+.green { color: green; }
+
+.hr {
+    border: 1px solid #44C767;
+    height: 0;
+}
+
+.quiz-complete-result {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+}
