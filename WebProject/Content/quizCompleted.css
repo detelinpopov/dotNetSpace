@@ -26,3 +26,10 @@
     border: 1px solid #44C767;
     height: 0;
 }
+
+.quiz-complete-result {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+}

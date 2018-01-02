@@ -185,6 +185,7 @@
     <Compile Include="Models\JsonEmployee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Quiz\CompletedQuizResult.cs" />
     <Compile Include="Models\Quiz\FeedbackModel.cs" />
     <Compile Include="Models\Quiz\VerifyAnswerModel.cs" />
     <Compile Include="Models\Quiz\QuizCompletedModel.cs" />

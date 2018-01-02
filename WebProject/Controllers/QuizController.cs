@@ -105,6 +105,7 @@ namespace WebProject.Controllers
             var verifyAnswerModel = new VerifyAnswerModel {AnswerResult = correctAnswers ? AnswerResult.Correct.ToString() : AnswerResult.Wrong.ToString()};
             var correctAnswersIds = CorrectAnswersIds;
             verifyAnswerModel.CorrectAnswersIds = correctAnswersIds.Select(i => i.ToString()).ToArray();
+            NumberOfAnsweredQuestions++;
 
             return Json(verifyAnswerModel);
         }
@@ -172,7 +173,7 @@ namespace WebProject.Controllers
                 Id = question.Id,
                 Text = question.Text,
                 Image = question.Image,
-                Number = AnsweredQuestionsIds.Count + 1,
+                Number = AnsweredQuestionsIds.Count,
                 SelectedQuestionCategory = question.Category
             };
             foreach (var answer in question.Answers)
@@ -190,17 +191,16 @@ namespace WebProject.Controllers
 
         private bool IsResponseCorrect(ResponseModel responseModel)
         {
-            var correctAnswers = CorrectAnswersIds.SequenceEqual(responseModel.AnswerIds);
+            var correctAnswers = CorrectAnswersIds.Any() && responseModel.AnswerIds.Any() && CorrectAnswersIds.SequenceEqual(responseModel.AnswerIds);
             if (correctAnswers && !AnsweredQuestionsIds.Contains(responseModel.QuestionId))
-            {
-                NumberOfCorrectAnswers++;
+            {               
+                NumberOfCorrectAnswers++;                
             }
-            if (responseModel.QuestionId > 0 && !AnsweredQuestionsIds.Contains(responseModel.QuestionId))
+            if (!AnsweredQuestionsIds.Contains(responseModel.QuestionId))
             {
-                NumberOfAnsweredQuestions++;
                 AnsweredQuestionsIds.Add(responseModel.QuestionId);
             }
-
+           
             return correctAnswers;
         }
 
