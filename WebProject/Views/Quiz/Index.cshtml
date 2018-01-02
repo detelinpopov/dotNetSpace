@@ -39,6 +39,10 @@
     <span> Don't worry if you cannot answer correctly! The purpose of the quiz is to help you learn. It is NOT easy, our idea is to challenge you. </span>
     <hr class="hr-green" />
 </div>
+<div class="quiz-row">
+    <span> We often add new questions and categories. We guarantee that the content is always up-to-date. </span>
+    <hr class="hr-green" />
+</div>
 <div class="section-buttons">
     <div class="button-section">
         <a title="C# Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="button"> Start C# Test </a>
@@ -51,8 +55,7 @@
         <a title="Sql Server Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SqlServer})" class="button"> Start Sql Server Test </a>
     </div>
     <div class="button-section">
-        <a title="Entity Framework Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="button"> Start Entity Framework Test </a>
-        <a title="Multithreading Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Threads})" class="button"> Start Multithreading Test </a>
+        <a title="Entity Framework Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="button"> Start Entity Framework Test </a>       
     </div>
 </div>
 
