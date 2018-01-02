@@ -7,9 +7,9 @@
     font-family: 'Nunito', sans-serif;
     padding-bottom: 5px;
     padding-left: 12px;
-    font-style: italic;
     font-weight: bold;
     font-size: 16px;
+    color: green;
 }
 
 .quiz-row {
