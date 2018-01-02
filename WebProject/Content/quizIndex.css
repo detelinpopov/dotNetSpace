@@ -3,10 +3,21 @@
     font-size: xx-large;
 }
 
-.quiz-description {
+.quiz-quote {
     font-family: 'Nunito', sans-serif;
     font-size: large;
     padding-bottom: 5px;
+    padding-left: 12px;
+    color: black;
+    font-style: italic;
+}
+
+.quiz-row {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    color: black;
 }
 
 .hr {

@@ -309,6 +309,7 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\System.W
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\WebActivatorEx.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\Shared.dll
+C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\EntityFramework.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\Core.pdb
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\Interfaces.pdb
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\Sql.pdb
@@ -325,6 +326,7 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\System.W
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\Shared.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Debug\EntityFramework.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\obj\Debug\InversionOfControl.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\obj\Debug\InversionOfControl.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\obj\Debug\InversionOfControl.pdb

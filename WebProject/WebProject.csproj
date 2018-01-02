@@ -197,6 +197,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\FontAwesome\css\font-awesome.css" />
+    <Content Include="Content\FontAwesome\css\font-awesome.min.css" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Gridmvc.css" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery-ui.min.css" />
@@ -231,6 +234,7 @@
     <Content Include="Images\checkOutQuizzes.png" />
     <Content Include="Images\contacts.png" />
     <Content Include="Images\errorImage.png" />
+    <Content Include="Images\firstSolveTheProblem.png" />
     <Content Include="Images\greenHand.png" />
     <Content Include="Images\loadImage.gif" />
     <Content Include="Images\logOutIcon.png" />
@@ -238,6 +242,7 @@
     <Content Include="Images\tick.png" />
     <Content Include="Images\weBelieveIn.png" />
     <Content Include="Images\welcome.png" />
+    <Content Include="Images\welcomeToQuiz4Net.png" />
     <Content Include="Images\weSupport.png" />
     <Content Include="Scripts\answer.min.js">
       <DependentUpon>answer.js</DependentUpon>
@@ -248,6 +253,39 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Grid.mvc.readme" />
     <None Include="bundleconfig.json" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\FontAwesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\FontAwesome\less\animated.less" />
+    <Content Include="Content\FontAwesome\less\bordered-pulled.less" />
+    <Content Include="Content\FontAwesome\less\core.less" />
+    <Content Include="Content\FontAwesome\less\fixed-width.less" />
+    <Content Include="Content\FontAwesome\less\font-awesome.less" />
+    <Content Include="Content\FontAwesome\less\icons.less" />
+    <Content Include="Content\FontAwesome\less\larger.less" />
+    <Content Include="Content\FontAwesome\less\list.less" />
+    <Content Include="Content\FontAwesome\less\mixins.less" />
+    <Content Include="Content\FontAwesome\less\path.less" />
+    <Content Include="Content\FontAwesome\less\rotated-flipped.less" />
+    <Content Include="Content\FontAwesome\less\screen-reader.less" />
+    <Content Include="Content\FontAwesome\less\stacked.less" />
+    <Content Include="Content\FontAwesome\less\variables.less" />
+    <Content Include="Content\FontAwesome\scss\font-awesome.scss" />
+    <Content Include="Content\FontAwesome\scss\_animated.scss" />
+    <Content Include="Content\FontAwesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\FontAwesome\scss\_core.scss" />
+    <Content Include="Content\FontAwesome\scss\_fixed-width.scss" />
+    <Content Include="Content\FontAwesome\scss\_icons.scss" />
+    <Content Include="Content\FontAwesome\scss\_larger.scss" />
+    <Content Include="Content\FontAwesome\scss\_list.scss" />
+    <Content Include="Content\FontAwesome\scss\_mixins.scss" />
+    <Content Include="Content\FontAwesome\scss\_path.scss" />
+    <Content Include="Content\FontAwesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\FontAwesome\scss\_screen-reader.scss" />
+    <Content Include="Content\FontAwesome\scss\_stacked.scss" />
+    <Content Include="Content\FontAwesome\scss\_variables.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\gridmvc.js" />
     <Content Include="Scripts\gridmvc.lang.ru.js" />

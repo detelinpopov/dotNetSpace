@@ -2,7 +2,6 @@
     font-family: 'Nunito', sans-serif;
     font-size: large;
     padding-top: 10px;
-    padding-top: 10px;
 }
 
 .quiz-completed-title {
@@ -11,7 +10,10 @@
     font-size: xx-large;
 }
 
-.quiz-completed-buttons { padding-bottom: 20px; }
+.quiz-completed-buttons {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 .user-level {
     color: green;

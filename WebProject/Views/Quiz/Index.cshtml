@@ -1,8 +1,8 @@
 ﻿@using Shared.Entities
 @model IEnumerable<WebProject.Models.Account.RegisterModel>
 @{
-    ViewBag.Title = "Free .Net online quiz";
-    ViewBag.MetaDescription = "We provide free online .Net tests";
+    ViewBag.Title = "Quiz4Net";
+    ViewBag.MetaDescription = "We provide online .Net tests";
     ViewBag.MetaKeywords = ".net quiz, .net online quiz, .net tests, .net tests online, c# quiz, c# online quiz, c# test, c# online test, mvc quiz, asp.net mvc quiz, mvc test online, sharepoint 2016 quiz, sharepoint 2016 test online, sharepoint 2016, sharepoint 2016 test, javascript quiz, javascript test, quiz online free";
     var userMessage = string.Empty;
 }
@@ -20,23 +20,24 @@
 
 @Html.Partial("_Menu")
 <div class="quiz-title">
-    <img src="~/Images/welcome.png" alt="Welcome to Quiz4Net"/>
+    <img src="~/Images/welcomeToQuiz4Net.png" alt="Welcome to Quiz4Net" class="img-responsive"/>
 </div>
 <hr class="hr"/>
-<div class="quiz-description">
-    <img title="Quiz4Net" src="~/Images/tick.png" alt=".Net quiz"/>
-    <span title="Free .Net online tests"> We provide free online tests which help you assess your development skills </span>
-    <hr class="hr-gray"/>
+<div class="quiz-quote">
+    <span> "First solve the problem. Then, write the code." - John Johnson </span>
+    <hr class="hr-green" />
 </div>
-<div class="quiz-description">
-    <img title="Quiz4Net" src="~/Images/tick.png" alt=".Net quiz"/>
-    <span> Our main goal is to provide quality content and great user experience </span>
-    <hr class="hr-gray"/>
-</div>
-<div class="quiz-description">
-    <img src="~/Images/tick.png" alt=".Net quiz"/>
-    <span> We keep our questions up-to-date and often add new questions and categories </span>
+<div class="quiz-row">    
+    <span> It needs a lot of practise and dedication to become a good software engineer. Our tests are a great way to test your skills and to learn new things. </span>
     <hr class="hr-green"/>
+</div>
+<div class="quiz-row">
+    <span> We tried to make a combination of basic, more advaced are some really complicated questions. The questions cover many different topics. </span>
+    <hr class="hr-green"/>
+</div>
+<div class="quiz-row">
+    <span> Don't worry if you cannot answer correctly! The purpose of the quiz is to help you learn. It is NOT easy, our idea is to challenge you. </span>
+    <hr class="hr-green" />
 </div>
 <div class="section-buttons">
     <div class="button-section">

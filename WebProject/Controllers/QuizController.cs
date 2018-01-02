@@ -11,10 +11,9 @@ using WebProject.Models.Quiz;
 
 namespace WebProject.Controllers
 {
-    [Authorize]
     public class QuizController : Controller
     {
-        private const int TotalQuestionsCount = 20;
+        private const int TotalQuestionsCount = 10;
 
         private readonly IQuestionService _questionService;
 
@@ -76,6 +75,19 @@ namespace WebProject.Controllers
             set { System.Web.HttpContext.Current.Session[SessionKeys.NumberOfAnsweredQuestionsKey] = value; }
         }
 
+        public static IList<int> CorrectAnswersIds
+        {
+            get
+            {
+                if (System.Web.HttpContext.Current.Session[SessionKeys.CorrectAnswersIdsKey] == null)
+                {
+                    System.Web.HttpContext.Current.Session[SessionKeys.CorrectAnswersIdsKey] = new List<int>();
+                }
+                return (List<int>)System.Web.HttpContext.Current.Session[SessionKeys.CorrectAnswersIdsKey];
+            }
+            set { System.Web.HttpContext.Current.Session[SessionKeys.CorrectAnswersIdsKey] = value; }
+        }
+
         public ActionResult CategoriesDetails()
         {
             return View("Categories/CategoriesDetails");
@@ -87,11 +99,11 @@ namespace WebProject.Controllers
         }
 
         [HttpPost]
-        public async Task<JsonResult> CheckAnswers(ResponseModel responseModel)
+        public JsonResult CheckAnswers(ResponseModel responseModel)
         {
-            var correctAnswers = await IsResponseCorrectAsync(responseModel);
+            var correctAnswers = IsResponseCorrect(responseModel);
             var verifyAnswerModel = new VerifyAnswerModel {AnswerResult = correctAnswers ? AnswerResult.Correct.ToString() : AnswerResult.Wrong.ToString()};
-            var correctAnswersIds = await _questionService.GetCorrectAnswersIdsAsync(responseModel.QuestionId);
+            var correctAnswersIds = CorrectAnswersIds;
             verifyAnswerModel.CorrectAnswersIds = correctAnswersIds.Select(i => i.ToString()).ToArray();
 
             return Json(verifyAnswerModel);
@@ -125,7 +137,7 @@ namespace WebProject.Controllers
 
             if (responseModel != null)
             {
-                await IsResponseCorrectAsync(responseModel);
+                 IsResponseCorrect(responseModel);
             }
 
             var question = await _questionService.FindRandomQuestionAsync(questionCategory, AnsweredQuestionsIds);
@@ -134,6 +146,7 @@ namespace WebProject.Controllers
                 return RedirectToAction("QuizCompleted", "Quiz");
             }
 
+            CorrectAnswersIds = question.Answers.Where(a => a.IsCorrect).Select(a => a.Id).ToList();
             var model = CreateQuestionModel(question);
             return View("Question", model);
         }
@@ -175,9 +188,9 @@ namespace WebProject.Controllers
             return model;
         }
 
-        private async Task<bool> IsResponseCorrectAsync(ResponseModel responseModel)
+        private bool IsResponseCorrect(ResponseModel responseModel)
         {
-            var correctAnswers = await _questionService.CheckAnswersAsync(responseModel.QuestionId, responseModel.AnswerIds);
+            var correctAnswers = CorrectAnswersIds.SequenceEqual(responseModel.AnswerIds);
             if (correctAnswers && !AnsweredQuestionsIds.Contains(responseModel.QuestionId))
             {
                 NumberOfCorrectAnswers++;
@@ -210,6 +223,8 @@ namespace WebProject.Controllers
             public static readonly string NumberOfCorrectAnswersKey = "NumberOfCorrectAnswers";
 
             public static readonly string NumberOfAnsweredQuestionsKey = "NumberOfAnsweredQuestions";
+
+            public static readonly string CorrectAnswersIdsKey = "CorrectAnswersIds";
         }
     }
 }

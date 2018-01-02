@@ -48,10 +48,14 @@ a:hover { color: white; }
     font-size: large;
 }
 
-a.link-register:hover {
+a.link-register:hover { color: #44c767; }
+
+.validation-summary-errors { color: red; }
+
+.fa-sign-out, .fa-envelope, .fa-sign-in {
     color: #44c767;
+    font-size: 35px !important;
+    padding-right: 40px;
 }
 
-.validation-summary-errors {
-    color: red;
-}
+a:hover { text-decoration: none!important; }
