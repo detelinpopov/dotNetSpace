@@ -1,24 +1,37 @@
 ﻿<link href="~/Content/quizMenu.min.css" rel="stylesheet">
 <link href="~/Content/bootstrap.min.css" rel="stylesheet">
 <link href="~/Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet">
-<div>
-    <a href="@Url.Action("Index", "Quiz")">
-        <img title="Quiz4Net" src="~/Images/quiz4net_logo.png" alt="Quiz4Net Logo" class="quiz4net-menu-logo"/>
-    </a>  
-    @if (User.Identity.IsAuthenticated)
-    {
-        <a href="@Url.Action("Logout", "Account")">
-            <i class="fa fa-sign-out" aria-hidden="true" title="Logout"></i>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111091508-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111091508-2');
+    </script>
+</head>
+<body>
+    <div>
+        <a href="@Url.Action("Index", "Quiz")">
+            <img title="Quiz4Net" src="~/Images/quiz4net_logo.png" alt="Quiz4Net Logo" class="quiz4net-menu-logo" />
         </a>
-    }
-    else
-    {
-        <a href="@Url.Action("Login", "Account")">
-            <i class="fa fa-sign-in" aria-hidden="true" title="Login"></i>
-        </a>
-    }
-    <a href="@Url.Action("Contact", "Home")">
-        <i class="fa fa-envelope" aria-hidden="true" title="Contact"></i>
+        @if (User.Identity.IsAuthenticated)
+        {
+    <a href="@Url.Action("Logout", "Account")">
+        <i class="fa fa-sign-out" aria-hidden="true" title="Logout"></i>
     </a>
-    <hr class="hr-green"/>
-</div>
+        }
+        else
+        {
+    <a href="@Url.Action("Login", "Account")">
+        <i class="fa fa-sign-in" aria-hidden="true" title="Login"></i>
+    </a>
+        }
+        <a href="@Url.Action("Contact", "Home")">
+            <i class="fa fa-envelope" aria-hidden="true" title="Contact"></i>
+        </a>
+        <hr class="hr-green" />
+    </div>
+</body>
