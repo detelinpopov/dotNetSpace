@@ -44,6 +44,4 @@
     padding-bottom: 40px;
 }
 
-.section-buttons { padding-top: 10px; }
-
-.button-section{ padding-bottom: 30px;}
+.button-section{ padding-bottom: 30px; padding-top: 10px;}
