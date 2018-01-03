@@ -9,6 +9,7 @@
 
 <link href="~/Content/quizMenu.min.css" rel="stylesheet">
 <link href="~/Content/quizIndex.min.css" rel="stylesheet">
+<link href="~/Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet">
 
 @if (TempData["UserMessage"] != null)
 {
@@ -28,18 +29,25 @@
         <img src="~/Images/firstSolveTheProblem.png" class="img-responsive"/>
     </div>
     <div class="main-section-row">
-        <span class="glyphicon glyphicon-ok"></span> It needs a lot of practise and dedication to become a good software engineer.
+        <span class="glyphicon glyphicon-ok"></span> It needs a lot of practise and dedication to become a good software engineer
     </div>
     <div class="main-section-row">
-        <span class="glyphicon glyphicon-ok"></span> Our tests are a great way to test your skills and to learn new things.
+        <span class="glyphicon glyphicon-ok"></span> Our tests are a great way to test your skills and to learn new things
     </div>
     <div class="main-section-row">
-        <span class="glyphicon glyphicon-ok"></span> The questions cover many different topics and we often add new questions and categories.
+        <span class="glyphicon glyphicon-ok"></span> The questions cover many different topics and we often add new questions and categories
     </div>
     <hr class="hr-green"/>
 </div>
-
 <div class="quiz-container">
+    <div class="quiz-settings">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+        <span class="settings-label"> Settings </span>
+        <div class="quiz-setting">
+            Show quiz description sections <input type="checkbox" id="showQuizDescriptionSections"/>
+        </div>
+    </div>
+    <hr class="hr-green" />
     <div class="quiz-title">
         <span class="lucida-sans-font">C# Quiz</span>
     </div>

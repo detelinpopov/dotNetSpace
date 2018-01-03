@@ -1,13 +1,14 @@
 .div-item {
-    font-family: 'Nunito', sans-serif;
-    font-size: large;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
     padding-top: 10px;
 }
 
 .quiz-completed-title {
     color: green;
-    font-family: 'Nunito', sans-serif;
-    font-size: x-large;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    padding-top: 10px;
 }
 
 .quiz-completed-buttons {

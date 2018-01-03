@@ -299,19 +299,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 17:07:36</publishTime>
     </File>
     <File Include="Content/quizCompleted.css">
-      <publishTime>01/02/2018 14:40:45</publishTime>
+      <publishTime>01/03/2018 16:49:33</publishTime>
     </File>
     <File Include="Content/quizCompleted.min.css">
-      <publishTime>01/02/2018 14:40:46</publishTime>
+      <publishTime>01/03/2018 16:49:33</publishTime>
     </File>
     <File Include="Content/quizContact.css">
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/03/2018 15:11:53</publishTime>
+      <publishTime>01/03/2018 16:58:09</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/03/2018 15:11:54</publishTime>
+      <publishTime>01/03/2018 16:58:10</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/03/2018 09:34:21</publishTime>
@@ -380,7 +380,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/25/2017 10:02:12</publishTime>
     </File>
     <File Include="Images/quizIncludesQuestionsFrom.png">
-      <publishTime>01/03/2018 14:20:55</publishTime>
+      <publishTime>01/03/2018 17:03:47</publishTime>
     </File>
     <File Include="Images/tick.png">
       <publishTime>09/21/2017 15:42:39</publishTime>
@@ -422,10 +422,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="Scripts/index.js">
-      <publishTime>09/27/2017 13:22:48</publishTime>
+      <publishTime>01/03/2018 16:36:01</publishTime>
     </File>
     <File Include="Scripts/index.min.js">
-      <publishTime>10/26/2017 11:05:59</publishTime>
+      <publishTime>01/03/2018 16:36:02</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -500,13 +500,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 18:17:19</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/03/2018 14:42:28</publishTime>
+      <publishTime>01/03/2018 17:00:23</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>01/03/2018 12:44:05</publishTime>
     </File>
     <File Include="Views/Quiz/QuizCompleted.cshtml">
-      <publishTime>01/03/2018 12:48:26</publishTime>
+      <publishTime>01/03/2018 16:48:58</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>09/29/2017 13:24:37</publishTime>

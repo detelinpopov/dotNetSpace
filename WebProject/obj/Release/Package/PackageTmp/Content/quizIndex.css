@@ -53,14 +53,14 @@
 .quiz-title {
     color: green;
     font-family: 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+    padding-bottom: 10px;
     font-weight: bold;
 }
 
 .lucida-sans-font {
     color: green;
     font-family: 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 26px;
     text-indent: 30px;
 }
@@ -73,16 +73,15 @@
 .quiz-description {
     color: green;
     font-family: 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     padding-bottom: 5px;
-    padding-top: 5px;
 }
 
 .quiz-start-test-button-container {
     padding-bottom: 10px;
-    padding-top: 20px;
     padding-left: 100px;
+    padding-top: 20px;
 }
 
 .quiz-description-value {
@@ -115,3 +114,25 @@
 }
 
 .main-section-row { padding-bottom: 5px; }
+
+.quiz-settings {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.settings-label {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.quiz-setting {
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.quiz-description, .quiz-description-category {
+    display: none;
+}
