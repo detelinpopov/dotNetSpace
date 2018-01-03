@@ -23,23 +23,28 @@
     <img src="~/Images/welcomeToQuiz4Net.png" alt="Welcome to Quiz4Net" class="img-responsive"/>
 </div>
 <hr class="hr"/>
-<div class="quiz-row">
-    <div class="quiz-quote"> "First, solve the problem. Then, write the code." - John Johnson </div>
-    <div> <span class="glyphicon glyphicon-ok"></span> It needs a lot of practise and dedication to become a good software engineer.
+<div class="quiz-row lucida-sans-font-clean">
+    <div class="quiz-quote">
+        <img src="~/Images/firstSolveTheProblem.png" class="img-responsive"/>
     </div>
-    <div> <span class="glyphicon glyphicon-ok"></span> Our tests are a great way to test your skills and to learn new things.
+    <div class="main-section-row">
+        <span class="glyphicon glyphicon-ok"></span> It needs a lot of practise and dedication to become a good software engineer.
     </div>
-    <div> <span class="glyphicon glyphicon-ok"></span> The questions cover many different topics and we often add new questions and categories.
+    <div class="main-section-row">
+        <span class="glyphicon glyphicon-ok"></span> Our tests are a great way to test your skills and to learn new things.
+    </div>
+    <div class="main-section-row">
+        <span class="glyphicon glyphicon-ok"></span> The questions cover many different topics and we often add new questions and categories.
     </div>
     <hr class="hr-green"/>
 </div>
 
 <div class="quiz-container">
     <div class="quiz-title">
-        C# Quiz
+        <span class="lucida-sans-font">C# Quiz</span>
     </div>
     <div class="quiz-description">
-        The quiz includes questions from the following categories:
+        <img src="~/Images/quizIncludesQuestionsFrom.png" class="img-responsive"/>
     </div>
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
@@ -72,22 +77,22 @@
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
         Object-Oriented Programming
-    </div>      
+    </div>
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
         Data Structures
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label"> Number of questions: </span>  20 
+        <span class="quiz-details-label"> Number of questions: </span> 20
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Time: </span> Unlimited
+        <span class="quiz-details-label"> Time: </span> Unlimited
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Question type: </span> Multiple choice
+        <span class="quiz-details-label"> Question type: </span> Multiple choice
     </div>
     <div class="quiz-start-test-button-container">
         <a title="C# Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="start-quiz-button"> Start Quiz </a>
@@ -96,10 +101,10 @@
 <hr class="hr-green"/>
 <div class="quiz-container">
     <div class="quiz-title">
-        Data Structures Quiz
+        <span class="lucida-sans-font"> Data Structures Quiz </span>
     </div>
     <div class="quiz-description">
-        The quiz includes questions from the following categories:
+        <img src="~/Images/quizIncludesQuestionsFrom.png" class="img-responsive"/>
     </div>
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
@@ -122,28 +127,28 @@
         Algorithm Complexity
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label"> Number of questions: </span>  20
+        <span class="quiz-details-label"> Number of questions: </span> 20
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Time: </span> Unlimited
+        <span class="quiz-details-label"> Time: </span> Unlimited
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Question type: </span> Multiple choice
+        <span class="quiz-details-label"> Question type: </span> Multiple choice
     </div>
     <div class="quiz-start-test-button-container">
         <a title="Data Structures Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.DataStructures})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-green" />
+<hr class="hr-green"/>
 <div class="quiz-container">
     <div class="quiz-title">
-        ASP.Net MVC Quiz
+        <span class="lucida-sans-font"> ASP.Net MVC Quiz </span>
     </div>
     <div class="quiz-description">
-        The quiz includes questions from the following categories:
+        <img src="~/Images/quizIncludesQuestionsFrom.png" class="img-responsive"/>
     </div>
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
@@ -178,28 +183,28 @@
         Dependency Injection
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label"> Number of questions: </span>  20
+        <span class="quiz-details-label"> Number of questions: </span> 20
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Time: </span> Unlimited
+        <span class="quiz-details-label"> Time: </span> Unlimited
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Question type: </span> Multiple choice
+        <span class="quiz-details-label"> Question type: </span> Multiple choice
     </div>
     <div class="quiz-start-test-button-container">
         <a title="ASP.Net MVC Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-green" />
+<hr class="hr-green"/>
 <div class="quiz-container">
     <div class="quiz-title">
-        JavaScript Quiz
+        <span class="lucida-sans-font"> JavaScript Quiz </span>
     </div>
     <div class="quiz-description">
-        The quiz includes questions from the following categories:
+        <img src="~/Images/quizIncludesQuestionsFrom.png" class="img-responsive"/>
     </div>
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
@@ -242,28 +247,28 @@
         DOM Manipulation
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label"> Number of questions: </span>  20
+        <span class="quiz-details-label"> Number of questions: </span> 20
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Time: </span> Unlimited
+        <span class="quiz-details-label"> Time: </span> Unlimited
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Question type: </span> Multiple choice
+        <span class="quiz-details-label"> Question type: </span> Multiple choice
     </div>
     <div class="quiz-start-test-button-container">
         <a title="JavaScript Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-green" />
+<hr class="hr-green"/>
 <div class="quiz-container">
     <div class="quiz-title">
-        SharePoint 2016 Quiz
+        <span class="lucida-sans-font"> SharePoint 2016 Quiz </span>
     </div>
     <div class="quiz-description">
-        The quiz includes questions from the following categories:
+        <img src="~/Images/quizIncludesQuestionsFrom.png" class="img-responsive"/>
     </div>
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
@@ -292,30 +297,30 @@
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
         Use SharePoint with Microsoft Word, Excel, Outlook, and OneNote
-    </div>  
-    <div class="quiz-description-value">
-        <span class="quiz-details-label"> Number of questions: </span>  20
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+        <span class="quiz-details-label"> Number of questions: </span> 20
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Time: </span> Unlimited
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Question type: </span> Multiple choice
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Question type: </span> Multiple choice
     </div>
     <div class="quiz-start-test-button-container">
         <a title="SharePoint 2016 Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-green" />
+<hr class="hr-green"/>
 <div class="quiz-container">
     <div class="quiz-title">
-        Sql Server Quiz
+        <span class="lucida-sans-font"> Sql Server Quiz </span>
     </div>
     <div class="quiz-description">
-        The quiz includes questions from the following categories:
+        <img src="~/Images/quizIncludesQuestionsFrom.png" class="img-responsive"/>
     </div>
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
@@ -350,28 +355,28 @@
         Transactions
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label"> Number of questions: </span>  20
+        <span class="quiz-details-label"> Number of questions: </span> 20
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Time: </span> Unlimited
+        <span class="quiz-details-label"> Time: </span> Unlimited
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Question type: </span> Multiple choice
+        <span class="quiz-details-label"> Question type: </span> Multiple choice
     </div>
     <div class="quiz-start-test-button-container">
         <a title="Sql Server Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SqlServer})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-green" />
+<hr class="hr-green"/>
 <div class="quiz-container">
     <div class="quiz-title">
-        Entity Framework Quiz
+        <span class="lucida-sans-font"> Entity Framework Quiz </span>
     </div>
     <div class="quiz-description">
-        The quiz includes questions from the following categories:
+        <img src="~/Images/quizIncludesQuestionsFrom.png" class="img-responsive"/>
     </div>
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
@@ -392,18 +397,18 @@
     <div class="quiz-description-category">
         <span class="glyphicon glyphicon-ok"></span>
         Relationships
-    </div>  
-    <div class="quiz-description-value">
-        <span class="quiz-details-label"> Number of questions: </span>  20
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+        <span class="quiz-details-label"> Number of questions: </span> 20
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Time: </span> Unlimited
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
     </div>
     <div class="quiz-description-value">
-        <span class="quiz-details-label">  Question type: </span> Multiple choice
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Question type: </span> Multiple choice
     </div>
     <div class="quiz-start-test-button-container">
         <a title="Entity Framework Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="start-quiz-button"> Start Quiz </a>
