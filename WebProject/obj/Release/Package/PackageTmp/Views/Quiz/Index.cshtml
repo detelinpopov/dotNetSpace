@@ -18,42 +18,394 @@
 
 <div id="messageDialog" class="user-message-field"> @userMessage </div>
 
-@Html.Partial("_Menu")
 <div class="quiz-title">
+    <img src="~/Images/quiz4net_logo.png" class="img-responsive"/>
     <img src="~/Images/welcomeToQuiz4Net.png" alt="Welcome to Quiz4Net" class="img-responsive"/>
 </div>
 <hr class="hr"/>
-<div class="quiz-row">    
-    <span> It needs a lot of practise and dedication to become a good software engineer. Our tests are a great way to test your skills and to learn new things. </span>
+<div class="quiz-row">
+    <span> It needs a lot of practise and dedication to become a good software engineer. Our tests are a great way to test your skills and to learn new things. The questions cover many different topics and we often add new questions and categories. We guarantee that the content is always up-to-date.</span>
     <hr class="hr-green"/>
 </div>
-<div class="quiz-row">
-    <span> We tried to make a combination of basic, more advaced are some really complicated questions. The questions cover many different topics. </span>
-    <hr class="hr-green"/>
-</div>
-<div class="quiz-row">
-    <span> Don't worry if you cannot answer correctly! The purpose of the quiz is to help you learn. It is NOT easy, our idea is to challenge you. </span>
-    <hr class="hr-green" />
-</div>
-<div class="quiz-row">
-    <span> We often add new questions and categories. We guarantee that the content is always up-to-date. </span>
-    <hr class="hr-green" />
-</div>
-<div class="section-buttons">
-    <div class="button-section">
-        <a title="C# Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="button"> Start C# Test </a>
-        <a title="Data Structures Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.DataStructures})" class="button"> Start Data Structures Test </a>
-        <a title="ASP.Net MVC Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="button"> Start ASP.Net MVC Test </a>
+
+<div class="quiz-container">
+    <div class="quiz-title">
+        C# Quiz
     </div>
-    <div class="button-section">
-        <a title="JavaScript Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="button"> Start JavaScript Test </a>
-        <a title="SharePoint 2016 Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="button"> Start SharePoint 2016 Test </a>
-        <a title="Sql Server Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SqlServer})" class="button"> Start Sql Server Test </a>
+    <div class="quiz-description">
+        The quiz includes questions from the following categories:
     </div>
-    <div class="button-section">
-        <a title="Entity Framework Test" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="button"> Start Entity Framework Test </a>       
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Primitive Types and Variables
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Operators and Expressions
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Conditional Statements
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Loops
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Arrays
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Methods
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Exceptions
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Object-Oriented Programming
+    </div>      
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Data Structures
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Number of questions: </span>  20 
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Time: </span> Unlimited
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Question type: </span> Multiple choice
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="C# Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
+<hr class="hr-green"/>
+<div class="quiz-container">
+    <div class="quiz-title">
+        Data Structures Quiz
+    </div>
+    <div class="quiz-description">
+        The quiz includes questions from the following categories:
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Linear Data Structures
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Trees and Graphs
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Conditional Statements
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Dictionaries, Hash-Tables and Sets
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Algorithm Complexity
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Number of questions: </span>  20
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Time: </span> Unlimited
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Question type: </span> Multiple choice
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Data Structures Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.DataStructures})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-green" />
+<div class="quiz-container">
+    <div class="quiz-title">
+        ASP.Net MVC Quiz
+    </div>
+    <div class="quiz-description">
+        The quiz includes questions from the following categories:
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Controllers
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Views
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Models
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Forms and HTML Helpers
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Data Annotations and Validations
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Ajax
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Routing
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Dependency Injection
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Number of questions: </span>  20
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Time: </span> Unlimited
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Question type: </span> Multiple choice
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="ASP.Net MVC Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-green" />
+<div class="quiz-container">
+    <div class="quiz-title">
+        JavaScript Quiz
+    </div>
+    <div class="quiz-description">
+        The quiz includes questions from the following categories:
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Syntax
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Statements
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Variables
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Operators
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Data Types
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Functions
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Scope
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Arrays
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Object-Oriented Concepts
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        DOM Manipulation
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Number of questions: </span>  20
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Time: </span> Unlimited
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Question type: </span> Multiple choice
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="JavaScript Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-green" />
+<div class="quiz-container">
+    <div class="quiz-title">
+        SharePoint 2016 Quiz
+    </div>
+    <div class="quiz-description">
+        The quiz includes questions from the following categories:
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Create, edit, share, and manage documents
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Create sites, organize them, and customize their layouts, features, and apps
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Efficiently organize content by using lists, libraries, and sites
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Manage site security, themes, templates, and content syndication
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Search for information and people
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Communicate and collaborate via SharePoint’s social features
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Use SharePoint with Microsoft Word, Excel, Outlook, and OneNote
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Number of questions: </span>  20
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Time: </span> Unlimited
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Question type: </span> Multiple choice
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="SharePoint 2016 Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-green" />
+<div class="quiz-container">
+    <div class="quiz-title">
+        Sql Server Quiz
+    </div>
+    <div class="quiz-description">
+        The quiz includes questions from the following categories:
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Tables
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Relationships
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Indexes
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Constraints
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Views
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Stored Procedures
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Triggers
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Transactions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Number of questions: </span>  20
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Time: </span> Unlimited
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Question type: </span> Multiple choice
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Sql Server Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SqlServer})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-green" />
+<div class="quiz-container">
+    <div class="quiz-title">
+        Entity Framework Quiz
+    </div>
+    <div class="quiz-description">
+        The quiz includes questions from the following categories:
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Database Initialization
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Code-First Conventions
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Configure Domain Classes
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Data Annotations
+    </div>
+    <div class="quiz-description-category">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Relationships
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Number of questions: </span>  20
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Time: </span> Unlimited
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label">  Question type: </span> Multiple choice
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Entity Framework Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-green" />
+    
+
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/index.min.js"></script>

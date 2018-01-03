@@ -1,22 +1,14 @@
-.quiz-title {
-    font-family: 'Nunito', sans-serif;
-    font-size: xx-large;
-}
-
 .quiz-quote {
+    color: green;
     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
     padding-bottom: 5px;
     padding-left: 12px;
-    font-weight: bold;
-    font-size: 16px;
-    color: green;
 }
 
 .quiz-row {
     font-family: 'Nunito', sans-serif;
-    padding-bottom: 5px;
-    padding-left: 12px;
-    color: black;
     font-size: 16px;
 }
 
@@ -44,4 +36,69 @@
     padding-bottom: 40px;
 }
 
-.button-section{ padding-bottom: 30px; padding-top: 10px;}
+.button-section {
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.quiz-container { width: 500px;}
+
+.start-quiz-button {
+    -moz-border-radius: 10px;
+    -moz-box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
+    background: #44C767;
+    border: solid 1px #44C767;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
+    color: #FFF;
+    margin: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #44C767;
+}
+
+.quiz-title {
+    color: green;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.quiz-description {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.quiz-description-category {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.fa-check {
+    color: green;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.quiz-start-test-button-container {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.quiz-description-value {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.quiz-details-label {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+}
