@@ -17,7 +17,7 @@ namespace WebProject.Models.Quiz
 
         public int Number { get; set; }
 
-        public int TotalQuestionsCount { get; set; } = 10;
+        public int TotalQuestionsCount { get; set; } = 20;
 
         public string SelectedQuestionCategory { get; set; }
 

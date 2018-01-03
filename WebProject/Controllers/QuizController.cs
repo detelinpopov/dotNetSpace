@@ -13,7 +13,7 @@ namespace WebProject.Controllers
 {
     public class QuizController : Controller
     {
-        private const int TotalQuestionsCount = 10;
+        private const int TotalQuestionsCount = 20;
 
         private readonly IQuestionService _questionService;
 
