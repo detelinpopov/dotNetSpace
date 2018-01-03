@@ -1,14 +1,5 @@
-.quiz-quote {
-    color: green;
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    padding-bottom: 5px;
-    padding-left: 12px;
-}
-
 .quiz-row {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
 }
 
@@ -31,7 +22,7 @@
 .user-message-field {
     color: green;
     display: none;
-    font-family: Times New Roman;
+    font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     padding-bottom: 40px;
 }
@@ -41,7 +32,7 @@
     padding-top: 10px;
 }
 
-.quiz-container { width: 500px;}
+.quiz-container { width: 500px; }
 
 .start-quiz-button {
     -moz-border-radius: 10px;
@@ -61,23 +52,31 @@
 
 .quiz-title {
     color: green;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     font-weight: bold;
 }
 
+.lucida-sans-font {
+    color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    text-indent: 30px;
+}
+
+.lucida-sans-font-clean {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
 .quiz-description {
     color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
     padding-bottom: 5px;
     padding-top: 5px;
-}
-
-.quiz-description-category {
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    padding-bottom: 5px;
 }
 
 .quiz-start-test-button-container {
@@ -86,15 +85,21 @@
 }
 
 .quiz-description-value {
+    font-size: 16px;
     padding-bottom: 5px;
     padding-top: 5px;
-    font-size: 16px;
 }
 
 .quiz-details-label {
     color: green;
     font-size: 16px;
     font-weight: bold;
+}
+
+.quiz-description-category {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
 }
 
 .glyphicon-ok {
@@ -104,6 +109,8 @@
 }
 
 .quiz-quote {
-    font-style: italic;
     font-size: 18px;
+    font-style: italic;
 }
+
+.main-section-row { padding-bottom: 5px; }
