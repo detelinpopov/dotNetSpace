@@ -133,3 +133,7 @@
     padding-left: 10px;
     font-size: 15px;
 }
+
+.quiz-description, .quiz-description-category {
+    display: none;
+}

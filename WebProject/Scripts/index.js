@@ -4,14 +4,14 @@
         $("#messageDialog").show(2000);
     }
 
-    $("#hideQuizDescriptionSections").click(function() {
+    $("#showQuizDescriptionSections").click(function() {
         var hideSections = $(this);
         if (hideSections.is(":checked")) {
-            $(".quiz-description").hide("slow");
-            $(".quiz-description-category").hide("slow");
-        } else {
             $(".quiz-description").show("slow");
             $(".quiz-description-category").show("slow");
+        } else {
+            $(".quiz-description").hide("slow");
+            $(".quiz-description-category").hide("slow");
         }
     });
 });
