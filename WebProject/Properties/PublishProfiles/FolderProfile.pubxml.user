@@ -158,7 +158,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>01/03/2018 14:44:07</publishTime>
+      <publishTime>01/03/2018 15:12:55</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -308,10 +308,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/03/2018 14:42:40</publishTime>
+      <publishTime>01/03/2018 15:11:53</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/03/2018 14:42:41</publishTime>
+      <publishTime>01/03/2018 15:11:54</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/03/2018 09:34:21</publishTime>
@@ -392,7 +392,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 12:22:36</publishTime>
     </File>
     <File Include="Images/welcomeToQuiz4Net.png">
-      <publishTime>01/02/2018 11:20:02</publishTime>
+      <publishTime>01/03/2018 15:05:53</publishTime>
     </File>
     <File Include="Images/weSupport.png">
       <publishTime>10/13/2017 10:32:57</publishTime>

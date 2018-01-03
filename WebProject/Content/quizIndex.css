@@ -55,6 +55,7 @@
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .lucida-sans-font {
@@ -76,13 +77,12 @@
     font-size: 16px;
     font-weight: bold;
     padding-bottom: 5px;
-    padding-top: 5px;
 }
 
 .quiz-start-test-button-container {
     padding-bottom: 10px;
-    padding-top: 20px;
     padding-left: 100px;
+    padding-top: 20px;
 }
 
 .quiz-description-value {
@@ -115,3 +115,21 @@
 }
 
 .main-section-row { padding-bottom: 5px; }
+
+.quiz-settings {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.settings-label {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.quiz-setting {
+    padding-left: 10px;
+    font-size: 15px;
+}
