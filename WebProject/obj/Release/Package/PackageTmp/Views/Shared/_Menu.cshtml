@@ -16,22 +16,6 @@
     <div>
         <a href="@Url.Action("Index", "Quiz")">
             <img title="Quiz4Net" src="~/Images/quiz4net_logo.png" alt="Quiz4Net Logo" class="quiz4net-menu-logo" />
-        </a>
-        @if (User.Identity.IsAuthenticated)
-        {
-    <a href="@Url.Action("Logout", "Account")">
-        <i class="fa fa-sign-out" aria-hidden="true" title="Logout"></i>
-    </a>
-        }
-        else
-        {
-    <a href="@Url.Action("Login", "Account")">
-        <i class="fa fa-sign-in" aria-hidden="true" title="Login"></i>
-    </a>
-        }
-        <a href="@Url.Action("Contact", "Home")">
-            <i class="fa fa-envelope" aria-hidden="true" title="Contact"></i>
-        </a>
-        <hr class="hr-green" />
+        </a>     
     </div>
 </body>
