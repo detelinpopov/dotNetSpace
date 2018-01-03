@@ -9,6 +9,7 @@
 
 <link href="~/Content/quizMenu.min.css" rel="stylesheet">
 <link href="~/Content/quizIndex.min.css" rel="stylesheet">
+<link href="~/Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet">
 
 @if (TempData["UserMessage"] != null)
 {
@@ -40,6 +41,7 @@
 </div>
 <div class="quiz-container">
     <div class="quiz-settings">
+        <i class="fa fa-cog" aria-hidden="true"></i>
         <span class="settings-label"> Settings </span>
         <div class="quiz-setting">
             Show quiz description sections <input type="checkbox" id="showQuizDescriptionSections"/>
