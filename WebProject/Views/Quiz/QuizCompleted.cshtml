@@ -5,8 +5,9 @@
 }
 
 <link href="~/Content/quizCompleted.min.css" rel="stylesheet">
+<link href="~/Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet">
 @Html.Partial("_Menu")
-<div class="quiz-completed-title"> Quiz Completed</div>
+<div class="quiz-completed-title"> Quiz Completed <i class="fa fa-pencil" aria-hidden="true"></i></div>
 <div class="quiz-complete-result">
     @if (Model.QuizResult == CompletedQuizResult.Great)
     {
