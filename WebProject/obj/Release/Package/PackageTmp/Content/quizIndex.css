@@ -72,15 +72,15 @@
 
 .quiz-description {
     color: green;
-    font-family: 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
+    font-family: 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 5px;
 }
 
 .quiz-start-test-button-container {
     padding-bottom: 10px;
-    padding-left: 100px;
+    padding-left: 185px;
     padding-top: 20px;
 }
 
@@ -94,6 +94,7 @@
     color: green;
     font-size: 16px;
     font-weight: bold;
+    font-family: 'Lucida Sans', Arial, sans-serif;
 }
 
 .quiz-description-category {
@@ -111,6 +112,7 @@
 .quiz-quote {
     font-size: 18px;
     font-style: italic;
+    padding-bottom: 10px;
 }
 
 .main-section-row { padding-bottom: 5px; }
