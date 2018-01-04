@@ -308,10 +308,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/04/2018 13:54:30</publishTime>
+      <publishTime>01/04/2018 14:16:25</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/04/2018 13:54:31</publishTime>
+      <publishTime>01/04/2018 14:16:25</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/03/2018 09:34:21</publishTime>
@@ -500,7 +500,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 18:17:19</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/04/2018 13:51:39</publishTime>
+      <publishTime>01/04/2018 14:14:32</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>01/03/2018 12:44:05</publishTime>
