@@ -158,4 +158,9 @@
 
 #showQuizDescriptionSections { transform: scale(1.5); }
 
-.settings-label { padding-right: 5px; padding-top: 5px; }
+.settings-label {
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.hr-white { color: white; }
