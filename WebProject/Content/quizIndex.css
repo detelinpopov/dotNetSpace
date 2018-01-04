@@ -1,6 +1,7 @@
 .quiz-row {
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
+    padding-right: 10px !important;
 }
 
 .hr {
@@ -32,7 +33,10 @@
     padding-top: 10px;
 }
 
-.quiz-container { width: 500px; }
+.quiz-container {
+    padding-right: 10px !important;
+    width: 500px;
+}
 
 .start-quiz-button {
     -moz-border-radius: 10px;
@@ -55,8 +59,8 @@
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     padding-bottom: 10px;
-    padding-top: 10px;
     padding-left: 10px;
+    padding-top: 10px;
 }
 
 .lucida-sans-font {
@@ -74,9 +78,9 @@
 
 .quiz-description {
     color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 5px;
     padding-left: 10px;
 }
@@ -90,15 +94,15 @@
 .quiz-description-value {
     font-size: 16px;
     padding-bottom: 5px;
-    padding-top: 5px;
     padding-left: 10px;
+    padding-top: 5px;
 }
 
 .quiz-details-label {
     color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Lucida Sans', Arial, sans-serif;
 }
 
 .quiz-description-category {
@@ -128,7 +132,7 @@
     padding-bottom: 10px;
 }
 
-.settings-label {
+.settings-label-header {
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -145,7 +149,13 @@
 .index-header { padding-top: 20px; }
 
 .quiz-frame {
-    border-style: groove;
     border-color: #44C767;
+    border-style: groove;
     border-width: 25px;
 }
+
+.index-quote { padding-left: 15px; }
+
+#showQuizDescriptionSections { transform: scale(1.5); }
+
+.settings-label { padding-right: 5px; padding-top: 5px; }
