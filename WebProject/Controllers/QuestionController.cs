@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ using WebProject.Models.Quiz;
 
 namespace WebProject.Controllers
 {
+    [Authorize]
     public class QuestionController : Controller
     {
         private readonly IQuestionService _questionService;
@@ -22,6 +24,10 @@ namespace WebProject.Controllers
         [HttpGet]
         public ActionResult Create()
         {
+            if (User.Identity.Name != "admin")
+            {
+                throw new UnauthorizedAccessException();
+            }
             var model = new QuestionModel();
             for (var i = 0; i < 6; i++)
             {
@@ -33,6 +39,10 @@ namespace WebProject.Controllers
         [HttpPost]
         public async Task<ActionResult> Create(QuestionModel model, HttpPostedFileBase uploadImage)
         {
+            if (User.Identity.Name != "admin")
+            {
+                throw new UnauthorizedAccessException();
+            }
             var question = _questionService.CreateQuestion();
             question.Category = model.SelectedQuestionCategory;
             question.Text = model.Text;
