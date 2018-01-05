@@ -24,7 +24,7 @@
 <div class="div-question-image">
     @if (Model.Image != null && Model.Image.Length > 0)
     {
-        @Html.Raw("<img class='zooomin' src=\"data:image/jpeg;base64," + Convert.ToBase64String(Model.Image) + "\" />")
+        @Html.Raw("<img class='zooomin img-responsive' src=\"data:image/jpeg;base64," + Convert.ToBase64String(Model.Image) + "\" />")
     }
 </div>
 <div id="divResult" class="div-result"></div>

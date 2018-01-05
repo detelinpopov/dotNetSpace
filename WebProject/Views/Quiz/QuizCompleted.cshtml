@@ -11,23 +11,23 @@
 <div class="quiz-complete-result">
     @if (Model.QuizResult == CompletedQuizResult.Great)
     {
-    <span> <i class="fa fa-trophy" aria-hidden="true"></i> Perfect! All your answers are correct! You are a real champion! </span>
+    <span> <i class="fa fa-trophy" aria-hidden="true"></i> Incredible! All your answers are correct! </span>
     }
     else if (Model.QuizResult == CompletedQuizResult.VeryGood)
     {
-    <span> <i class="fa fa-star" aria-hidden="true"></i> Great result! You are a star! </span>
+    <span> <i class="fa fa-star" aria-hidden="true"></i> Perfect result! You are a star! </span>
     }
     else if (Model.QuizResult == CompletedQuizResult.Good)
     {
-    <span> <i class="fa fa-check" aria-hidden="true"></i> Good job! You have very good understanding! </span>
+    <span> <i class="fa fa-check" aria-hidden="true"></i> Great job! You have a very good understanding! </span>
     }
     else if (Model.QuizResult == CompletedQuizResult.Mediocre)
     {
-        <span> <i class="fa fa-check" aria-hidden="true"></i> Good! You can improve your results if you practise a little bit more.</span>
+        <span> <i class="fa fa-check" aria-hidden="true"></i> Good job! You can improve your results if you practise a little bit more!</span>
     }
     else
     {
-        <span> The quiz is not very easy. Practise more to improve your results. </span>
+        <span> <i class="fa fa-graduation-cap" aria-hidden="true"></i> The quiz is quite tricky. Practise more to improve your results. </span>
     }
 </div>
 <hr class="hr"/>

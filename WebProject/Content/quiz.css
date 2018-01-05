@@ -2,11 +2,12 @@
     font-size: x-large;
     padding-bottom: 10px;
     padding-top: 10px;
+    display: none;
 }
 
 .answer {
-    font-family: Times New Roman;
-    font-size: x-large
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
 
 .question-buttons { padding-top: 30px }
@@ -18,8 +19,8 @@
 }
 
 .question {
-    font-family: Times New Roman;
-    font-size: xx-large;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
 }
 
 .green-answer { color: green; }
@@ -28,17 +29,10 @@
 
 .div-result-wrong { color: red; }
 
-.div-result-please-select { color: #DAA520; }
-
 .div-result {
     display: none;
-    font-family: Times New Roman;
-    font-size: x-large;
-}
-
-.answered {
-    font-size: xx-large;
-    padding-top: 20px;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
 
 .div-question-image {
@@ -75,7 +69,7 @@
     border-radius: 10px;
     box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
     color: #FFF;
-    margin: 3px;
+    margin: 5px;
     padding: 8px 12px;
     text-decoration: none;
     text-shadow: 0 -1px 0 #44C767;
