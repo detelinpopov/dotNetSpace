@@ -38,6 +38,9 @@
 
                 $("#nextQuestion").fadeIn(1000);
                 $("#finishTestLink").fadeIn(1000);
+            
+                var resultDiv = $("#divResult");
+                $("html, body").animate({ scrollTop: resultDiv.offset().top - ($(window).height() / 2) }, 1000);
             }
         });
     });
@@ -59,13 +62,13 @@
             self.AnswerIds = answerIds;
         });
     }
-
+  
     $(function () {
         $("#finishTestLink").click(function (event) {
             event.preventDefault();
             $('<div title="Confirm"></div>').dialog({
                 open: function (event, ui) {
-                    $(this).html("Are you sure you want to finish the test?");
+                    $(this).html("Are you sure you want to finish the quiz?");
                 },
                 close: function () {
                     $(this).remove();

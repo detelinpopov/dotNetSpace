@@ -158,7 +158,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>01/03/2018 15:12:55</publishTime>
+      <publishTime>01/05/2018 10:48:34</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -284,10 +284,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/14/2016 17:34:06</publishTime>
     </File>
     <File Include="Content/quiz.css">
-      <publishTime>01/03/2018 09:33:31</publishTime>
+      <publishTime>01/05/2018 10:39:29</publishTime>
     </File>
     <File Include="Content/quiz.min.css">
-      <publishTime>01/03/2018 09:33:31</publishTime>
+      <publishTime>01/05/2018 10:39:29</publishTime>
     </File>
     <File Include="Content/quizAbout.css">
       <publishTime>10/19/2017 08:04:20</publishTime>
@@ -299,25 +299,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 17:07:36</publishTime>
     </File>
     <File Include="Content/quizCompleted.css">
-      <publishTime>01/03/2018 16:49:33</publishTime>
+      <publishTime>01/05/2018 10:09:37</publishTime>
     </File>
     <File Include="Content/quizCompleted.min.css">
-      <publishTime>01/03/2018 16:49:33</publishTime>
+      <publishTime>01/05/2018 10:09:38</publishTime>
     </File>
     <File Include="Content/quizContact.css">
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/04/2018 16:04:42</publishTime>
+      <publishTime>01/05/2018 10:16:40</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/04/2018 16:04:40</publishTime>
+      <publishTime>01/05/2018 10:16:40</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
-      <publishTime>01/03/2018 09:34:21</publishTime>
+      <publishTime>01/05/2018 10:07:41</publishTime>
     </File>
     <File Include="Content/quizMenu.min.css">
-      <publishTime>01/03/2018 09:34:21</publishTime>
+      <publishTime>01/05/2018 10:07:41</publishTime>
     </File>
     <File Include="Content/Site.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -401,10 +401,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="Scripts/answer.js">
-      <publishTime>10/12/2017 12:13:48</publishTime>
+      <publishTime>01/05/2018 10:29:41</publishTime>
     </File>
     <File Include="Scripts/answer.min.js">
-      <publishTime>10/26/2017 11:05:55</publishTime>
+      <publishTime>01/05/2018 10:29:41</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -422,10 +422,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="Scripts/index.js">
-      <publishTime>01/03/2018 16:36:01</publishTime>
+      <publishTime>01/05/2018 10:22:50</publishTime>
     </File>
     <File Include="Scripts/index.min.js">
-      <publishTime>01/03/2018 16:36:02</publishTime>
+      <publishTime>01/05/2018 10:22:50</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -459,6 +459,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Scripts/respond.min.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
+    </File>
+    <File Include="Scripts/ScrollReveal/scrollreveal.min.js">
+      <publishTime>01/05/2018 10:21:02</publishTime>
     </File>
     <File Include="Scripts/zooomin.js">
       <publishTime>08/17/2017 06:34:04</publishTime>
@@ -500,13 +503,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 18:17:19</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/04/2018 16:05:22</publishTime>
+      <publishTime>01/05/2018 10:21:38</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
-      <publishTime>01/03/2018 12:44:05</publishTime>
+      <publishTime>01/05/2018 10:31:50</publishTime>
     </File>
     <File Include="Views/Quiz/QuizCompleted.cshtml">
-      <publishTime>01/03/2018 16:48:58</publishTime>
+      <publishTime>01/05/2018 10:46:16</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>09/29/2017 13:24:37</publishTime>

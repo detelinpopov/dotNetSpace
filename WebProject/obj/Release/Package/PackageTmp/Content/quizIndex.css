@@ -54,7 +54,7 @@
     text-shadow: 0 -1px 0 #44C767;
 }
 
-.quiz-title {
+.quiz-header-container {
     color: green;
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
@@ -105,7 +105,7 @@
     font-weight: bold;
 }
 
-.quiz-description-category {
+.quiz-description-topic {
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     padding-bottom: 5px;
@@ -144,7 +144,7 @@
     padding-left: 20px;
 }
 
-.quiz-description, .quiz-description-category { display: none; }
+.quiz-description, .quiz-description-topic { display: none; }
 
 .index-header { padding-top: 20px; }
 
@@ -154,7 +154,7 @@
     border-width: 25px;
 }
 
-.index-quote { padding-left: 15px; }
+.quiz-index-quote { padding-left: 10px; }
 
 #showQuizDescriptionSections { transform: scale(1.5); }
 
