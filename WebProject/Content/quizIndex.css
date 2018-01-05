@@ -134,7 +134,7 @@
 
 .settings-label-header {
     font-family: 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     padding-bottom: 10px;
 }
@@ -161,6 +161,7 @@
 .settings-label {
     padding-right: 5px;
     padding-top: 5px;
+    font-size: 16px;
 }
 
 .hr-white { color: white; }
