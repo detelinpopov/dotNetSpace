@@ -42,7 +42,6 @@
             @Html.Hidden(nameof(ResponseModel) + "." + nameof(ResponseModel.AnswerIds) + "[" + i + "]", 0, new {id = "hiddenAnswerId" + Model.Answers[i].Id})
         </div>
     }
-
     <div class="question-buttons">
         <a id="checkAnswer" data-request-url="@Url.Action("CheckAnswers", "Quiz")" class="button"> Submit </a>
         <button id="nextQuestion" type="submit" class="button"> Next </button>

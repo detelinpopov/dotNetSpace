@@ -4,14 +4,17 @@
         $("#messageDialog").show(2000);
     }
 
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal(".quiz-container", { duration: 1000, distance: 1000, mobile: true });
+   
     $("#showQuizDescriptionSections").click(function() {
         var hideSections = $(this);
         if (hideSections.is(":checked")) {
             $(".quiz-description").show("slow");
-            $(".quiz-description-category").show("slow");
+            $(".quiz-description-topic").show("slow");
         } else {
             $(".quiz-description").hide("slow");
-            $(".quiz-description-category").hide("slow");
+            $(".quiz-description-topic").hide("slow");
         }
     });
 });
