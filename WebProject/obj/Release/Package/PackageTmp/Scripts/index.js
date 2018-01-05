@@ -17,4 +17,11 @@
             $(".quiz-description-topic").hide("slow");
         }
     });
+
+    $("#searchQuizText").on('change', function () {        
+        var element = $(".quiz-container[name*='" + $(this).val().toLowerCase() + "']");
+        if (element != null && element.length > 0) {
+            $("html, body").animate({ scrollTop: element.offset().top - ($(window).height() / 2) }, 1000);
+        }
+    });
 });
