@@ -20,11 +20,11 @@
             data: JSON.stringify(responseModel),          
             success: function (response) {               
                 if (response.AnswerResult.toLowerCase() === "correct") {
-                    $("#divResult").text("Your answer is correct");
+                    $("#divResult").html("<span class='glyphicon glyphicon-ok'></span> Your answer is correct");
                     $("#divResult").addClass("div-result-correct");
                     $(".quiz-option").prop("disabled", true);
                 } else if (response.AnswerResult.toLowerCase() === "wrong") {
-                    $("#divResult").text("Your answer is wrong");
+                    $("#divResult").html("<span class='glyphicon glyphicon-remove'></span> Your answer is wrong");
                     $("#divResult").addClass("div-result-wrong");
                     $(".quiz-option").prop("disabled", true);
                 }

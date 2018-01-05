@@ -1,8 +1,8 @@
 #divResult {
+    display: none;
     font-size: x-large;
     padding-bottom: 10px;
     padding-top: 10px;
-    display: none;
 }
 
 .answer {
@@ -76,11 +76,17 @@
     width: 80px;
 }
 
-.padding-10 {
-    padding: 10px;
-}
+.padding-10 { padding: 10px; }
 
 a:hover {
     color: white;
     cursor: pointer;
 }
+
+.quiz-option { transform: scale(1.5); }
+
+.answer-text { padding-left: 5px; }
+
+.glyphicon-ok { font-size: 20px; }
+
+.glyphicon-remove { font-size: 20px; }
