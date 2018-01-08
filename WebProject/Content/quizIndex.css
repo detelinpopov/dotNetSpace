@@ -38,6 +38,11 @@
     width: 500px;
 }
 
+.quiz-container-first {
+    padding-right: 10px !important;
+    width: 500px;
+}
+
 .start-quiz-button {
     -moz-border-radius: 10px;
     -moz-box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
@@ -149,7 +154,7 @@
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 22px;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .quiz-setting {
@@ -188,5 +193,5 @@
 .hr-white { color: white; }
 
 #searchQuizText {
-    width: 120px;
+    width: 125px;
 }
