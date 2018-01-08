@@ -506,7 +506,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 18:17:19</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/08/2018 17:44:09</publishTime>
+      <publishTime>01/08/2018 17:59:44</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>01/05/2018 12:36:42</publishTime>
