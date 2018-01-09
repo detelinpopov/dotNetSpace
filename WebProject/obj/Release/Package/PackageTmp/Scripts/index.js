@@ -35,7 +35,6 @@
 
     $(function () {
         var availableQuizzes = [
-            "c#",
             "asp.net mvc",
             "mvc",
             "javascript",
@@ -44,8 +43,7 @@
             "sql server",
             "sharepoint",
             "data structures",
-            "entity framework"
-          
+            "entity framework"          
         ];
         $("#searchQuizText").autocomplete({
             source: availableQuizzes

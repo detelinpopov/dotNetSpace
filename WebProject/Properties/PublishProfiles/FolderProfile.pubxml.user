@@ -425,10 +425,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="Scripts/index.js">
-      <publishTime>01/09/2018 14:20:19</publishTime>
+      <publishTime>01/09/2018 14:25:56</publishTime>
     </File>
     <File Include="Scripts/index.min.js">
-      <publishTime>01/09/2018 14:20:19</publishTime>
+      <publishTime>01/09/2018 14:25:39</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
