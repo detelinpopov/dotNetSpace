@@ -28,9 +28,9 @@
         <img src="~/Images/theMostCompleteQuiz.png" class="img-responsive"/>
     </div>
 </div>
-<hr class="hr" />
-<div class="quiz-details">   
-    <span class="details-label-header"> About Quiz4Net </span>  
+<hr class="hr"/>
+<div class="quiz-details">
+    <span class="details-label-header"> About Quiz4Net </span>
     <div class="details-row">
         <span class="glyphicon glyphicon-ok"></span>
         Quiz4Net is a great way to test your skills and to prepare for a .Net interview
@@ -41,7 +41,7 @@
     </div>
     <div class="details-row">
         <span class="glyphicon glyphicon-ok"></span>
-        Our quizzes are created by very experienced professionals
+        Our high-quality quizzes are created by very experienced professionals
     </div>
 </div>
 <hr class="hr"/>
@@ -49,14 +49,20 @@
     <i class="fa fa-cog" aria-hidden="true"></i>
     <span class="settings-label-header"> Options </span>
     <div class="quiz-setting">
-        <span class="settings-label">Search </span>  <input type="text" id="searchQuizText"/>
+        <span class="settings-label">Search by keyword </span>      
+        <div>
+            <input type="text" id="searchQuizText" class="form-control"/>
+        </div>
+        <div id="searchByKeywordResult">
+            No items found 
+        </div>
     </div>
     <div class="quiz-setting">
-        <span class="settings-label">Display covered topics </span>  <input type="checkbox" id="showQuizDescriptionSections"/>
+        <span class="settings-label">Display covered topics </span> <input type="checkbox" id="showQuizDescriptionSections"/>
     </div>
 </div>
 <hr class="hr-green"/>
-<div class="quiz-container-first quiz-frame" name="c#">  
+<div class="quiz-container-first quiz-frame" name="c#">
     <div class="quiz-header-container">
         <span class="lucida-sans-font">C# Quiz</span>
     </div>
@@ -107,18 +113,18 @@
     </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Time: </span> Unlimited
-    </div> 
+    </div>
     <div class="quiz-start-test-button-container">
         <a title="C# Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white" />
+<hr class="hr-white"/>
 <div class="quiz-container quiz-frame" name="asp.net mvc">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> ASP.Net MVC Quiz </span>
     </div>
     <div class="quiz-description">
-         Topics covered:
+        Topics covered:
     </div>
     <div class="quiz-description-topic">
         <span class="glyphicon glyphicon-ok"></span>
@@ -160,12 +166,49 @@
     </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Time: </span> Unlimited
-    </div>  
+    </div>
     <div class="quiz-start-test-button-container">
         <a title="ASP.Net MVC Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
 <hr class="hr-white" />
+<div class="quiz-container quiz-frame" name="unit testing">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> Unit Testing Quiz </span>
+    </div>
+    <div class="quiz-description">
+        Topics covered:
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Unit Testing Basics
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Unit Testing Recommended Practices
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Test-Driven Development
+    </div>   
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Dependency Injection
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Unit Testing Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.UnitTesting})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white"/>
 <div class="quiz-container quiz-frame" name="javascript">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> JavaScript Quiz </span>
@@ -221,7 +264,7 @@
     </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Time: </span> Unlimited
-    </div>  
+    </div>
     <div class="quiz-start-test-button-container">
         <a title="JavaScript Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="start-quiz-button"> Start Quiz </a>
     </div>
@@ -241,7 +284,7 @@
     <div class="quiz-description-topic">
         <span class="glyphicon glyphicon-ok"></span>
         Trees and Graphs
-    </div>  
+    </div>
     <div class="quiz-description-topic">
         <span class="glyphicon glyphicon-ok"></span>
         Dictionaries, Hash-Tables and Sets
@@ -258,18 +301,18 @@
     </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Time: </span> Unlimited
-    </div>   
+    </div>
     <div class="quiz-start-test-button-container">
         <a title="Data Structures Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.DataStructures})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white" />
+<hr class="hr-white"/>
 <div class="quiz-container quiz-frame" name="sql server">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> Sql Server Quiz </span>
     </div>
     <div class="quiz-description">
-         Topics covered:
+        Topics covered:
     </div>
     <div class="quiz-description-topic">
         <span class="glyphicon glyphicon-ok"></span>
@@ -316,7 +359,7 @@
         <a title="Sql Server Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SqlServer})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white" />
+<hr class="hr-white"/>
 <div class="quiz-container quiz-frame" name="entity framework">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> Entity Framework Quiz </span>
@@ -352,12 +395,12 @@
     </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Time: </span> Unlimited
-    </div>  
+    </div>
     <div class="quiz-start-test-button-container">
         <a title="Entity Framework Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white" />
+<hr class="hr-white"/>
 <div class="quiz-container quiz-frame" name="sharepoint">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> SharePoint 2016 Quiz </span>
@@ -401,10 +444,13 @@
     </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Time: </span> Unlimited
-    </div> 
+    </div>
     <div class="quiz-start-test-button-container">
         <a title="SharePoint 2016 Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="start-quiz-button"> Start Quiz </a>
     </div>
+</div>
+<div class="footer">
+    <i class="fa fa-hand-o-up" aria-hidden="true"></i> Go to top
 </div>
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/ScrollReveal/scrollreveal.min.js"></script>

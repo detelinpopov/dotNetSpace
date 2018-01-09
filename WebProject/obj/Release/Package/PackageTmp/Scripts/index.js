@@ -5,7 +5,7 @@
     }
 
     window.sr = ScrollReveal({ reset: true });
-    sr.reveal(".quiz-container", { duration: 500, mobile: true });
+    sr.reveal(".quiz-container", { duration: 800, mobile: true, rotate: { x: 5, y: 5, z: 5 } });
    
     $("#showQuizDescriptionSections").click(function() {
         var hideSections = $(this);
@@ -21,8 +21,15 @@
     $("#searchQuizText").on('change', function () {        
         var element = $(".quiz-container[name*='" + $(this).val().toLowerCase() + "']");
         if (element != null && element.length > 0) {
+            $("#searchByKeywordResult").hide("slow");
             $("html, body").animate({ scrollTop: element.offset().top - ($(window).height() / 2) }, 1000);
-            $(this).val('');
+            $(this).val("");
+        } else {
+            $("#searchByKeywordResult").show("slow");
         }
+    });
+
+    $(".footer").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 2000);
     });
 });

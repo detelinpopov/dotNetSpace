@@ -5,7 +5,7 @@
     }
 
     window.sr = ScrollReveal({ reset: true });
-    sr.reveal(".quiz-container", { duration: 800, mobile: true });
+    sr.reveal(".quiz-container", { duration: 800, mobile: true, rotate: { x: 5, y: 5, z: 5 } });
    
     $("#showQuizDescriptionSections").click(function() {
         var hideSections = $(this);
