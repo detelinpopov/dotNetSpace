@@ -25,11 +25,16 @@
     function findQuizByKeyword() {
         var keywordInput = $("#searchQuizText");
         var element = $(".quiz-container[name*='" + keywordInput.val().trim().toLowerCase() + "']");
+        if (element == null || element.length === 0) {
+            element = $(".quiz-container-last[name*='" + keywordInput.val().trim().toLowerCase() + "']");
+        }
         if (element != null && element.length > 0) {
             $("#searchByKeywordResult").hide("slow");
             $("html, body").animate({ scrollTop: element.offset().top - ($(window).height() / 2) }, 1000);
             $(this).val("");
-        } else if (keywordInput.val() !== "" && keywordInput.val() !== null && keywordInput.val().trim().toLowerCase() !== "c#") {
+        } else if (keywordInput.val() !== "" &&
+            keywordInput.val() !== null &&
+            keywordInput.val().trim().toLowerCase() !== "c#") {
             $("#searchByKeywordResult").show("slow");
         } else {
             $("#searchByKeywordResult").hide("slow");

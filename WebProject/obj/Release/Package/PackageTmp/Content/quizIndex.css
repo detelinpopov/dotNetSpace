@@ -33,12 +33,7 @@
     padding-top: 10px;
 }
 
-.quiz-container {
-    padding-right: 10px !important;
-    width: 500px;
-}
-
-.quiz-container-first {
+.quiz-container, .quiz-container-first, .quiz-container-last {
     padding-right: 10px !important;
     width: 500px;
 }
