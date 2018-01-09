@@ -308,10 +308,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/09/2018 13:38:58</publishTime>
+      <publishTime>01/09/2018 15:46:11</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/09/2018 13:38:59</publishTime>
+      <publishTime>01/09/2018 15:46:11</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -425,10 +425,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="Scripts/index.js">
-      <publishTime>01/09/2018 14:25:56</publishTime>
+      <publishTime>01/09/2018 15:56:49</publishTime>
     </File>
     <File Include="Scripts/index.min.js">
-      <publishTime>01/09/2018 14:25:39</publishTime>
+      <publishTime>01/09/2018 15:56:50</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
