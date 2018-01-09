@@ -6,7 +6,7 @@
 
     window.sr = ScrollReveal({ reset: true });
     sr.reveal(".quiz-container", { duration: 800, mobile: true, rotate: { x: 5, y: 5, z: 5 } });
-   
+
     $("#showQuizDescriptionSections").click(function() {
         var hideSections = $(this);
         if (hideSections.is(":checked")) {
@@ -18,32 +18,37 @@
         }
     });
 
-    $("#searchQuizText").on('change', function () {        
-        var element = $(".quiz-container[name*='" + $(this).val().toLowerCase() + "']");
+    $("#searchQuizText").on("change", findQuizByKeyword);
+
+    $("#searchQuizText").on("click", findQuizByKeyword);
+
+    function findQuizByKeyword() {
+        var keywordInput = $("#searchQuizText");
+        var element = $(".quiz-container[name*='" + keywordInput.val().toLowerCase() + "']");
         if (element != null && element.length > 0) {
             $("#searchByKeywordResult").hide("slow");
             $("html, body").animate({ scrollTop: element.offset().top - ($(window).height() / 2) }, 1000);
             $(this).val("");
-        } else {
+        } else if (keywordInput.val() !== "" && keywordInput.val() !== null) {
             $("#searchByKeywordResult").show("slow");
+        } else {
+            $("#searchByKeywordResult").hide("slow");
         }
-    });
+    }
 
     $(".footer").click(function() {
         $("html, body").animate({ scrollTop: 0 }, 2000);
     });
 
-    $(function () {
+    $(function() {
         var availableQuizzes = [
-            "asp.net mvc",
-            "mvc",
-            "javascript",
-            "unit testing",
-            "testing",
-            "sql server",
-            "sharepoint",
-            "data structures",
-            "entity framework"          
+            "ASP.Net Mvc",
+            "JavaScript",
+            "Unit Testing",
+            "Sql Server",
+            "SharePoint",
+            "Data Structures",
+            "Entity Framework"
         ];
         $("#searchQuizText").autocomplete({
             source: availableQuizzes
