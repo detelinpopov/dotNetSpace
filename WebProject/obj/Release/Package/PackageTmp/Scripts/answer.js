@@ -51,6 +51,11 @@
         } else {
             $("#hiddenAnswerId" + $(this).attr("id")).val(0);
         }
+
+        var isSingleChoice = $("[name='singleChoiceQuestion']").val();
+        if (isSingleChoice === "True") {
+            $(":checkbox").not(this).prop("checked", false);
+        }
     });
 
     function ResponseModel() {
