@@ -14,7 +14,7 @@
 <div class="quiz4net-logo">
     <img src="~/Images/quiz4net_logo.png" alt="Quiz4Net Logo"/>
 </div>
-@Html.Hidden("singleChoiceQuestion", (Model.Answers.Count == 2).ToString())
+@Html.Hidden("singleChoiceQuestion", Model.HasSingleAnswer.ToString())
 <div class="question-number">
     Question @Model.Number / @Model.TotalQuestionsCount
 </div>

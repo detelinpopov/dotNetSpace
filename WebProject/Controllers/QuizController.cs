@@ -149,6 +149,7 @@ namespace WebProject.Controllers
 
             CorrectAnswersIds = question.Answers.Where(a => a.IsCorrect).Select(a => a.Id).ToList();
             var model = CreateQuestionModel(question);
+            model.HasSingleAnswer = question.Answers.Count == 2 || (CorrectAnswersIds.Count == 1 && !question.Answers.Any(a => a.Text.Trim().ToLower().Contains("all") && a.Text.Trim().ToLower().Contains("none")));
             return View("Question", model);
         }
 

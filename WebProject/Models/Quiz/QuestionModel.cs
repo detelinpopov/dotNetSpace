@@ -7,19 +7,15 @@ namespace WebProject.Models.Quiz
 {
     public class QuestionModel
     {
-        public int Id { get; set; }
+        public IList<AnswerModel> Answers { get; } = new List<AnswerModel>();
 
-        public string Text { get; set; }
+        public bool HasSingleAnswer { get; set; }
+
+        public int Id { get; set; }
 
         public byte[] Image { get; set; }
 
-        public IList<AnswerModel> Answers { get; } = new List<AnswerModel>();
-
         public int Number { get; set; }
-
-        public int TotalQuestionsCount { get; set; } = 20;
-
-        public string SelectedQuestionCategory { get; set; }
 
         public IList<SelectListItem> QuestionCategories
         {
@@ -39,5 +35,11 @@ namespace WebProject.Models.Quiz
                 return categories;
             }
         }
+
+        public string SelectedQuestionCategory { get; set; }
+
+        public string Text { get; set; }
+
+        public int TotalQuestionsCount { get; set; } = 20;
     }
 }
