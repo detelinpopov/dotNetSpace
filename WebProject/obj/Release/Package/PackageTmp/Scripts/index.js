@@ -32,4 +32,23 @@
     $(".footer").click(function() {
         $("html, body").animate({ scrollTop: 0 }, 2000);
     });
+
+    $(function () {
+        var availableQuizzes = [
+            "c#",
+            "asp.net mvc",
+            "mvc",
+            "javascript",
+            "unit testing",
+            "testing",
+            "sql server",
+            "sharepoint",
+            "data structures",
+            "entity framework"
+          
+        ];
+        $("#searchQuizText").autocomplete({
+            source: availableQuizzes
+        });
+    });
 });
