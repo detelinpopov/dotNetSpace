@@ -49,6 +49,7 @@
         var availableQuizzes = [
             "ASP.Net Mvc",
             "JavaScript",
+            "jQuery",
             "Unit Testing",
             "Sql Server",
             "SharePoint",

@@ -50,12 +50,13 @@
     <i class="fa fa-cog" aria-hidden="true"></i>
     <span class="settings-label-header"> Options </span>
     <div class="quiz-setting">
-        <span class="settings-label">Search by keyword </span>      
-        <div>
+        <span class="settings-label">Search for a quiz </span>      
+        <div class="quiz-search-options-container">
             <input type="text" id="searchQuizText" class="form-control"/>
+            <input type="button" class="form-control quiz-search-button" value="Search" />
         </div>
         <div id="searchByKeywordResult">
-            No items found 
+            No quizzes found 
         </div>
     </div>
     <div class="quiz-setting">
@@ -268,6 +269,55 @@
     </div>
     <div class="quiz-start-test-button-container">
         <a title="JavaScript Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white" />
+<div class="quiz-container quiz-frame" name="jquery">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> jQuery Quiz </span>
+    </div>
+    <div class="quiz-description">
+        Topics covered:
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Core Concepts
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Selectors
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Work with Data
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Work with CSS
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Effects
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        Events
+    </div>
+    <div class="quiz-description-topic">
+        <span class="glyphicon glyphicon-ok"></span>
+        DOM Manipulation
+    </div>   
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="jQuery Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.jQuery})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
 <hr class="hr-white"/>

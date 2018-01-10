@@ -153,8 +153,8 @@
 
 .quiz-setting {
     font-size: 15px;
-    padding-left: 20px;
     padding-bottom: 5px;
+    padding-left: 20px;
     padding-top: 5px;
 }
 
@@ -179,33 +179,41 @@
 #showQuizDescriptionSections { transform: scale(1.5); }
 
 .settings-label {
+    font-size: 15px;
+    padding-bottom: 10px;
     padding-right: 5px;
     padding-top: 5px;
-    font-size: 15px;
 }
 
 .hr-white { color: white; }
 
-#searchQuizText {
-    width: 176px;
-}
+#searchQuizText { width: 176px; }
 
 #searchByKeywordResult {
-    font-family: 'Lucida Sans', Arial, sans-serif;
     color: red;
-    font-size: 14px;
     display: none;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
 }
 
 .footer {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-    cursor: pointer;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 .fa-hand-o-up {
     color: green;
-    font-size: 18px!important;
+    font-size: 18px !important;
 }
+
+.quiz-search-button {
+    color: green;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 176px;
+}
+
+.quiz-search-options-container { padding-top: 5px; }
