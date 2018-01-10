@@ -9,7 +9,7 @@ namespace Sql.Context
         public QuizContext()
             : base("QuizContext")
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<QuizContext>());
+            Database.SetInitializer(new CreateDatabaseIfNotExists<QuizContext>());
         }
 
         public DbSet<Question> Questions { get; set; }

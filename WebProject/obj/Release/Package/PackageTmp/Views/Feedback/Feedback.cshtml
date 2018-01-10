@@ -1,0 +1,58 @@
+﻿@model WebProject.Models.Feedback.FeedbackModel
+@{
+    ViewBag.Title = "Feedback";
+}
+
+<link href="~/Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="~/Content/Effect/effect.min.css" rel="stylesheet">
+<link href="~/Content/feedback.min.css" rel="stylesheet">
+@using (Html.BeginForm("SendMessage", "Feedback"))
+{
+    <div class="close-icon">
+        <a href='@Url.Action("Index", "Quiz", new {expandedMenu = true})'>
+            <span class="glyphicon glyphicon-remove rotate" title="Close"></span>
+        </a>
+    </div>
+    <div class="quiz-feedback-logo-container" align="center">
+        <img src="~/Images/quiz4net_logo.png" class="img-responsive"/>
+    </div>
+    <div align="center" class="feedback-header">
+        We would like to hear from you
+        <i class="fa fa-comment" aria-hidden="true"></i>
+    </div>
+    <div class="feedback-wall-text" align="center">
+        <span> You can add here ideas, recommendations or any kind of feedback.</span>
+    </div>
+    <div align="center" class="feedback-name-container">
+        <span class="feedback-wall-name">Your name</span>
+        @Html.TextBoxFor(m => m.SenderName, new {@class = "form-control"})
+        <div class="validation-message-form-control">
+            @Html.ValidationMessageFor(m => m.SenderName)
+        </div>
+    </div>
+    <div align="center">
+        <span class="feedback-wall-message-label">Message</span>
+    </div>
+    <div align="center">
+        @Html.TextAreaFor(m => m.Message, new {@class = "message-text-area"})
+        <div class="validation-message-form-control">
+            @Html.ValidationMessageFor(m => m.Message)
+        </div>
+        <div class="message-send-button-container">
+            <button type="submit" class="button"> Send </button>
+        </div>
+    </div>
+    <div></div>
+    <div class="feedback-wall-messages-container">
+        @foreach (var message in Model.MessageModels)
+        {
+            <div>
+                <span class="feedback-wall-message-date-time"> @message.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy H:mm:ss") </span>
+            </div>
+            <div class="feedback-wall-message-container">
+                <span class="feedback-wall-message-author"> @message.Author: </span> <span class="feedback-wall-message">@message.Message</span>
+            </div>
+        }
+    </div>
+}
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>

@@ -1,3 +1,6 @@
+ body{
+     color: black;
+}
 .quiz-row {
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -178,6 +181,18 @@
     padding-top: 5px;
 }
 
+.quiz-setting > a {
+    color: black;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
+
+.quiz-setting > a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.quiz-setting > a:visited { color: black; }
+
 .hr-white { color: white; }
 
 #searchQuizText { width: 176px; }
@@ -207,6 +222,8 @@
     margin-bottom: 5px;
     margin-top: 5px;
     width: 176px;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .quiz-search-options-container { padding-top: 5px; }
@@ -318,4 +335,21 @@ input[type=checkbox]:checked ~ label .check {
         background: #DDD;
         transform: scale(1.25);
     }
+}
+
+.quiz-send-feedback-section {
+    padding-bottom: 20px;
+}
+
+.quiz-display-topics-section {
+    padding-top: 20px;
+}
+
+.quiz-search-for-quiz-section {
+    padding-top: 15px;
+}
+
+.fa-comment {
+    font-size: 20px!important;
+    padding-right: 5px;
 }

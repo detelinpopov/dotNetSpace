@@ -14,7 +14,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Core.dll">
-      <publishTime>01/09/2018 14:23:11</publishTime>
+      <publishTime>01/10/2018 16:04:42</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -26,10 +26,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Interfaces.dll">
-      <publishTime>01/09/2018 14:23:10</publishTime>
+      <publishTime>01/10/2018 16:04:41</publishTime>
     </File>
     <File Include="bin/InversionOfControl.dll">
-      <publishTime>01/09/2018 14:23:12</publishTime>
+      <publishTime>01/10/2018 16:04:43</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -128,7 +128,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/09/2018 14:23:09</publishTime>
     </File>
     <File Include="bin/Sql.dll">
-      <publishTime>01/09/2018 14:23:11</publishTime>
+      <publishTime>01/10/2018 16:04:42</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -158,13 +158,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>01/09/2018 17:01:47</publishTime>
+      <publishTime>01/10/2018 16:04:45</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
+    </File>
+    <File Include="Content/Effect/effect.css">
+      <publishTime>01/10/2018 15:16:32</publishTime>
+    </File>
+    <File Include="Content/Effect/effect.min.css">
+      <publishTime>01/10/2018 15:16:32</publishTime>
+    </File>
+    <File Include="Content/feedback.css">
+      <publishTime>01/10/2018 16:07:42</publishTime>
+    </File>
+    <File Include="Content/feedback.min.css">
+      <publishTime>01/10/2018 16:07:43</publishTime>
     </File>
     <File Include="Content/FontAwesome/css/font-awesome.css">
       <publishTime>01/02/2018 10:44:17</publishTime>
@@ -308,10 +320,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/10/2018 13:42:08</publishTime>
+      <publishTime>01/10/2018 15:58:31</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/10/2018 13:42:09</publishTime>
+      <publishTime>01/10/2018 15:58:32</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -481,6 +493,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Account/Register.cshtml">
       <publishTime>10/26/2017 11:06:37</publishTime>
     </File>
+    <File Include="Views/Feedback/Feedback.cshtml">
+      <publishTime>01/10/2018 15:39:25</publishTime>
+    </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>10/19/2017 08:01:22</publishTime>
     </File>
@@ -506,7 +521,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 18:17:19</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/10/2018 12:44:26</publishTime>
+      <publishTime>01/10/2018 15:56:03</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>01/09/2018 16:48:06</publishTime>
