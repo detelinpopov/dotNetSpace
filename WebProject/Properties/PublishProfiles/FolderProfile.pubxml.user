@@ -308,10 +308,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/10/2018 12:45:10</publishTime>
+      <publishTime>01/10/2018 13:42:08</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/10/2018 12:45:06</publishTime>
+      <publishTime>01/10/2018 13:42:09</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>

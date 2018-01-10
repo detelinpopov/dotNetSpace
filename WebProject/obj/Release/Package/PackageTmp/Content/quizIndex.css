@@ -35,8 +35,8 @@
 
 .quiz-container, .quiz-container-first, .quiz-container-last {
     padding-right: 10px !important;
-    width: 500px;
     padding-top: 10px;
+    width: 500px;
 }
 
 .start-quiz-button {
@@ -153,9 +153,9 @@
 
 .details-row {
     font-size: 15px;
+    font-weight: bold;
     padding-bottom: 5px;
     padding-top: 5px;
-    font-weight: bold;
 }
 
 .quiz-description, .quiz-description-topic { display: none; }
@@ -172,10 +172,10 @@
 
 .settings-label {
     font-size: 15px;
+    font-weight: bold;
     padding-bottom: 10px;
     padding-right: 5px;
     padding-top: 5px;
-    font-weight: bold;
 }
 
 .hr-white { color: white; }
@@ -211,76 +211,111 @@
 
 .quiz-search-options-container { padding-top: 5px; }
 
-main   { font-size:16px; }
-.stuff { padding-top:60px; }
+main { font-size: 16px; }
 
-input[type=checkbox]   { display:none; }
-label, p               { padding-left:30px; }
-#check-awesome         { position:relative; }
+.stuff { padding-top: 60px; }
+
+input[type=checkbox] { display: none; }
+
+label, p { padding-left: 30px; }
+
+#check-awesome { position: relative; }
 
 /* checkbox css */
-label                  { cursor:pointer; }
-label span             { display:block; position:absolute; left:0; 
-    -webkit-transition-duration:0.3s; -moz-transition-duration:0.3s; transition-duration:0.3s;
-}
-label .circle          {
-    background:#FFF;
-    left:-5px;
-    top:-30px;
-    height:80px;
-    width:80px;
-    z-index:-1;
-    border-radius:50%; -moz-border-radius:50%; -webkit-border-radius:50%;
-}
-label .box     {
-    border:2px solid #000;
-    height:20px; 
-    width:20px;
-    z-index:888;
-    -webkit-transition-delay:0.2s; -moz-transition-delay:0.2s; transition-delay:0.2s;
-}
-label .check         {
-    top: -7px;
-    left: 6px;
-    width: 12px;
-    height: 24px;
-    border:2px solid #0f9d58;  
-    border-top: none;
-    border-left: none;
-    opacity:0; 
-    z-index:888;
-    -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); transform:rotate(180deg);
-    -webkit-transition-delay:0.3s; -moz-transition-delay:0.3s; transition-delay:0.3s;
+
+label { cursor: pointer; }
+
+label span {
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    display: block;
+    left: 0;
+    position: absolute;
+    transition-duration: 0.3s;
 }
 
 label .circle {
-    -webkit-animation   :growCircle 0.3s ease;
-    -moz-animation      :growCircle 0.3s ease;
-    animation           :growCircle 0.3s ease;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFF;
+    border-radius: 50%;
+    height: 80px;
+    left: -5px;
+    top: -30px;
+    width: 80px;
+    z-index: -1;
 }
-input[type=checkbox]:checked ~ label .box { 
-    opacity:0;
-    -webkit-transform   :scale(0) rotate(-180deg);
-    -moz-transform 		:scale(0) rotate(-180deg);
-    transform 				:scale(0) rotate(-180deg);
+
+label .box {
+    -moz-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    border: 2px solid #000;
+    height: 20px;
+    transition-delay: 0.2s;
+    width: 20px;
 }
+
+label .check {
+    -moz-transform: rotate(180deg);
+    -moz-transition-delay: 0.3s;
+    -webkit-transform: rotate(180deg);
+    -webkit-transition-delay: 0.3s;
+    border: 2px solid #0f9d58;
+    border-left: none;
+    border-top: none;
+    height: 24px;
+    left: 6px;
+    opacity: 0;
+    top: -7px;
+    transform: rotate(180deg);
+    transition-delay: 0.3s;
+    width: 12px;
+}
+
+label .circle {
+    -moz-animation: growCircle 0.3s ease;
+    -webkit-animation: growCircle 0.3s ease;
+    animation: growCircle 0.3s ease;
+}
+
+input[type=checkbox]:checked ~ label .box {
+    -moz-transform: scale(0) rotate(-180deg);
+    -webkit-transform: scale(0) rotate(-180deg);
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+}
+
 input[type=checkbox]:checked ~ label .check {
-    opacity:1; 
-    -webkit-transform   :scale(1) rotate(45deg);
-    -moz-transform      :scale(1) rotate(45deg);
-    transform           :scale(1) rotate(45deg);
+    -moz-transform: scale(1) rotate(45deg);
+    -webkit-transform: scale(1) rotate(45deg);
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
 }
 
 
 @-webkit-keyframes growCircle {
-    0%, 100%   { -webkit-transform:scale(0); }
-    70%        { background:#DDD; -webkit-transform:scale(1.25); }
+    0%, 100% { -webkit-transform: scale(0); }
+
+    70% {
+        -webkit-transform: scale(1.25);
+        background: #DDD;
+    }
 }
+
 @-moz-keyframes growCircle {
-    0%, 100%   { -moz-transform:scale(0); }
-    70%        { background:#DDD; -moz-transform:scale(1.25); }
+    0%, 100% { -moz-transform: scale(0); }
+
+    70% {
+        -moz-transform: scale(1.25);
+        background: #DDD;
+    }
 }
+
 @keyframes growCircle {
-    0%, 100%   { transform:scale(0); }
-    70%        { background:#DDD; transform:scale(1.25); }
+    0%, 100% { transform: scale(0); }
+
+    70% {
+        background: #DDD;
+        transform: scale(1.25);
+    }
 }
