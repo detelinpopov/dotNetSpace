@@ -48,33 +48,32 @@
 <div class="quiz-settings">
     <i class="fa fa-cog" aria-hidden="true"></i>
     <span class="settings-label-header"> Options </span>
-    <div class="quiz-setting">
-        <span class="settings-label">Search for a quiz </span>      
+    <div class="quiz-setting quiz-search-for-quiz-section">
+        <span class="settings-label">Search for a quiz </span>
         <div class="quiz-search-options-container">
             <input type="text" id="searchQuizText" class="form-control"/>
-            <input type="button" class="form-control quiz-search-button" value="Search" />
+            <input type="button" class="form-control quiz-search-button" value="Search"/>
         </div>
         <div id="searchByKeywordResult">
-            No quizzes found 
+            No quizzes found
         </div>
     </div>
-    <div class="quiz-setting">            
-        <div id="check-awesome" class="form-group">    
-            <input type="checkbox" id="showQuizDescriptionSections">        
+    <div class="quiz-setting quiz-display-topics-section">
+        <div id="check-awesome" class="form-group">
+            <input type="checkbox" id="showQuizDescriptionSections">
             <label for="showQuizDescriptionSections">
                 <span></span>
                 <span class="check"></span>
                 <span class="box"></span>
                 Display covered topics
-            </label>       
+            </label>
         </div>
     </div>
-    <div class="quiz-setting">            
+    <div class="quiz-setting quiz-send-feedback-section">
         <a href="@Url.Action("Feedback", "Feedback")">
             <div>
-                <i class="fa fa-comment"></i>
+                <i class="fa fa-comment"></i> <span class="settings-label"> Send Feedback </span>
             </div>
-            <div>Feedback</div>
         </a>
     </div>
 </div>
@@ -187,7 +186,7 @@
         <a title="ASP.Net MVC Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white" />
+<hr class="hr-white"/>
 <div class="quiz-container quiz-frame" name="unit testing">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> Unit Testing Quiz </span>
@@ -206,7 +205,7 @@
     <div class="quiz-description-topic">
         <span class="glyphicon glyphicon-ok"></span>
         Test-Driven Development
-    </div>   
+    </div>
     <div class="quiz-description-topic">
         <span class="glyphicon glyphicon-ok"></span>
         Dependency Injection
@@ -285,7 +284,7 @@
         <a title="JavaScript Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white" />
+<hr class="hr-white"/>
 <div class="quiz-container quiz-frame" name="jquery">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> jQuery Quiz </span>
@@ -320,7 +319,7 @@
     <div class="quiz-description-topic">
         <span class="glyphicon glyphicon-ok"></span>
         DOM Manipulation
-    </div>   
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
     </div>

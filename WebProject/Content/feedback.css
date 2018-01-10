@@ -1,4 +1,7 @@
-body { font-family: 'Nunito', sans-serif; }
+body {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
 
 .contact-text-field {
     color: white;
