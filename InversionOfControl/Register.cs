@@ -35,6 +35,7 @@ namespace InversionOfControl
             container.BindInRequestScope<IQuestion, Question>();
             container.BindInRequestScope<IUser, User>();
             container.BindInRequestScope<IFeedback, Feedback>();
+            container.BindInRequestScope<IPublicFeedbackMessage, PublicFeedbackMessage>();
         }
 
         private static void RegisterRepositories(UnityContainer container)
@@ -42,6 +43,7 @@ namespace InversionOfControl
             container.BindInRequestScope<IQuestionRepository, QuestionRepository>();
             container.BindInRequestScope<IUserRepository, UserRepository>();
             container.BindInRequestScope<IFeedbackRepository, FeedbackRepository>();
+            container.BindInRequestScope<IPublicFeedbackRepository, PublicFeedbackRepository>();
         }
 
         private static void RegisterServices(UnityContainer container)
@@ -49,6 +51,7 @@ namespace InversionOfControl
             container.BindInRequestScope<IQuestionService, QuestionService>();
             container.BindInRequestScope<IUserService, UserService>();
             container.BindInRequestScope<IFeedbackService, FeedbackService>();
+            container.BindInRequestScope<IPublicFeedbackService, PublicFeedbackService>();
         }
     }
 }

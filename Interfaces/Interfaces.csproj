@@ -41,15 +41,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Services\IFeedbackService.cs" />
+    <Compile Include="Core\Services\IPublicFeedbackService.cs" />
     <Compile Include="Core\Services\IUserService.cs" />
     <Compile Include="Core\Services\IQuestionService.cs" />
     <Compile Include="Sql\Entities\IFeedback.cs" />
+    <Compile Include="Sql\Entities\IPublicFeedbackMessage.cs" />
     <Compile Include="Sql\Entities\IUser.cs" />
     <Compile Include="Sql\Entities\IEntity.cs" />
     <Compile Include="Sql\Entities\IAnswer.cs" />
     <Compile Include="Sql\Entities\IQuestion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sql\Repositories\IFeedbackRepository.cs" />
+    <Compile Include="Sql\Repositories\IPublicFeedbackRepository.cs" />
     <Compile Include="Sql\Repositories\IUserRepository.cs" />
     <Compile Include="Sql\Repositories\IQuestionRepository.cs" />
   </ItemGroup>

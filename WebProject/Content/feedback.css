@@ -1,0 +1,136 @@
+body { font-family: 'Nunito', sans-serif; }
+
+.contact-text-field {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+
+.contact-validation-message {
+    color: red;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.contact-message-text-area {
+    height: 200px;
+    width: 500px;
+}
+
+.send-message-div { padding-top: 20px; }
+
+.contact-button-section { padding-top: 5px; }
+
+.feedback-wall-text {
+    color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.glyphicon-remove {
+    color: black;
+    font-size: 25px;
+}
+
+hr { display: none; }
+
+.feedback-wall-message {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.feedback-wall-message-label {
+    color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.feedback-wall-name {
+    color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.feedback-wall-message-author {
+    color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.feedback-wall-message-container { padding-bottom: 10px; }
+
+.feedback-wall-message-date-time {
+    color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.feedback-wall-messages-container {
+    max-height: 5000px;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.feedback-wall-textbox { width: 500px; }
+
+.message-send-button-container { padding-left: 200px; }
+
+.validation-message-form-control {
+    color: #cc0000;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 20px;
+}
+
+.message-text-area {
+    height: 200px;
+    width: 800px;
+}
+
+.feedback-header {
+    color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.quiz-feedback-logo-container { margin: 0 auto; }
+
+.button {
+    -moz-border-radius: 10px;
+    -moz-box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
+    background: #44C767;
+    border: solid 1px #44C767;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 0 #44C767, 0 1px 1px #44C767;
+    color: #FFF;
+    margin: 10px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #44C767;
+}
+
+.close-icon {
+    clear: both;
+    float: right;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.feedback-name-container { padding-bottom: 20px; }

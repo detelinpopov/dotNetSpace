@@ -55,12 +55,14 @@
   <ItemGroup>
     <Compile Include="Context\QuizContext.cs" />
     <Compile Include="Entities\Feedback.cs" />
+    <Compile Include="Entities\PublicFeedbackMessage.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Answer.cs" />
     <Compile Include="Entities\Question.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\FeedbackRepository.cs" />
+    <Compile Include="Repositories\PublicFeedbackRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Repositories\QuestionRepository.cs" />
   </ItemGroup>
@@ -76,6 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBUpdateScripts\SqlData.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

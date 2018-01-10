@@ -172,6 +172,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\QuestionController.cs" />
     <Compile Include="Controllers\QuizController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -182,6 +183,8 @@
     <Compile Include="Helpers\SessionUtils.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Account\RegisterModel.cs" />
+    <Compile Include="Models\Feedback\FeedbackMessageModel.cs" />
+    <Compile Include="Models\Feedback\FeedbackModel.cs" />
     <Compile Include="Models\JsonEmployee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -198,12 +201,18 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Effect\effect.css" />
+    <Content Include="Content\Effect\effect.min.css" />
+    <Content Include="Content\feedback.min.css">
+      <DependentUpon>feedback.css</DependentUpon>
+    </Content>
     <Content Include="Content\FontAwesome\css\font-awesome.css" />
     <Content Include="Content\FontAwesome\css\font-awesome.min.css" />
     <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Gridmvc.css" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\feedback.css" />
     <Content Include="Content\quiz.min.css">
       <DependentUpon>quiz.css</DependentUpon>
     </Content>
@@ -306,7 +315,6 @@
       <DependentUpon>zooomin.js</DependentUpon>
     </Content>
     <Content Include="Scripts\_references.js" />
-    <Content Include="DBUpdateScripts\SqlData.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -331,11 +339,7 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Quiz\QuizCompleted.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />
-    <Content Include="Views\Quiz\Categories\CategoriesDetails.cshtml" />
-    <Content Include="Views\Quiz\Categories\CategoryDetailsCSharp.cshtml" />
-    <Content Include="Views\Quiz\Categories\CategoryDetailsMvc.cshtml" />
-    <Content Include="Views\Quiz\Categories\CategoryDetailsJavaScript.cshtml" />
-    <Content Include="Views\Quiz\Categories\CategoryDetailsSharePoint.cshtml" />
+    <Content Include="Views\Feedback\Feedback.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

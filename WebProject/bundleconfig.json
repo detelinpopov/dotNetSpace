@@ -52,5 +52,11 @@
     "inputFiles": [
       "Scripts/zooomin.js"
     ]
+  },
+  {
+    "outputFileName": "Content/feedback.min.css",
+    "inputFiles": [
+      "Content/feedback.css"
+    ]
   }
 ]

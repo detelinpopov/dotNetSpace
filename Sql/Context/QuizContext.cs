@@ -20,6 +20,8 @@ namespace Sql.Context
 
         public DbSet<Feedback> Feedbacks { get; set; }
 
+        public DbSet<PublicFeedbackMessage> FeedbackMessages { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

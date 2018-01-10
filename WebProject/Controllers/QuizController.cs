@@ -87,17 +87,7 @@ namespace WebProject.Controllers
             }
             set { System.Web.HttpContext.Current.Session[SessionKeys.CorrectAnswersIdsKey] = value; }
         }
-
-        public ActionResult CategoriesDetails()
-        {
-            return View("Categories/CategoriesDetails");
-        }
-
-        public ActionResult CategoryDetails(QuestionCategory category)
-        {
-            return View("Categories/CategoryDetails" + category);
-        }
-
+      
         [HttpPost]
         public JsonResult CheckAnswers(ResponseModel responseModel)
         {
