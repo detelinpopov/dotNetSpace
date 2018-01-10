@@ -299,19 +299,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 17:07:36</publishTime>
     </File>
     <File Include="Content/quizCompleted.css">
-      <publishTime>01/05/2018 10:09:37</publishTime>
+      <publishTime>01/10/2018 12:38:44</publishTime>
     </File>
     <File Include="Content/quizCompleted.min.css">
-      <publishTime>01/05/2018 10:09:38</publishTime>
+      <publishTime>01/10/2018 12:38:44</publishTime>
     </File>
     <File Include="Content/quizContact.css">
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/10/2018 12:29:28</publishTime>
+      <publishTime>01/10/2018 12:45:10</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/10/2018 12:29:29</publishTime>
+      <publishTime>01/10/2018 12:45:06</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -506,7 +506,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 18:17:19</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/10/2018 12:29:56</publishTime>
+      <publishTime>01/10/2018 12:44:26</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>01/09/2018 16:48:06</publishTime>

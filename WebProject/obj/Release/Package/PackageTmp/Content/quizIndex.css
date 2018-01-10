@@ -36,6 +36,7 @@
 .quiz-container, .quiz-container-first, .quiz-container-last {
     padding-right: 10px !important;
     width: 500px;
+    padding-top: 10px;
 }
 
 .start-quiz-button {
@@ -117,14 +118,6 @@
     padding-left: 5px;
     padding-right: 3px;
 }
-
-.quiz-quote {
-    font-size: 18px;
-    font-style: italic;
-    padding-bottom: 10px;
-}
-
-.main-section-row { padding-bottom: 5px; }
 
 .quiz-settings {
     font-family: 'Lucida Sans', Arial, sans-serif;
