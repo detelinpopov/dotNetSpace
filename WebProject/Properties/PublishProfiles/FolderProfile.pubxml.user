@@ -320,10 +320,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/10/2018 15:58:31</publishTime>
+      <publishTime>01/10/2018 16:11:14</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/10/2018 15:58:32</publishTime>
+      <publishTime>01/10/2018 16:11:15</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -494,7 +494,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/26/2017 11:06:37</publishTime>
     </File>
     <File Include="Views/Feedback/Feedback.cshtml">
-      <publishTime>01/10/2018 15:39:25</publishTime>
+      <publishTime>01/10/2018 16:09:40</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>10/19/2017 08:01:22</publishTime>
