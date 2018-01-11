@@ -150,7 +150,6 @@
 .quiz-setting {
     font-size: 15px;
     padding-bottom: 5px;
-    padding-left: 20px;
     padding-top: 5px;
 }
 
@@ -341,12 +340,8 @@ input[type=checkbox]:checked ~ label .check {
     padding-bottom: 20px;
 }
 
-.quiz-display-topics-section {
-    padding-top: 20px;
-}
-
 .quiz-search-for-quiz-section {
-    padding-top: 17px;
+    padding-bottom: 15px;
 }
 
 .fa-comment {

@@ -173,10 +173,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/10/2018 15:16:32</publishTime>
     </File>
     <File Include="Content/feedback.css">
-      <publishTime>01/10/2018 16:07:42</publishTime>
+      <publishTime>01/10/2018 16:15:41</publishTime>
     </File>
     <File Include="Content/feedback.min.css">
-      <publishTime>01/10/2018 16:07:43</publishTime>
+      <publishTime>01/10/2018 16:15:42</publishTime>
     </File>
     <File Include="Content/FontAwesome/css/font-awesome.css">
       <publishTime>01/02/2018 10:44:17</publishTime>
@@ -320,10 +320,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/10/2018 16:11:14</publishTime>
+      <publishTime>01/11/2018 10:14:33</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/10/2018 16:11:15</publishTime>
+      <publishTime>01/11/2018 10:14:25</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -521,7 +521,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 18:17:19</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/10/2018 15:56:03</publishTime>
+      <publishTime>01/11/2018 10:12:24</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>01/09/2018 16:48:06</publishTime>

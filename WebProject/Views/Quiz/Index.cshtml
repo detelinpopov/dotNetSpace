@@ -45,9 +45,7 @@
     </div>
 </div>
 <hr class="hr"/>
-<div class="quiz-settings">
-    <i class="fa fa-cog" aria-hidden="true"></i>
-    <span class="settings-label-header"> Options </span>
+<div class="quiz-settings"> 
     <div class="quiz-setting quiz-search-for-quiz-section">
         <span class="settings-label">Search for a quiz </span>
         <div class="quiz-search-options-container">
@@ -57,6 +55,13 @@
         <div id="searchByKeywordResult">
             No quizzes found
         </div>
+    </div>  
+    <div class="quiz-setting quiz-send-feedback-section">
+        <a href="@Url.Action("Feedback", "Feedback")">
+            <div>
+                <i class="fa fa-comment"></i> <span class="settings-label"> Send Feedback </span>
+            </div>
+        </a>
     </div>
     <div class="quiz-setting quiz-display-topics-section">
         <div id="check-awesome" class="form-group">
@@ -68,13 +73,6 @@
                 Display covered topics
             </label>
         </div>
-    </div>
-    <div class="quiz-setting quiz-send-feedback-section">
-        <a href="@Url.Action("Feedback", "Feedback")">
-            <div>
-                <i class="fa fa-comment"></i> <span class="settings-label"> Send Feedback </span>
-            </div>
-        </a>
     </div>
 </div>
 <div class="quiz-container-first quiz-frame" name="c#">
