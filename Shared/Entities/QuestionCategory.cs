@@ -2,6 +2,8 @@
 {
     public enum QuestionCategory
     {
+        dotNetCore,
+
         CSharp,
 
         Mvc,
@@ -20,6 +22,8 @@
 
         UnitTesting,
 
-        DataStructures
+        DataStructures,
+
+        WebApi
     }
 }
