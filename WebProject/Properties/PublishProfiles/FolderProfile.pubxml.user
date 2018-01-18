@@ -437,10 +437,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="Scripts/index.js">
-      <publishTime>01/15/2018 16:58:11</publishTime>
+      <publishTime>01/18/2018 12:32:30</publishTime>
     </File>
     <File Include="Scripts/index.min.js">
-      <publishTime>01/15/2018 16:58:11</publishTime>
+      <publishTime>01/18/2018 12:32:30</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -521,7 +521,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 18:17:19</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/11/2018 10:12:24</publishTime>
+      <publishTime>01/18/2018 12:34:58</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>01/09/2018 16:48:06</publishTime>

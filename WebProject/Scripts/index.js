@@ -54,7 +54,8 @@
             "Sql Server",
             "SharePoint",
             "Data Structures",
-            "Entity Framework"
+            "Entity Framework",
+            "Scrum"
         ];
         $("#searchQuizText").autocomplete({
             source: availableQuizzes

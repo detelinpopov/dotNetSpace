@@ -463,7 +463,7 @@
     </div>
 </div>
 <hr class="hr-white"/>
-<div class="quiz-container-last quiz-frame" name="sharepoint">
+<div class="quiz-container quiz-frame" name="sharepoint">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> SharePoint 2016 Quiz </span>
     </div>
@@ -509,6 +509,21 @@
     </div>
     <div class="quiz-start-test-button-container">
         <a title="SharePoint 2016 Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white" />
+<div class="quiz-container-last quiz-frame" name="scrum">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> Scrum Quiz </span>
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Scrum Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Scrum})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
 <div class="footer">
