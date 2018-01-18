@@ -2,10 +2,10 @@
 {
     public enum QuestionCategory
     {
-        dotNetCore,
-
         CSharp,
 
+        dotNetCore,
+       
         Mvc,
 
         SharePoint,
@@ -24,6 +24,8 @@
 
         DataStructures,
 
-        WebApi
+        WebApi,
+
+        Scrum
     }
 }
