@@ -33,8 +33,7 @@
 {
     @Html.HiddenFor(m => m.Id, new {id = "QuestionId"})
     @Html.Hidden("ResponseModel.QuestionId", Model.Id.ToString())
-    <img id="ajaxLoadIndicator" src="~/Images/loadImage.gif" alt="Loading..."/>
-
+    
     for (var i = 0; i < Model.Answers.Count; i++)
     {
         <div class="answer">
@@ -49,7 +48,9 @@
         <a id="finishTestLink" class="link-finish-test button"> Finish Quiz </a>
     </div>
 }
-
+<div class="load-indicator-container" align="center">
+    <img src="~/Images/loading.gif" class="img-responsive" />
+</div>
 <script src="~/Scripts/zooomin.js"></script>
 <script type="text/javascript" src="~/Scripts/answer.min.js"></script>
 <script type="text/javascript">

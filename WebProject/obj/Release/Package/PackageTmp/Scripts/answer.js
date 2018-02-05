@@ -1,15 +1,14 @@
 ﻿$(document).ready(function() {
-
     var $loading = $("#ajaxLoadIndicator").hide();
     $(document)
-        .ajaxStart(function() {            
-            $loading.show();
+        .ajaxStart(function() {
+            $(".load-indicator-container").fadeIn();
         })
         .ajaxStop(function() {
-            $loading.hide();
+            $(".load-indicator-container").fadeOut();
         });
 
-    $("#checkAnswer").click(function () {
+    $("#checkAnswer").click(function() {
         $("#finishTestLink").hide();
         var responseModel = new ResponseModel();
         $.ajax({
@@ -17,8 +16,8 @@
             dataType: "json",
             contentType: "application/json",
             type: "POST",
-            data: JSON.stringify(responseModel),          
-            success: function (response) {               
+            data: JSON.stringify(responseModel),
+            success: function(response) {
                 if (response.AnswerResult.toLowerCase() === "correct") {
                     $("#divResult").html("<span class='glyphicon glyphicon-ok'></span> Your answer is correct");
                     $("#divResult").addClass("div-result-correct");
@@ -28,7 +27,7 @@
                     $("#divResult").addClass("div-result-wrong");
                     $(".quiz-option").prop("disabled", true);
                 }
-               
+
                 $("#checkAnswer").hide();
                 $("#divResult").fadeIn(1000);
                 for (var i = 0; i < response.CorrectAnswersIds.length; i++) {
@@ -38,7 +37,7 @@
 
                 $("#nextQuestion").fadeIn(1000);
                 $("#finishTestLink").fadeIn(1000);
-            
+
                 var resultDiv = $("#divResult");
                 $("html, body").animate({ scrollTop: resultDiv.offset().top - ($(window).height() / 2) }, 1000);
             }
@@ -67,30 +66,34 @@
             self.AnswerIds = answerIds;
         });
     }
-  
-    $(function () {
-        $("#finishTestLink").click(function (event) {
+
+    $(function() {
+        $("#finishTestLink").click(function(event) {
             event.preventDefault();
             $('<div title="Confirm"></div>').dialog({
-                open: function (event, ui) {
+                open: function(event, ui) {
                     $(this).html("Are you sure you want to finish the quiz?");
                 },
-                close: function () {
+                close: function() {
                     $(this).remove();
                 },
-                resizable: false,                
+                resizable: false,
                 modal: true,
                 buttons: {
-                    'Yes': function () {
-                        $(this).dialog('close');
+                    'Yes': function() {
+                        $(this).dialog("close");
                         window.location.href = "/Quiz/QuizCompleted";
 
                     },
-                    'No': function () {
-                        $(this).dialog('close');                      
+                    'No': function() {
+                        $(this).dialog("close");
                     }
                 }
             });
         });
-    });    
+    });
+
+    $("#nextQuestion").click(function() {
+        $(".load-indicator-container").fadeIn();
+    });
 });

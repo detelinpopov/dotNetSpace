@@ -90,3 +90,14 @@ a:hover {
 .glyphicon-ok { font-size: 20px; }
 
 .glyphicon-remove { font-size: 20px; }
+
+.load-indicator-container {
+    display: none;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 200px;
+    transition: 1s 0.4s;
+    z-index: 99999;
+}
