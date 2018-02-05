@@ -80,7 +80,8 @@
                 resizable: false,
                 modal: true,
                 buttons: {
-                    'Yes': function() {
+                    'Yes': function () {
+                        $(".load-indicator-container").fadeIn();
                         $(this).dialog("close");
                         window.location.href = "/Quiz/QuizCompleted";
 
@@ -95,5 +96,5 @@
 
     $("#nextQuestion").click(function() {
         $(".load-indicator-container").fadeIn();
-    });
+    });  
 });
