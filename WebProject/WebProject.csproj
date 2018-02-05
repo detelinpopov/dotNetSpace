@@ -243,6 +243,7 @@
     <Content Include="Images\errorImage.png" />
     <Content Include="Images\firstSolveTheProblem.png" />
     <Content Include="Images\loadImage.gif" />
+    <Content Include="Images\loading.gif" />
     <Content Include="Images\quiz4net_logo.png" />
     <Content Include="Images\quizIncludesQuestionsFrom.png" />
     <Content Include="Images\theMostCompleteQuiz.png" />

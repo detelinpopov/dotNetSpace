@@ -68,5 +68,9 @@
         var newone = el.clone(true);
         el.before(newone);
         $("." + el.attr("class") + ":last").remove();
-    }); 
+    });
+
+    $(".start-quiz-button").click(function() {
+        $(".load-indicator-container").fadeIn();
+    });
 });

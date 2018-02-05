@@ -205,10 +205,10 @@
 
 .footer {
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     padding-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .fa-hand-o-up {
@@ -347,4 +347,15 @@ input[type=checkbox]:checked ~ label .check {
 .fa-comment {
     font-size: 20px!important;
     padding-right: 5px;
+}
+
+.load-indicator-container {
+    display: none;   
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 200px;
+    transition: 1s 0.4s;
+    z-index: 99999;
 }
