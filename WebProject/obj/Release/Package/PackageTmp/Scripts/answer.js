@@ -92,9 +92,5 @@
                 }
             });
         });
-    });
-
-    $("#nextQuestion").click(function() {
-        $(".load-indicator-container").fadeIn();
-    });  
+    });    
 });
