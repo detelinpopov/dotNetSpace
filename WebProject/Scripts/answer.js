@@ -80,8 +80,7 @@
                 resizable: false,
                 modal: true,
                 buttons: {
-                    'Yes': function () {
-                        $(".load-indicator-container").fadeIn();
+                    'Yes': function () {                       
                         $(this).dialog("close");
                         window.location.href = "/Quiz/QuizCompleted";
 
