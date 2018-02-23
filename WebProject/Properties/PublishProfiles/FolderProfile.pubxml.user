@@ -320,10 +320,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>02/23/2018 14:26:31</publishTime>
+      <publishTime>02/23/2018 14:33:21</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>02/23/2018 14:26:32</publishTime>
+      <publishTime>02/23/2018 14:33:21</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
