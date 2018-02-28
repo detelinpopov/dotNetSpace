@@ -158,7 +158,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>02/28/2018 10:05:27</publishTime>
+      <publishTime>02/28/2018 16:39:55</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -296,10 +296,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/14/2016 17:34:06</publishTime>
     </File>
     <File Include="Content/quiz.css">
-      <publishTime>02/05/2018 12:16:21</publishTime>
+      <publishTime>02/28/2018 16:37:02</publishTime>
     </File>
     <File Include="Content/quiz.min.css">
-      <publishTime>02/05/2018 12:16:21</publishTime>
+      <publishTime>02/28/2018 16:37:02</publishTime>
     </File>
     <File Include="Content/quizAbout.css">
       <publishTime>10/19/2017 08:04:20</publishTime>
@@ -311,19 +311,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 17:07:36</publishTime>
     </File>
     <File Include="Content/quizCompleted.css">
-      <publishTime>01/10/2018 12:38:44</publishTime>
+      <publishTime>02/28/2018 15:24:59</publishTime>
     </File>
     <File Include="Content/quizCompleted.min.css">
-      <publishTime>01/10/2018 12:38:44</publishTime>
+      <publishTime>02/28/2018 15:25:00</publishTime>
     </File>
     <File Include="Content/quizContact.css">
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>02/23/2018 14:33:21</publishTime>
+      <publishTime>02/28/2018 16:05:06</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>02/23/2018 14:33:21</publishTime>
+      <publishTime>02/28/2018 16:05:06</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -379,6 +379,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/firstSolveTheProblem.png">
       <publishTime>01/03/2018 14:24:13</publishTime>
     </File>
+    <File Include="Images/freeQuiz.png">
+      <publishTime>02/28/2018 15:19:50</publishTime>
+    </File>
     <File Include="Images/greenHand.png">
       <publishTime>10/19/2017 08:03:27</publishTime>
     </File>
@@ -396,6 +399,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/quizIncludesQuestionsFrom.png">
       <publishTime>01/03/2018 17:03:47</publishTime>
+    </File>
+    <File Include="Images/theBestFreeQuiz.png">
+      <publishTime>02/28/2018 16:00:45</publishTime>
     </File>
     <File Include="Images/theMostCompleteQuiz.png">
       <publishTime>01/09/2018 13:25:25</publishTime>
@@ -524,10 +530,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2017 18:17:19</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>02/28/2018 10:03:43</publishTime>
+      <publishTime>02/28/2018 15:20:29</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
-      <publishTime>02/05/2018 12:21:04</publishTime>
+      <publishTime>02/28/2018 15:02:04</publishTime>
     </File>
     <File Include="Views/Quiz/QuizCompleted.cshtml">
       <publishTime>01/09/2018 17:01:10</publishTime>

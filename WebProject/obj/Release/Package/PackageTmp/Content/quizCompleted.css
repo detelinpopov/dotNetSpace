@@ -1,8 +1,8 @@
 .div-item {
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-    padding-top: 10px;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 .quiz-completed-title {
@@ -16,6 +16,15 @@
     padding-bottom: 20px;
     padding-top: 10px;
 }
+
+.quiz-completed-buttons > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.quiz-completed-buttons > a:active { text-decoration: none; }
+
+.quiz-completed-buttons > a { color: white; }
 
 .user-level {
     color: green;

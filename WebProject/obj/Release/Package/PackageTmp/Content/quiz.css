@@ -7,7 +7,7 @@
 
 .answer {
     font-family: 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .question-buttons { padding-top: 30px }
@@ -92,8 +92,8 @@ a:hover {
 .glyphicon-remove { font-size: 20px; }
 
 .load-indicator-container {
-    display: none;
     bottom: 0;
+    display: none;
     left: 0;
     position: fixed;
     right: 0;
@@ -101,3 +101,11 @@ a:hover {
     transition: 1s 0.4s;
     z-index: 99999;
 }
+
+#checkAnswer:active { text-decoration: none; }
+
+#checkAnswer:hover { text-decoration: none; }
+
+#finishTestLink:active { text-decoration: none; }
+
+#finishTestLink:hover { text-decoration: none; }

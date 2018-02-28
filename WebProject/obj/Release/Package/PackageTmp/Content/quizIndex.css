@@ -1,6 +1,5 @@
- body{
-     color: black;
-}
+body { color: black; }
+
 .quiz-row {
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -42,9 +41,7 @@
     width: 500px;
 }
 
-.quiz-container-first {
-    padding-top: 20px !important;
-}
+.quiz-container-first { padding-top: 20px !important; }
 
 .start-quiz-button {
     -moz-border-radius: 10px;
@@ -62,10 +59,13 @@
     text-shadow: 0 -1px 0 #44C767;
 }
 
+.start-quiz-button:active { text-decoration: none; }
+
+.start-quiz-button:hover { text-decoration: none; }
+
 .quiz-header-container {
     color: green;
     font-family: 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-top: 10px;
@@ -110,7 +110,6 @@
     color: green;
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-    font-weight: bold;
 }
 
 .quiz-description-topic {
@@ -174,7 +173,12 @@
     border-width: 7px;
 }
 
-.quiz-index-quote { padding-left: 10px; }
+.quiz-index-quote {
+    padding-bottom: 15px;
+    padding-left: 7px;
+}
+
+.quiz-index-detail { padding-bottom: 10px; }
 
 .settings-label {
     font-size: 15px;
@@ -209,9 +213,8 @@
 
 .footer {
     cursor: pointer;
-    font-size: 17px;
-    font-weight: bold;
-    padding-bottom: 10px;    
+    font-size: 15px;
+    padding-bottom: 10px;
 }
 
 .fa-hand-o-up {
@@ -221,11 +224,11 @@
 
 .quiz-search-button {
     color: green;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
     margin-bottom: 5px;
     margin-top: 5px;
     width: 176px;
-    font-family: 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
 }
 
 .quiz-search-options-container { padding-top: 5px; }
@@ -339,22 +342,18 @@ input[type=checkbox]:checked ~ label .check {
     }
 }
 
-.quiz-send-feedback-section {
-    padding-bottom: 20px;
-}
+.quiz-send-feedback-section { padding-bottom: 20px; }
 
-.quiz-search-for-quiz-section {
-    padding-bottom: 15px;
-}
+.quiz-search-for-quiz-section { padding-bottom: 15px; }
 
 .fa-comment {
-    font-size: 20px!important;
+    font-size: 20px !important;
     padding-right: 5px;
 }
 
 .load-indicator-container {
-    display: none;   
     bottom: 0;
+    display: none;
     left: 0;
     position: fixed;
     right: 0;
