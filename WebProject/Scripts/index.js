@@ -1,11 +1,6 @@
-﻿$(document).ready(function() {
-    var hdnUserMessageValue = $("[name=hdnUserMessage").val();
-    if (hdnUserMessageValue.length > 0) {
-        $("#messageDialog").show(2000);
-    }
-
+﻿$(document).ready(function() {   
     window.sr = ScrollReveal({ reset: true });
-    sr.reveal(".quiz-container", { duration: 800, mobile: true, rotate: { x: 5, y: 5, z: 5 } });
+    sr.reveal(".quiz-container", { mobile: true });
 
     $("#showQuizDescriptionSections").click(function() {
         var hideSections = $(this);
@@ -58,6 +53,9 @@
             "Scrum"
         ];
         $("#searchQuizText").autocomplete({
+            open: function (event, ui) {
+                $('.ui-autocomplete').off("menufocus hover mouseover mouseenter");
+            },
             source: availableQuizzes
         });
     });
