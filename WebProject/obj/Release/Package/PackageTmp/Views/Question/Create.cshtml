@@ -7,8 +7,6 @@
 
 @using (Html.BeginForm("Create", "Question", FormMethod.Post, new {enctype = "multipart/form-data"}))
 {
-    @*@Html.AntiForgeryToken()*@
-
     <span> Question: </span>
     <div>
         @Html.TextAreaFor(m => m.Text, new { style ="width:1000px"})
