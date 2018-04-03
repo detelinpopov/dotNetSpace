@@ -2,4 +2,3 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\Shared\bin\Release\Shared.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Shared\bin\Release\Shared.pdb
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Shared\obj\Release\Shared.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Shared\obj\Release\Shared.pdb
-C:\Users\Detelin Popov\Desktop\dotNetSpace\Shared\obj\Release\Shared.csprojResolveAssemblyReference.cache
