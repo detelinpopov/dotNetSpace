@@ -26,6 +26,8 @@
 
         WebApi,
 
-        Scrum
+        Scrum,
+
+        AngularJS2
     }
 }
