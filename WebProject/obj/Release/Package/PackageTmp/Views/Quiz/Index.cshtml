@@ -1,0 +1,266 @@
+﻿@using Shared.Entities
+@model IEnumerable<WebProject.Models.Account.RegisterModel>
+@{
+    ViewBag.Title = "Quiz4Net";
+    ViewBag.MetaDescription = "We provide online .Net tests";
+    ViewBag.MetaKeywords = ".net quiz, .net online quiz, .net tests, .net tests online, c# quiz, c# online quiz, c# test, c# online test, mvc quiz, asp.net mvc quiz, mvc test online, sharepoint 2016 quiz, sharepoint 2016 test online, sharepoint 2016, sharepoint 2016 test, javascript quiz, javascript test, quiz online free";
+    var userMessage = string.Empty;
+}
+
+<link href="~/Content/jquery-ui.min.css" rel="stylesheet">
+<link href="~/Content/quizMenu.min.css" rel="stylesheet">
+<link href="~/Content/quizIndex.min.css" rel="stylesheet">
+<link href="~/Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet">
+
+@if (TempData["UserMessage"] != null)
+{
+    userMessage = (string) TempData["UserMessage"];
+}
+@Html.Hidden("hdnUserMessage", userMessage)
+
+<div id="messageDialog" class="user-message-field"> @userMessage </div>
+
+<div class="quiz-header-container">
+    <img src="~/Images/quiz4net_logo.png" class="img-responsive"/>
+    <div class="index-header">
+        <img src="~/Images/welcomeToQuiz4Net.png" alt="Welcome to Quiz4Net" class="img-responsive"/>
+    </div>
+    <div class="quiz-index-quote">
+        <img src="~/Images/theBestFreeQuiz.png" class="img-responsive"/>
+    </div>   
+</div>
+@*<div class="quiz-settings"> 
+    <div class="quiz-setting quiz-search-for-quiz-section">
+        <span class="settings-label">Search for a quiz </span>
+        <div class="quiz-search-options-container">
+            <input type="text" id="searchQuizText" class="form-control"/>
+            <input type="button" class="form-control quiz-search-button" value="Search"/>
+        </div>
+        <div id="searchByKeywordResult">
+            No quizzes found
+        </div>
+    </div>  
+    <div class="quiz-setting quiz-send-feedback-section">
+        <a href="@Url.Action("Feedback", "Feedback")">
+            <div>
+                <i class="fa fa-comment"></i> <span class="settings-label"> Send Feedback </span>
+            </div>
+        </a>
+    </div>
+    <div class="quiz-setting quiz-display-topics-section">
+        <div id="check-awesome" class="form-group">
+            <input type="checkbox" id="showQuizDescriptionSections">
+            <label for="showQuizDescriptionSections">
+                <span></span>
+                <span class="check"></span>
+                <span class="box"></span>
+                Display covered topics
+            </label>
+        </div>
+    </div>
+</div>*@
+<div class="quiz-container-first quiz-frame" name="c#">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font">C# Quiz</span>
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="C# Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white"/>
+<div class="quiz-container quiz-frame" name="asp.net mvc">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> ASP.Net MVC Quiz </span>
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="ASP.Net MVC Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white" />
+<div class="quiz-container quiz-frame" name="javascript">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> AngularJS 2 Quiz </span>
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="AngularJS 2 Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.AngularJS2})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white"/>
+<div class="quiz-container quiz-frame" name="javascript">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> JavaScript Quiz </span>
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="JavaScript Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white" />
+<div class="quiz-container quiz-frame" name="unit testing">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> Unit Testing Quiz </span>
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Unit Testing Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.UnitTesting})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white"/>
+<div class="quiz-container quiz-frame" name="jquery">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> jQuery Quiz </span>
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="jQuery Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.jQuery})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white"/>
+<div class="quiz-container quiz-frame" name="data structures">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> Data Structures Quiz </span>
+    </div>   
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Data Structures Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.DataStructures})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white"/>
+<div class="quiz-container quiz-frame" name="sql server">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> Sql Server Quiz </span>
+    </div>    
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Sql Server Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SqlServer})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white"/>
+<div class="quiz-container quiz-frame" name="entity framework">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> Entity Framework Quiz </span>
+    </div>   
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Entity Framework Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white"/>
+<div class="quiz-container quiz-frame" name="sharepoint">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> SharePoint 2016 Quiz </span>
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Level: </span> Mid-Level/Senior
+    </div>
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="SharePoint 2016 Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SharePoint})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white" />
+<div class="quiz-container-last quiz-frame" name="scrum">
+    <div class="quiz-header-container">
+        <span class="lucida-sans-font"> Scrum Quiz </span>
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
+    </div>  
+    <div class="quiz-description-value">
+        <span class="quiz-details-label"> Time: </span> Unlimited
+    </div>
+    <div class="quiz-start-test-button-container">
+        <a title="Scrum Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Scrum})" class="start-quiz-button"> Start Quiz </a>
+    </div>
+</div>
+<hr class="hr-white" />
+<div class="footer">
+    <i class="fa fa-hand-o-up" aria-hidden="true"></i> Go to top
+</div>
+<div class="load-indicator-container" align="center">
+    <img src="~/Images/loading.gif" class="img-responsive"/>
+</div>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/ScrollReveal/scrollreveal.min.js"></script>
+<script src="~/Scripts/index.min.js"></script>

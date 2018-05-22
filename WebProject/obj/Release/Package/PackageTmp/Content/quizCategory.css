@@ -1,0 +1,36 @@
+.detail-form-container { padding-top: 10px; }
+
+.detail-title {
+    color: green;
+    font-family: 'Nunito', sans-serif;
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+
+.detail-item {
+    color: #44C767;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+.detail-item-description {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.detail-item > a:link { color: green; }
+
+.detail-item > a:visited { color: green; }
+
+.detail-item > a:hover { color: #44C767; }
+
+.detail-buttons { padding-top: 20px; }
+
+.detail-item-option {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    padding-bottom: 5px;
+}

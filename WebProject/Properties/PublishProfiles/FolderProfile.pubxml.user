@@ -14,7 +14,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Core.dll">
-      <publishTime>04/03/2018 11:35:01</publishTime>
+      <publishTime>05/22/2018 10:13:07</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -26,10 +26,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Interfaces.dll">
-      <publishTime>04/03/2018 11:35:01</publishTime>
+      <publishTime>05/22/2018 10:13:06</publishTime>
     </File>
     <File Include="bin/InversionOfControl.dll">
-      <publishTime>04/03/2018 11:35:01</publishTime>
+      <publishTime>05/22/2018 10:13:07</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -125,10 +125,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Shared.dll">
-      <publishTime>04/03/2018 11:35:00</publishTime>
+      <publishTime>05/22/2018 10:13:06</publishTime>
     </File>
     <File Include="bin/Sql.dll">
-      <publishTime>04/03/2018 11:35:01</publishTime>
+      <publishTime>05/22/2018 10:13:07</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -158,7 +158,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>04/03/2018 11:36:19</publishTime>
+      <publishTime>05/22/2018 10:13:08</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -320,10 +320,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>04/03/2018 11:39:04</publishTime>
+      <publishTime>05/22/2018 10:02:39</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>02/28/2018 16:05:06</publishTime>
+      <publishTime>05/22/2018 10:02:39</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -379,7 +379,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/quizIncludesQuestionsFrom.png">
       <publishTime>01/03/2018 17:03:47</publishTime>
     </File>
+    <File Include="Images/theBestFreeQuiz.gif">
+      <publishTime>05/22/2018 09:53:35</publishTime>
+    </File>
     <File Include="Images/theBestFreeQuiz.png">
+      <publishTime>05/22/2018 10:01:18</publishTime>
+    </File>
+    <File Include="Images/theBestFreeQuiz1.png">
       <publishTime>03/30/2018 14:16:56</publishTime>
     </File>
     <File Include="Images/theMostCompleteQuiz.png">
@@ -482,7 +488,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2018 14:07:16</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>04/03/2018 11:31:58</publishTime>
+      <publishTime>05/22/2018 10:00:58</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>02/28/2018 15:02:04</publishTime>
@@ -518,7 +524,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/03/2018 11:36:19</publishTime>
+      <publishTime>05/22/2018 10:13:39</publishTime>
     </File>
   </ItemGroup>
 </Project>

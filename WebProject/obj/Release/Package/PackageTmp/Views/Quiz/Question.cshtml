@@ -1,0 +1,60 @@
+﻿@using WebProject.Models.Quiz
+@model WebProject.Models.Quiz.QuestionModel
+@{
+    ViewBag.Title = "Question";
+}
+
+<link href="~/Content/zooomin.css" rel="stylesheet">
+<link href="~/Content/quiz.min.css" rel="stylesheet">
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
+<div class="quiz4net-logo">
+    <img src="~/Images/quiz4net_logo.png" alt="Quiz4Net Logo"/>
+</div>
+@Html.Hidden("singleChoiceQuestion", Model.HasSingleAnswer.ToString())
+<div class="question-number">
+    Question @Model.Number / @Model.TotalQuestionsCount
+</div>
+<hr class="hr-green"/>
+<div class="question">
+    @Model.Text
+</div>
+<div class="div-question-image">
+    @if (Model.Image != null && Model.Image.Length > 0)
+    {
+        @Html.Raw("<img class='zooomin img-responsive' src=\"data:image/jpeg;base64," + Convert.ToBase64String(Model.Image) + "\" />")
+    }
+</div>
+<div id="divResult" class="div-result"></div>
+@using (Html.BeginForm("Question", "Quiz", new {questionCategory = Model.SelectedQuestionCategory}))
+{
+    @Html.HiddenFor(m => m.Id, new {id = "QuestionId"})
+    @Html.Hidden("ResponseModel.QuestionId", Model.Id.ToString())
+    
+    for (var i = 0; i < Model.Answers.Count; i++)
+    {
+        <div class="answer">
+            <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quiz-option"})</span>
+            <span> @Html.Label(Model.Answers[i].Text, new {id = "spanAnswerText" + Model.Answers[i].Id, @class = "answer-text"}) </span>
+            @Html.Hidden(nameof(ResponseModel) + "." + nameof(ResponseModel.AnswerIds) + "[" + i + "]", 0, new {id = "hiddenAnswerId" + Model.Answers[i].Id})
+        </div>
+    }
+    <div class="question-buttons">
+        <a id="checkAnswer" data-request-url="@Url.Action("CheckAnswers", "Quiz")" class="button"> Submit </a>
+        <button id="nextQuestion" type="submit" class="button"> Next </button>
+        <a id="finishTestLink" class="link-finish-test button"> Finish Quiz </a>
+    </div>
+}
+<div class="load-indicator-container" align="center">
+    <img src="~/Images/loading.gif" class="img-responsive" />
+</div>
+<script src="~/Scripts/zooomin.js"></script>
+<script type="text/javascript" src="~/Scripts/answer.min.js"></script>
+<script type="text/javascript">
+    $('.zooomin').zooomin();
+</script>
+
+

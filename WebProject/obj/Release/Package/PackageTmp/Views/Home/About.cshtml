@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<link href="~/Content/quizAbout.css" rel="stylesheet">
+@Html.Partial("_Menu")
+<div>
+    <div>
+        <img src="~/Images/weBelieveIn.png" alt="We Believe In" />
+        <hr class="hr-green" />
+    </div>
+    <div class="about-item">
+        <img src="~/Images/tick.png"/>
+        <span class="about-main-item">Quality</span>
+        <div class="about-item-description">
+            We provide a wide range of up-to-date questions, which cover many different topics. All the answers are verified. We often add new questions and cover more and more topics.
+        </div>
+        <hr class="hr-gray"/>
+    </div>
+    <div class="about-item">
+        <img src="~/Images/tick.png"/>
+        <span class="about-main-item"> User Experience</span>
+        <div class="about-item-description">
+            Our goal is to deliver a great user experience. No confusing site structure, good flexibility and responsiveness.
+        </div>
+        <hr class="hr-gray"/>
+    </div>
+    <div class="about-item">
+        <img src="~/Images/tick.png"/>
+        <span class="about-main-item">
+            Inspiration
+        </span>
+        <div class="about-item-description">
+            We want to inspire you to dig deeper into software development. It can be a great fun!
+        </div>
+        <hr class="hr-green"/>
+    </div>
+    <div class="about-item">       
+        <span class="about-main-item categories-details-link">
+            <img src="~/Images/greenHand.png" />
+            <a href="@Url.Action("CategoriesDetails", "Quiz", null)">
+                <span class="check-out-our-quizzes-text"> Check out our quizzes </span>
+            </a>
+        </span>
+        <hr class="hr-green" />
+    </div>
+    <div class="detail-buttons">
+        <a href="@Url.Action("Index", "Quiz", null)" class="button"> Back </a>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+<link href="~/Content/quizMenu.min.css" rel="stylesheet">
+@Html.Partial("_Menu")
+@using (Html.BeginForm("Login", "Account"))
+{
+    @Html.ValidationSummary()
+    <div class="login-control login-label">
+        Login
+    </div>
+    <div> Username: </div>
+    <div class="login-control">
+        @Html.TextBox("name")
+    </div>
+    <div class="login-control">
+        <div> Password: </div> 
+        @Html.Password("password")
+    </div>
+    <div class="login-control label-text">
+     You don't have an account? <a class="link-register" href='@Url.Action("Register", "Account")'> Register </a>
+    </div>
+    <div class="button-section">
+        <input type="submit" value="Login" class="button"/>
+    </div>
+}
