@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Demo";
+}
+
+<h2>Demo</h2>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Quiz4Net Demo</title> 
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link href="~/Content/Skitter/skitter.min.css" type="text/css" media="all" rel="stylesheet"/>
+    <link href="~/Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/Effect/effect.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="~/Content/Home/demo.min.css">
+</head>
+<body>
+<div class="close-icon">
+    <a href='@Url.Action("Index", "Quiz")'>
+        <span class="glyphicon glyphicon-remove rotate" title="Close"></span>
+    </a>
+</div>
+<div class="quiz4net-logo">
+    <img src="~/Images/quiz4net_logo.png" alt="Quiz4Net Logo" />
+</div>
+<div align="center" class="image-slider-container">
+    <div class="skitter skitter-large with-dots">
+        <ul>
+            <li>
+                <a href="#cut">
+                    <img src="~/Images/Demo/demo-img1.png" class="cut img-responsive"/>
+                </a>
+                <div class="label_text">
+                    <p>
+                        Test your C# skills
+                    </p>
+                </div>
+            </li>      
+            <li>
+                <a href="#cut">
+                    <img src="~/Images/Demo/demo-img1.png" class="cut img-responsive"/>
+                </a>
+                <div class="label_text">
+                    <p>
+                        Test your C# skills
+                    </p>
+                </div>
+            </li>      
+        </ul>
+    </div>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="~/Scripts/Skitter/jquery-2.1.1.min.js"></script>
+<script src="~/Scripts/Skitter/jquery.easing.1.3.js"></script>
+<script src="~/Scripts/Skitter/jquery.skitter.min.js"></script>
+<script src="~/Scripts/Home/demo.min.js"></script>
+</body>
+</html>
+

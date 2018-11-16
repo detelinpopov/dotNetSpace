@@ -35,6 +35,8 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Release\System
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Release\System.Web.WebPages.Razor.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Release\Shared.pdb
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\bin\Release\EntityFramework.xml
-C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\obj\Release\InversionOfControl.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\obj\Release\InversionOfControl.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\obj\Release\InversionOfControl.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\obj\Release\InversionOfControl.csprojAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\obj\Release\InversionOfControl.csproj.CoreCompileInputs.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\InversionOfControl\obj\Release\InversionOfControl.csproj.CopyComplete

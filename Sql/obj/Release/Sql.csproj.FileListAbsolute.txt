@@ -10,6 +10,8 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Shared.pdb
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\EntityFramework.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\bin\Release\Newtonsoft.Json.xml
-C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\obj\Release\Sql.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\obj\Release\Sql.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\obj\Release\Sql.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\obj\Release\Sql.csprojAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\obj\Release\Sql.csproj.CoreCompileInputs.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Sql\obj\Release\Sql.csproj.CopyComplete

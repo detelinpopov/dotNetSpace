@@ -203,6 +203,11 @@ namespace WebProject.Controllers
             NumberOfCorrectAnswers = 0;
         }
 
+        public ActionResult Demo()
+        {
+            return View("~/Views/Demo/Demo.cshtml");
+        }
+
         private static class SessionKeys
         {
             public static readonly string AnsweredQuestionsIdsKey = "AnsweredQuestionsIds";

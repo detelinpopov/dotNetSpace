@@ -20,6 +20,8 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\bin\Release\EntityFramework.xm
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\bin\Release\Moq.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\bin\Release\nunit.framework.xml
-C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Release\Tester.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Release\Tester.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Release\Tester.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Release\Tester.csprojAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Release\Tester.csproj.CoreCompileInputs.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Release\Tester.csproj.CopyComplete

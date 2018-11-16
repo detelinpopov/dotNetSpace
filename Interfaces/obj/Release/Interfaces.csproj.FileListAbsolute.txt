@@ -2,6 +2,8 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\bin\Release\Interfaces.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\bin\Release\Interfaces.pdb
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\bin\Release\Shared.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\bin\Release\Shared.pdb
-C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\obj\Release\Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\obj\Release\Interfaces.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\obj\Release\Interfaces.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\obj\Release\Interfaces.csprojAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\obj\Release\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Interfaces\obj\Release\Interfaces.csproj.CopyComplete

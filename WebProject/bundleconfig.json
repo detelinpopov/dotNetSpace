@@ -58,5 +58,17 @@
     "inputFiles": [
       "Content/feedback.css"
     ]
+  },
+  {
+    "outputFileName": "Content/Home/demo.min.css",
+    "inputFiles": [
+      "Content/Home/demo.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/Home/demo.min.js",
+    "inputFiles": [
+      "Scripts/Home/demo.js"
+    ]
   }
 ]
