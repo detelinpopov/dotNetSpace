@@ -1,6 +1,6 @@
 ﻿$(document).ready(function() {   
     window.sr = ScrollReveal({ reset: true });
-    sr.reveal(".quiz-container", { mobile: true });
+    sr.reveal(".scroll-reveal", { mobile: true });
 
     $("#showQuizDescriptionSections").click(function() {
         var hideSections = $(this);

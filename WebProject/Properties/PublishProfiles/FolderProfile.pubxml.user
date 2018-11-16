@@ -13,8 +13,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>07/18/2017 14:06:08</publishTime>
+    </File>
     <File Include="bin/Core.dll">
-      <publishTime>07/19/2018 12:14:07</publishTime>
+      <publishTime>11/16/2018 10:50:18</publishTime>
+    </File>
+    <File Include="bin/Core.pdb">
+      <publishTime>11/16/2018 10:50:18</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -26,10 +32,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Interfaces.dll">
-      <publishTime>07/19/2018 12:14:06</publishTime>
+      <publishTime>11/16/2018 10:50:18</publishTime>
+    </File>
+    <File Include="bin/Interfaces.pdb">
+      <publishTime>11/16/2018 10:50:18</publishTime>
     </File>
     <File Include="bin/InversionOfControl.dll">
-      <publishTime>07/19/2018 12:14:07</publishTime>
+      <publishTime>11/16/2018 10:50:19</publishTime>
+    </File>
+    <File Include="bin/InversionOfControl.pdb">
+      <publishTime>11/16/2018 10:50:19</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -71,6 +83,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>07/18/2017 14:06:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.pdb">
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.Unity.dll">
@@ -125,10 +140,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Shared.dll">
-      <publishTime>07/19/2018 12:14:06</publishTime>
+      <publishTime>11/16/2018 10:50:18</publishTime>
+    </File>
+    <File Include="bin/Shared.pdb">
+      <publishTime>11/16/2018 10:50:18</publishTime>
     </File>
     <File Include="bin/Sql.dll">
-      <publishTime>07/19/2018 12:14:06</publishTime>
+      <publishTime>11/16/2018 10:50:18</publishTime>
+    </File>
+    <File Include="bin/Sql.pdb">
+      <publishTime>11/16/2018 10:50:18</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -158,7 +179,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>07/19/2018 12:14:08</publishTime>
+      <publishTime>11/16/2018 11:09:32</publishTime>
+    </File>
+    <File Include="bin/WebProject.pdb">
+      <publishTime>11/16/2018 11:09:32</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -289,6 +313,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/Gridmvc.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
+    <File Include="Content/Home/demo.css">
+      <publishTime>11/16/2018 11:01:50</publishTime>
+    </File>
+    <File Include="Content/Home/demo.min.css">
+      <publishTime>11/16/2018 11:01:50</publishTime>
+    </File>
     <File Include="Content/jquery-ui.css">
       <publishTime>09/14/2016 17:34:06</publishTime>
     </File>
@@ -334,6 +364,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/Site.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
+    <File Include="Content/Skitter/skitter.css">
+      <publishTime>11/16/2018 10:54:49</publishTime>
+    </File>
+    <File Include="Content/Skitter/skitter.min.css">
+      <publishTime>11/16/2018 10:54:49</publishTime>
+    </File>
     <File Include="Content/zooomin.css">
       <publishTime>09/18/2017 17:59:39</publishTime>
     </File>
@@ -357,6 +393,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Grid.mvc.readme">
       <publishTime>07/18/2017 14:06:08</publishTime>
+    </File>
+    <File Include="Images/Demo/demo-img1.png">
+      <publishTime>11/16/2018 11:06:38</publishTime>
     </File>
     <File Include="Images/errorImage.png">
       <publishTime>09/29/2017 13:22:25</publishTime>
@@ -389,10 +428,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2018 14:16:56</publishTime>
     </File>
     <File Include="Images/theMostCompleteQuiz.png">
-      <publishTime>01/09/2018 13:25:25</publishTime>
+      <publishTime>11/16/2018 10:50:40</publishTime>
     </File>
     <File Include="Images/welcomeToQuiz4Net.png">
-      <publishTime>01/03/2018 15:05:53</publishTime>
+      <publishTime>11/16/2018 10:50:34</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -418,11 +457,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/gridmvc.min.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
+    <File Include="Scripts/Home/demo.js">
+      <publishTime>11/16/2018 10:59:41</publishTime>
+    </File>
+    <File Include="Scripts/Home/demo.min.js">
+      <publishTime>11/16/2018 10:59:38</publishTime>
+    </File>
     <File Include="Scripts/index.js">
-      <publishTime>02/28/2018 09:52:44</publishTime>
+      <publishTime>11/16/2018 11:16:47</publishTime>
     </File>
     <File Include="Scripts/index.min.js">
-      <publishTime>02/28/2018 09:52:45</publishTime>
+      <publishTime>11/16/2018 11:16:48</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -460,6 +505,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/ScrollReveal/scrollreveal.min.js">
       <publishTime>01/05/2018 10:21:02</publishTime>
     </File>
+    <File Include="Scripts/Skitter/jquery-2.1.1.min.js">
+      <publishTime>11/16/2018 10:54:18</publishTime>
+    </File>
+    <File Include="Scripts/Skitter/jquery.easing.1.3.js">
+      <publishTime>11/16/2018 10:54:18</publishTime>
+    </File>
+    <File Include="Scripts/Skitter/jquery.skitter.js">
+      <publishTime>11/16/2018 10:54:18</publishTime>
+    </File>
+    <File Include="Scripts/Skitter/jquery.skitter.min.js">
+      <publishTime>11/16/2018 10:54:18</publishTime>
+    </File>
     <File Include="Scripts/zooomin.js">
       <publishTime>08/17/2017 06:34:04</publishTime>
     </File>
@@ -475,6 +532,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Account/Register.cshtml">
       <publishTime>10/26/2017 11:06:37</publishTime>
     </File>
+    <File Include="Views/Demo/Demo.cshtml">
+      <publishTime>11/16/2018 11:11:08</publishTime>
+    </File>
     <File Include="Views/Feedback/Feedback.cshtml">
       <publishTime>01/10/2018 16:09:40</publishTime>
     </File>
@@ -488,10 +548,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2018 14:07:16</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>07/19/2018 12:14:03</publishTime>
+      <publishTime>11/16/2018 11:21:34</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
-      <publishTime>02/28/2018 15:02:04</publishTime>
+      <publishTime>07/19/2018 12:24:07</publishTime>
     </File>
     <File Include="Views/Quiz/QuizCompleted.cshtml">
       <publishTime>01/09/2018 17:01:10</publishTime>
