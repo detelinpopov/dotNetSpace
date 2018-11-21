@@ -361,11 +361,9 @@ input[type=checkbox]:checked ~ label .check {
 }
 
 .load-indicator-container {
-    bottom: 0;
     display: none;
     left: 0;
     position: fixed;
-    right: 0;
     top: 200px;
     transition: 1s 0.4s;
     z-index: 99999;

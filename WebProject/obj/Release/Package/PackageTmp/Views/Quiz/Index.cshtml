@@ -7,10 +7,7 @@
     var userMessage = string.Empty;
 }
 
-<link href="~/Content/jquery-ui.min.css" rel="stylesheet">
-<link href="~/Content/quizMenu.min.css" rel="stylesheet">
 <link href="~/Content/quizIndex.min.css" rel="stylesheet">
-<link href="~/Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet">
 
 @if (TempData["UserMessage"] != null)
 {
@@ -227,10 +224,9 @@
 <div class="footer">
     <i class="fa fa-hand-o-up" aria-hidden="true"></i> Go to top
 </div>
-<div class="load-indicator-container" align="center">
-    <img src="~/Images/loading.gif" class="img-responsive"/>
-</div>
+@*<div class="load-indicator-container" align="center">
+    <img src="~/Images/Shared/coding.gif" class="img-responsive"/>
+</div>*@
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-<script src="~/Scripts/jquery-ui.min.js"></script>
 <script src="~/Scripts/ScrollReveal/scrollreveal.min.js"></script>
 <script src="~/Scripts/index.min.js"></script>
