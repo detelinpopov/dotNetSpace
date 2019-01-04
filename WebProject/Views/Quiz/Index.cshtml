@@ -8,28 +8,30 @@
 }
 
 <link href="~/Content/quizIndex.min.css" rel="stylesheet">
+<link rel="stylesheet" href="~/Content/3DCloudCarousel/main.min.css">
+<link rel="stylesheet" href="~/Content/Effect/effect.min.css">
 
 @if (TempData["UserMessage"] != null)
 {
-    userMessage = (string) TempData["UserMessage"];
+    userMessage = (string)TempData["UserMessage"];
 }
 @Html.Hidden("hdnUserMessage", userMessage)
 
 <div id="messageDialog" class="user-message-field"> @userMessage </div>
 
 <div class="quiz-header-container">
-    <img src="~/Images/quiz4net_logo.png" class="img-responsive"/>
+    <img src="~/Images/quiz4net_logo.png" class="img-responsive" />
     <div class="index-header">
-        <img src="~/Images/welcomeToQuiz4Net.png" alt="Welcome to Quiz4Net" class="img-responsive"/>
+        <img src="~/Images/welcomeToQuiz4Net.png" alt="Welcome to Quiz4Net" class="img-responsive" />
     </div>
     <div class="quiz-index-quote">
-        <img src="~/Images/theBestFreeQuiz.png" class="img-responsive"/>
-    </div>   
+        <img src="~/Images/theBestFreeQuiz.png" class="img-responsive" />
+    </div>
 </div>
 <div class="quiz-container quiz-frame" name="c#">
     <div class="quiz-header-container">
         <span class="lucida-sans-font">C# Quiz</span>
-    </div>  
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
     </div>
@@ -43,11 +45,11 @@
         <a title="C# Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white"/>
+<hr class="hr-white" />
 <div class="quiz-container quiz-frame" name="asp.net mvc">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> ASP.Net MVC Quiz </span>
-    </div>  
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
     </div>
@@ -79,11 +81,11 @@
         <a title="AngularJS 2 Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.AngularJS2})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white"/>
+<hr class="hr-white" />
 <div class="quiz-container scroll-reveal quiz-frame" name="javascript">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> JavaScript Quiz </span>
-    </div>  
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
     </div>
@@ -115,11 +117,11 @@
         <a title="Unit Testing Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.UnitTesting})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white"/>
+<hr class="hr-white" />
 <div class="quiz-container scroll-reveal quiz-frame" name="jquery">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> jQuery Quiz </span>
-    </div>  
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
     </div>
@@ -133,11 +135,11 @@
         <a title="jQuery Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.jQuery})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white"/>
+<hr class="hr-white" />
 <div class="quiz-container scroll-reveal quiz-frame" name="data structures">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> Data Structures Quiz </span>
-    </div>   
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
     </div>
@@ -151,11 +153,11 @@
         <a title="Data Structures Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.DataStructures})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white"/>
+<hr class="hr-white" />
 <div class="quiz-container scroll-reveal quiz-frame" name="sql server">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> Sql Server Quiz </span>
-    </div>    
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
     </div>
@@ -169,11 +171,11 @@
         <a title="Sql Server Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.SqlServer})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white"/>
+<hr class="hr-white" />
 <div class="quiz-container scroll-reveal quiz-frame" name="entity framework">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> Entity Framework Quiz </span>
-    </div>   
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
     </div>
@@ -187,11 +189,11 @@
         <a title="Entity Framework Quiz" href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})" class="start-quiz-button"> Start Quiz </a>
     </div>
 </div>
-<hr class="hr-white"/>
+<hr class="hr-white" />
 <div class="quiz-container scroll-reveal quiz-frame" name="sharepoint">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> SharePoint 2016 Quiz </span>
-    </div>  
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
     </div>
@@ -209,10 +211,10 @@
 <div class="quiz-container-last quiz-frame" name="scrum">
     <div class="quiz-header-container">
         <span class="lucida-sans-font"> Scrum Quiz </span>
-    </div>  
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Type: </span> 20 random multiple choice questions
-    </div>  
+    </div>
     <div class="quiz-description-value">
         <span class="quiz-details-label"> Time: </span> Unlimited
     </div>
@@ -224,9 +226,52 @@
 <div class="footer">
     <i class="fa fa-hand-o-up" aria-hidden="true"></i> Go to top
 </div>
-@*<div class="load-indicator-container" align="center">
-    <img src="~/Images/Shared/coding.gif" class="img-responsive"/>
-</div>*@
+
+<div class="label-div">.Net Framework Quizzes</div>
+<div id="showcase" class="noselect">
+    <div class="cloud9-item">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.CSharp})">
+            <img class="img-responsive rounded" src="~/Images/Technologies/Logos/csharp_logo.jpg">
+        </a>
+    </div>
+    <div class="cloud9-item">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Mvc})">
+            <img class="img-responsive rounded" src="~/Images/Technologies/Logos/asp-net-mvc.jpg">
+        </a>
+    </div>
+    <div class="cloud9-item">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.EntityFramework})">
+            <img class="img-responsive rounded" src="~/Images/Technologies/Logos/entity-framework.jpg">
+        </a>
+    </div>
+</div>
+
+<div id="arrows-container" class="nav" class="noselect">
+    <button class="left"> ← </button>
+    <button class="right"> → </button>
+</div>
+
+<div class="label-div">JavaScript Quizzes</div>
+<div id="showcase-javascript" class="noselect">
+    <div class="cloud9-item">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.Javascript})">
+            <img class="img-responsive rounded" src="~/Images/Technologies/Logos/csharp_logo.jpg">
+        </a>
+    </div>
+    <div class="cloud9-item">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.jQuery})">
+            <img class="img-responsive rounded" src="~/Images/Technologies/Logos/asp-net-mvc.jpg">
+        </a>
+    </div>
+    <div class="cloud9-item">
+        <a href="@Url.Action("Question", "Quiz", new {questionCategory = QuestionCategory.AngularJS2})">
+            <img class="img-responsive rounded" src="~/Images/Technologies/Logos/entity-framework.jpg">
+        </a>
+    </div>
+</div>
+
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/ScrollReveal/scrollreveal.min.js"></script>
+<script src="~/Scripts/3DCloudCarousel/jquery.reflection.min.js"></script>
+<script src="~/Scripts/3DCloudCarousel/jquery.cloud9carousel.min.js"></script>
 <script src="~/Scripts/index.min.js"></script>

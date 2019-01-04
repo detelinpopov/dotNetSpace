@@ -37,3 +37,9 @@
 .grow { transition: all .2s ease-in-out; }
 
 .grow:hover { transform: scale(1.05); }
+
+.rounded { border-radius: 50%; }
+
+.text-shadow {
+    text-shadow: 2px 2px 5px #44c767, 0 0 25px #44c767, 0 0 15px #44c767;
+}

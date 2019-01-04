@@ -70,5 +70,11 @@
     "inputFiles": [
       "Scripts/Home/demo.js"
     ]
+  },
+  {
+    "outputFileName": "Content/3DCloudCarousel/main.min.css",
+    "inputFiles": [
+      "Content/3DCloudCarousel/main.css"
+    ]
   }
 ]

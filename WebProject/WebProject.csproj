@@ -200,6 +200,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\3DCloudCarousel\main.css" />
+    <Content Include="Content\3DCloudCarousel\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Effect\effect.css" />
@@ -249,6 +253,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\Demo\demo-img1.png" />
     <Content Include="Images\Shared\coding.gif" />
+    <Content Include="Images\Technologies\Logos\asp-net-mvc.jpg" />
+    <Content Include="Images\Technologies\Logos\csharp_logo.jpg" />
+    <Content Include="Images\Technologies\Logos\entity-framework.jpg" />
     <Content Include="Images\theBestFreeQuiz.png" />
     <Content Include="Images\theBestFreeQuiz.gif" />
     <Content Include="Images\errorImage.png" />
@@ -261,6 +268,10 @@
     <Content Include="Images\theBestFreeQuiz1.png" />
     <Content Include="Images\theMostCompleteQuiz.png" />
     <Content Include="Images\welcomeToQuiz4Net.png" />
+    <Content Include="Scripts\3DCloudCarousel\jquery.cloud9carousel.js" />
+    <Content Include="Scripts\3DCloudCarousel\jquery.cloud9carousel.min.js" />
+    <Content Include="Scripts\3DCloudCarousel\jquery.reflection.js" />
+    <Content Include="Scripts\3DCloudCarousel\jquery.reflection.min.js" />
     <Content Include="Scripts\answer.min.js">
       <DependentUpon>answer.js</DependentUpon>
     </Content>

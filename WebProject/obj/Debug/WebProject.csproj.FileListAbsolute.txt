@@ -583,7 +583,6 @@ C:\Users\Detelin Popov\Desktop\Quiz\WebProject\bin\Microsoft.Practices.ServiceLo
 C:\Users\Detelin Popov\Desktop\Quiz\WebProject\obj\Debug\WebProject.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\Quiz\WebProject\obj\Debug\WebProject.dll
 C:\Users\Detelin Popov\Desktop\Quiz\WebProject\obj\Debug\WebProject.pdb
-C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\roslyn\csc.exe
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -671,3 +670,6 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.Se
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\bin\Microsoft.Practices.ServiceLocation.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.csprojAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.csproj.CoreCompileInputs.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\obj\Debug\WebProject.csproj.CopyComplete

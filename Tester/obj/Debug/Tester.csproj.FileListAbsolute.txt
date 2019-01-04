@@ -192,6 +192,8 @@ C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\bin\Debug\EntityFramework.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\bin\Debug\Moq.xml
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\bin\Debug\nunit.framework.xml
-C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Debug\Tester.csprojResolveAssemblyReference.cache
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Debug\Tester.dll
 C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Debug\Tester.pdb
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Debug\Tester.csprojAssemblyReference.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Debug\Tester.csproj.CoreCompileInputs.cache
+C:\Users\Detelin Popov\Desktop\dotNetSpace\Tester\obj\Debug\Tester.csproj.CopyComplete
