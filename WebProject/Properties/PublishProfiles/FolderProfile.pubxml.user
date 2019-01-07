@@ -179,16 +179,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>01/07/2019 16:03:52</publishTime>
+      <publishTime>01/07/2019 16:13:20</publishTime>
     </File>
     <File Include="bin/WebProject.pdb">
-      <publishTime>01/07/2019 16:03:52</publishTime>
+      <publishTime>01/07/2019 16:13:20</publishTime>
     </File>
     <File Include="Content/3DCloudCarousel/main.css">
-      <publishTime>01/07/2019 15:29:53</publishTime>
+      <publishTime>01/07/2019 16:09:55</publishTime>
     </File>
     <File Include="Content/3DCloudCarousel/main.min.css">
-      <publishTime>01/07/2019 15:29:53</publishTime>
+      <publishTime>01/07/2019 16:09:55</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -356,10 +356,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/07/2019 16:00:38</publishTime>
+      <publishTime>01/07/2019 16:12:44</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/07/2019 16:00:38</publishTime>
+      <publishTime>01/07/2019 16:12:45</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -617,7 +617,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2018 14:07:16</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/07/2019 16:02:55</publishTime>
+      <publishTime>01/07/2019 16:12:49</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>07/19/2018 12:24:07</publishTime>
