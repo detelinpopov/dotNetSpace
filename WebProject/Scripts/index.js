@@ -36,7 +36,7 @@
         }
     }
 
-    $(".footer").click(function() {
+    $("#showcase").click(function() {
         $("html, body").animate({ scrollTop: 0 }, 2000);
     });
 
@@ -72,7 +72,7 @@
         $(".load-indicator-container").fadeIn();
     });
 
-    var showcase = $("#showcase");
+    var showcase = $(".showcase");
     showcase.Cloud9Carousel({
         yPos: 42,
         yRadius: 48,
@@ -86,9 +86,7 @@
         bringToFront: true,
         onRendered: showcaseUpdated,
         onLoaded: function () {
-            showcase.css("visibility", 'visible');
-            showcase.css("display", 'none');
-            showcase.fadeIn(1500);
+         
         }
     });
 
@@ -99,34 +97,5 @@
 
         var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI);
         title.css("opacity", 0.5 + (0.5 * c));
-    }
-
-    var showcaseJavaScript = $("#showcase-javascript");
-    showcaseJavaScript.Cloud9Carousel({
-        yPos: 42,
-        yRadius: 48,
-        mirrorOptions: {
-            gap: 12,
-            height: 0.2
-        },
-        buttonLeft: $(".nav > .left"),
-        buttonRight: $(".nav > .right"),
-        autoPlay: true,
-        bringToFront: true,
-        onRendered: showcaseUpdatedJs,
-        onLoaded: function () {
-            showcaseJavaScript.css("visibility", 'visible');
-            showcaseJavaScript.css("display", 'none');
-            showcaseJavaScript.fadeIn(1500);
-        }
-    });
-
-    function showcaseUpdatedJs(showcaseJavaScript) {
-        var title = $("#item-title").html(
-            $(showcaseJavaScript.nearestItem()).attr("alt")
-        );
-
-        var c = Math.cos((showcaseJavaScript.floatIndex() % 1) * 2 * Math.PI);
-        title.css("opacity", 0.5 + (0.5 * c));
-    }
+    }   
 });

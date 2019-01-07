@@ -253,9 +253,15 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\Demo\demo-img1.png" />
     <Content Include="Images\Shared\coding.gif" />
+    <Content Include="Images\Technologies\Logos\angularjs_logo.jpeg" />
     <Content Include="Images\Technologies\Logos\asp-net-mvc.jpg" />
     <Content Include="Images\Technologies\Logos\csharp_logo.jpg" />
+    <Content Include="Images\Technologies\Logos\Data-Structure.png" />
+    <Content Include="Images\Technologies\Logos\entity-framework-dot-ryt.png" />
     <Content Include="Images\Technologies\Logos\entity-framework.jpg" />
+    <Content Include="Images\Technologies\Logos\JavaScript_Logo.png" />
+    <Content Include="Images\Technologies\Logos\jquery-logo.png" />
+    <Content Include="Images\Technologies\Logos\sql-server-logo.jpg" />
     <Content Include="Images\theBestFreeQuiz.png" />
     <Content Include="Images\theBestFreeQuiz.gif" />
     <Content Include="Images\errorImage.png" />
