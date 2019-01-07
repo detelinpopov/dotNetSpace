@@ -1,4 +1,4 @@
-﻿$(document).ready(function() {   
+﻿$(document).ready(function() {
     window.sr = ScrollReveal({ reset: true });
     sr.reveal(".scroll-reveal", { mobile: true });
 
@@ -19,8 +19,8 @@
         autoPlay: true,
         bringToFront: true,
         onRendered: showcaseUpdated,
-        onLoaded: function () {
-         
+        onLoaded: function() {
+
         }
     });
 
@@ -31,5 +31,6 @@
 
         var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI);
         title.css("opacity", 0.5 + (0.5 * c));
-    }   
+    }
+
 });

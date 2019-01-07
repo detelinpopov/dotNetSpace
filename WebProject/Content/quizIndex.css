@@ -391,3 +391,31 @@ input[type=checkbox]:checked ~ label .check {
 #arrows-container { padding-top: 10px; }
 
 .showcase { width: 100%; }
+
+#overlay {
+    background: black;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 1s 0.4s;
+    z-index: 99999;
+}
+
+.div-description {
+    color: #44c767;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.glyphicon-ok {
+    color: #44c767 !important;
+}
+
+.description-header {
+    color: #44c767;
+    font-weight: bold;
+}
