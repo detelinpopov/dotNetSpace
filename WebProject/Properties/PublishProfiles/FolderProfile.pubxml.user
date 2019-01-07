@@ -17,10 +17,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Core.dll">
-      <publishTime>11/21/2018 17:01:22</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/Core.pdb">
-      <publishTime>11/21/2018 17:01:22</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -32,16 +32,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Interfaces.dll">
-      <publishTime>11/21/2018 17:01:21</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/Interfaces.pdb">
-      <publishTime>11/21/2018 17:01:21</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/InversionOfControl.dll">
-      <publishTime>11/21/2018 17:01:22</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/InversionOfControl.pdb">
-      <publishTime>11/21/2018 17:01:22</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -140,16 +140,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/Shared.dll">
-      <publishTime>11/21/2018 17:01:21</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/Shared.pdb">
-      <publishTime>11/21/2018 17:01:21</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/Sql.dll">
-      <publishTime>11/21/2018 17:01:21</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/Sql.pdb">
-      <publishTime>11/21/2018 17:01:21</publishTime>
+      <publishTime>01/07/2019 13:49:15</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -179,10 +179,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>11/21/2018 17:11:51</publishTime>
+      <publishTime>01/07/2019 13:58:32</publishTime>
     </File>
     <File Include="bin/WebProject.pdb">
-      <publishTime>11/21/2018 17:11:51</publishTime>
+      <publishTime>01/07/2019 13:58:32</publishTime>
+    </File>
+    <File Include="Content/3DCloudCarousel/main.css">
+      <publishTime>01/07/2019 13:27:17</publishTime>
+    </File>
+    <File Include="Content/3DCloudCarousel/main.min.css">
+      <publishTime>01/07/2019 13:27:18</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -191,7 +197,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="Content/Effect/effect.css">
-      <publishTime>01/10/2018 15:16:32</publishTime>
+      <publishTime>01/04/2019 13:34:53</publishTime>
     </File>
     <File Include="Content/Effect/effect.min.css">
       <publishTime>01/10/2018 15:16:32</publishTime>
@@ -350,10 +356,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>11/21/2018 17:18:06</publishTime>
+      <publishTime>01/07/2019 13:23:52</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>11/21/2018 17:18:06</publishTime>
+      <publishTime>01/07/2019 13:23:52</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -421,6 +427,42 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/Shared/coding.gif">
       <publishTime>11/21/2018 17:10:51</publishTime>
     </File>
+    <File Include="Images/Technologies/Logos/angularjs_logo.jpeg">
+      <publishTime>01/07/2019 13:36:09</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/asp-net-mvc.jpg">
+      <publishTime>01/07/2019 13:37:34</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/csharp_logo.jpg">
+      <publishTime>01/07/2019 13:57:42</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/Data-Structure.png">
+      <publishTime>01/07/2019 13:39:39</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/entity-framework-dot-ryt.png">
+      <publishTime>01/07/2019 13:39:42</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/entity-framework.jpg">
+      <publishTime>01/07/2019 13:39:45</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/JavaScript_Logo.png">
+      <publishTime>01/07/2019 13:39:48</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/jquery-logo.png">
+      <publishTime>01/07/2019 13:39:54</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/scrum.png">
+      <publishTime>01/07/2019 13:47:42</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/sharepoint-2016.png">
+      <publishTime>01/07/2019 13:47:38</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/sql-server-logo.jpg">
+      <publishTime>01/07/2019 13:14:59</publishTime>
+    </File>
+    <File Include="Images/Technologies/Logos/unit-testing.png">
+      <publishTime>01/07/2019 13:47:32</publishTime>
+    </File>
     <File Include="Images/theBestFreeQuiz.gif">
       <publishTime>05/22/2018 09:53:35</publishTime>
     </File>
@@ -438,6 +480,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="packages.config">
       <publishTime>07/18/2017 14:06:08</publishTime>
+    </File>
+    <File Include="Scripts/3DCloudCarousel/jquery.cloud9carousel.js">
+      <publishTime>01/04/2019 13:00:09</publishTime>
+    </File>
+    <File Include="Scripts/3DCloudCarousel/jquery.cloud9carousel.min.js">
+      <publishTime>01/04/2019 13:00:09</publishTime>
+    </File>
+    <File Include="Scripts/3DCloudCarousel/jquery.reflection.js">
+      <publishTime>01/04/2019 13:00:09</publishTime>
+    </File>
+    <File Include="Scripts/3DCloudCarousel/jquery.reflection.min.js">
+      <publishTime>01/04/2019 13:00:09</publishTime>
     </File>
     <File Include="Scripts/answer.js">
       <publishTime>02/20/2018 09:35:48</publishTime>
@@ -467,10 +521,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/16/2018 10:59:38</publishTime>
     </File>
     <File Include="Scripts/index.js">
-      <publishTime>11/16/2018 11:16:47</publishTime>
+      <publishTime>01/07/2019 13:54:33</publishTime>
     </File>
     <File Include="Scripts/index.min.js">
-      <publishTime>11/16/2018 11:16:48</publishTime>
+      <publishTime>01/07/2019 13:54:34</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -551,7 +605,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2018 14:07:16</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>11/21/2018 17:18:51</publishTime>
+      <publishTime>01/07/2019 13:56:09</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>07/19/2018 12:24:07</publishTime>
