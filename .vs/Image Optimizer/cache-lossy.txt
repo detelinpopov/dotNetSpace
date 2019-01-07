@@ -1,0 +1,4 @@
+C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\Images\Technologies\Logos\angularjs_logo.jpeg|34466
+C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\Images\Technologies\Logos\asp-net-mvc.jpg|25400
+C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\Images\Technologies\Logos\csharp_logo.jpg|30749
+C:\Users\Detelin Popov\Desktop\dotNetSpace\WebProject\Images\Technologies\Logos\sql-server-logo.jpg|71701

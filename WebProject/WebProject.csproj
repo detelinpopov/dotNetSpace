@@ -261,7 +261,10 @@
     <Content Include="Images\Technologies\Logos\entity-framework.jpg" />
     <Content Include="Images\Technologies\Logos\JavaScript_Logo.png" />
     <Content Include="Images\Technologies\Logos\jquery-logo.png" />
+    <Content Include="Images\Technologies\Logos\scrum.png" />
+    <Content Include="Images\Technologies\Logos\sharepoint-2016.png" />
     <Content Include="Images\Technologies\Logos\sql-server-logo.jpg" />
+    <Content Include="Images\Technologies\Logos\unit-testing.png" />
     <Content Include="Images\theBestFreeQuiz.png" />
     <Content Include="Images\theBestFreeQuiz.gif" />
     <Content Include="Images\errorImage.png" />
