@@ -38,5 +38,5 @@
         if ($(window).width() !== width && $(window).height() !== height) {
             window.location.href = "/Quiz/Index";
         }       
-    });
+    });   
 });

@@ -253,7 +253,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\200.gif" />
     <Content Include="Images\Demo\demo-img1.png" />
-    <Content Include="Images\page-turning-book-animation-17.gif" />
+    <Content Include="Images\loading_exam.gif" />
     <Content Include="Images\Shared\coding.gif" />
     <Content Include="Images\Shared\generating-preview.gif" />
     <Content Include="Images\Technologies\Logos\angularjs_logo.jpeg" />
@@ -268,17 +268,10 @@
     <Content Include="Images\Technologies\Logos\sharepoint-2016.png" />
     <Content Include="Images\Technologies\Logos\sql-server-logo.jpg" />
     <Content Include="Images\Technologies\Logos\unit-testing.png" />
-    <Content Include="Images\theBestFreeQuiz.png" />
-    <Content Include="Images\theBestFreeQuiz.gif" />
     <Content Include="Images\errorImage.png" />
-    <Content Include="Images\firstSolveTheProblem.png" />
-    <Content Include="Images\freeQuiz.png" />
     <Content Include="Images\loadImage.gif" />
     <Content Include="Images\loading.gif" />
     <Content Include="Images\quiz4net_logo.png" />
-    <Content Include="Images\quizIncludesQuestionsFrom.png" />
-    <Content Include="Images\theBestFreeQuiz1.png" />
-    <Content Include="Images\theMostCompleteQuiz.png" />
     <Content Include="Images\welcome-logo.png" />
     <Content Include="Images\welcomeToQuiz4Net.png" />
     <Content Include="Scripts\3DCloudCarousel\jquery.cloud9carousel.js" />
