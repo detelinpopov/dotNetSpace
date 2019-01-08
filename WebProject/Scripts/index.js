@@ -33,8 +33,10 @@
         title.css("opacity", 0.5 + (0.5 * c));
     }
 
+    var width = $(window).width(), height = $(window).height();
     $(window).resize(function () {
-        window.location.href = "/Quiz/Index";
+        if ($(window).width() !== width && $(window).height() !== height) {
+            window.location.href = "/Quiz/Index";
+        }       
     });
-
 });
