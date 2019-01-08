@@ -179,10 +179,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>01/08/2019 10:29:51</publishTime>
+      <publishTime>01/08/2019 11:11:57</publishTime>
     </File>
     <File Include="bin/WebProject.pdb">
-      <publishTime>01/08/2019 10:29:51</publishTime>
+      <publishTime>01/08/2019 11:11:57</publishTime>
     </File>
     <File Include="Content/3DCloudCarousel/main.css">
       <publishTime>01/08/2019 10:06:49</publishTime>
@@ -356,10 +356,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2017 16:29:04</publishTime>
     </File>
     <File Include="Content/quizIndex.css">
-      <publishTime>01/08/2019 10:11:57</publishTime>
+      <publishTime>01/08/2019 10:51:16</publishTime>
     </File>
     <File Include="Content/quizIndex.min.css">
-      <publishTime>01/08/2019 10:11:58</publishTime>
+      <publishTime>01/08/2019 10:51:16</publishTime>
     </File>
     <File Include="Content/quizMenu.css">
       <publishTime>01/05/2018 10:07:41</publishTime>
@@ -420,6 +420,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/loading.gif">
       <publishTime>03/30/2018 11:20:43</publishTime>
+    </File>
+    <File Include="Images/loading_exam.gif">
+      <publishTime>01/08/2019 10:48:55</publishTime>
     </File>
     <File Include="Images/page-turning-book-animation-17.gif">
       <publishTime>01/07/2019 14:58:37</publishTime>
@@ -533,10 +536,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/16/2018 10:59:38</publishTime>
     </File>
     <File Include="Scripts/index.js">
-      <publishTime>01/08/2019 10:29:35</publishTime>
+      <publishTime>01/08/2019 11:00:03</publishTime>
     </File>
     <File Include="Scripts/index.min.js">
-      <publishTime>01/08/2019 10:29:20</publishTime>
+      <publishTime>01/08/2019 11:00:04</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>07/18/2017 14:06:08</publishTime>
@@ -617,10 +620,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2018 14:07:16</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/08/2019 10:06:19</publishTime>
+      <publishTime>01/08/2019 11:02:23</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
-      <publishTime>07/19/2018 12:24:07</publishTime>
+      <publishTime>01/08/2019 11:10:13</publishTime>
     </File>
     <File Include="Views/Quiz/QuizCompleted.cshtml">
       <publishTime>01/09/2018 17:01:10</publishTime>

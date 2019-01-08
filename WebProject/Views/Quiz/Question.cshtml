@@ -9,7 +9,7 @@
 
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"/>
 
 <div class="quiz4net-logo">
     <img src="~/Images/quiz4net_logo.png" alt="Quiz4Net Logo"/>
@@ -33,13 +33,15 @@
 {
     @Html.HiddenFor(m => m.Id, new {id = "QuestionId"})
     @Html.Hidden("ResponseModel.QuestionId", Model.Id.ToString())
-    
+
     for (var i = 0; i < Model.Answers.Count; i++)
     {
         <div class="answer">
-            <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quiz-option"})</span>
-            <span> @Html.Label(Model.Answers[i].Text, new {id = "spanAnswerText" + Model.Answers[i].Id, @class = "answer-text"}) </span>
-            @Html.Hidden(nameof(ResponseModel) + "." + nameof(ResponseModel.AnswerIds) + "[" + i + "]", 0, new {id = "hiddenAnswerId" + Model.Answers[i].Id})
+            <label style="word-wrap: break-word">
+                <span> @Html.CheckBox("quizOption", new {id = Model.Answers[i].Id, @class = "quiz-option"})</span>
+                <span> @Html.Label(Model.Answers[i].Text, new {id = "spanAnswerText" + Model.Answers[i].Id, @class = "answer-text"}) </span>
+                @Html.Hidden(nameof(ResponseModel) + "." + nameof(ResponseModel.AnswerIds) + "[" + i + "]", 0, new {id = "hiddenAnswerId" + Model.Answers[i].Id})
+            </label>
         </div>
     }
     <div class="question-buttons">
@@ -49,12 +51,10 @@
     </div>
 }
 <div class="load-indicator-container" align="center">
-    <img src="~/Images/loading.gif" class="img-responsive" />
+    <img src="~/Images/loading.gif" class="img-responsive"/>
 </div>
 <script src="~/Scripts/zooomin.js"></script>
 <script type="text/javascript" src="~/Scripts/answer.min.js"></script>
 <script type="text/javascript">
     $('.zooomin').zooomin();
 </script>
-
-
