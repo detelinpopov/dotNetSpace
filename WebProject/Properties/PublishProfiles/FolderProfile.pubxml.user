@@ -179,10 +179,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 14:06:08</publishTime>
     </File>
     <File Include="bin/WebProject.dll">
-      <publishTime>01/08/2019 11:11:57</publishTime>
+      <publishTime>01/08/2019 13:30:24</publishTime>
     </File>
     <File Include="bin/WebProject.pdb">
-      <publishTime>01/08/2019 11:11:57</publishTime>
+      <publishTime>01/08/2019 13:30:24</publishTime>
     </File>
     <File Include="Content/3DCloudCarousel/main.css">
       <publishTime>01/08/2019 10:06:49</publishTime>
@@ -620,7 +620,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2018 14:07:16</publishTime>
     </File>
     <File Include="Views/Quiz/Index.cshtml">
-      <publishTime>01/08/2019 11:02:23</publishTime>
+      <publishTime>01/08/2019 13:29:43</publishTime>
     </File>
     <File Include="Views/Quiz/Question.cshtml">
       <publishTime>01/08/2019 11:10:13</publishTime>
