@@ -33,4 +33,8 @@
         title.css("opacity", 0.5 + (0.5 * c));
     }
 
+    $(window).resize(function () {
+        window.location.href = "/Quiz/Index";
+    });
+
 });

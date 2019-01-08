@@ -392,6 +392,10 @@ input[type=checkbox]:checked ~ label .check {
 
 .showcase { width: 100%; }
 
+.cloud9-item {
+    
+}
+
 #overlay {
     background: black;
     bottom: 0;
