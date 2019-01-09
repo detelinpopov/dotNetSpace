@@ -30,6 +30,8 @@ namespace Sql.Repositories
         {
             using (var context = new QuizContext())
             {
+                context.Configuration.AutoDetectChangesEnabled = false;
+                context.Configuration.LazyLoadingEnabled = false;
                 IQuestion question = await context.Questions.Include(nameof(Question.Answers)).FirstOrDefaultAsync(q => q.Id == questionId);
                 if (question == null || answersIds == null || !answersIds.Any())
                 {
@@ -63,6 +65,8 @@ namespace Sql.Repositories
         {
             using (var context = new QuizContext())
             {
+                context.Configuration.AutoDetectChangesEnabled = false;
+                context.Configuration.LazyLoadingEnabled = false;
                 return await context.Questions.Include(nameof(Question.Answers)).OrderBy(r => Guid.NewGuid()).FirstOrDefaultAsync(q => q.Category == category.ToString() && !excludeIdsList.Contains(q.Id));
             }
         }
@@ -71,6 +75,8 @@ namespace Sql.Repositories
         {
             using (var context = new QuizContext())
             {
+                context.Configuration.AutoDetectChangesEnabled = false;
+                context.Configuration.LazyLoadingEnabled = false;
                 var correctAnswersIds = await context.Answers.Where(a => a.QuestionId == questionId && a.IsCorrect).Select(a => a.Id).ToListAsync();
                 return correctAnswersIds;
             }
