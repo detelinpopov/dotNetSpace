@@ -32,7 +32,7 @@ namespace Sql.Repositories
             {
                 context.Configuration.AutoDetectChangesEnabled = false;
                 context.Configuration.LazyLoadingEnabled = false;
-                IQuestion question = await context.Questions.Include(nameof(Question.Answers)).FirstOrDefaultAsync(q => q.Id == questionId);
+                IQuestion question = await context.Questions.AsNoTracking().Include(nameof(Question.Answers)).FirstOrDefaultAsync(q => q.Id == questionId);
                 if (question == null || answersIds == null || !answersIds.Any())
                 {
                     return false;
@@ -67,7 +67,7 @@ namespace Sql.Repositories
             {
                 context.Configuration.AutoDetectChangesEnabled = false;
                 context.Configuration.LazyLoadingEnabled = false;
-                return await context.Questions.Include(nameof(Question.Answers)).OrderBy(r => Guid.NewGuid()).FirstOrDefaultAsync(q => q.Category == category.ToString() && !excludeIdsList.Contains(q.Id));
+                return await context.Questions.AsNoTracking().Include(nameof(Question.Answers)).OrderBy(r => Guid.NewGuid()).FirstOrDefaultAsync(q => q.Category == category.ToString() && !excludeIdsList.Contains(q.Id));
             }
         }
 
@@ -77,7 +77,7 @@ namespace Sql.Repositories
             {
                 context.Configuration.AutoDetectChangesEnabled = false;
                 context.Configuration.LazyLoadingEnabled = false;
-                var correctAnswersIds = await context.Answers.Where(a => a.QuestionId == questionId && a.IsCorrect).Select(a => a.Id).ToListAsync();
+                var correctAnswersIds = await context.Answers.AsNoTracking().Where(a => a.QuestionId == questionId && a.IsCorrect).Select(a => a.Id).ToListAsync();
                 return correctAnswersIds;
             }
         }
